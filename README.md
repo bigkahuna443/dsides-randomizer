@@ -9,14 +9,14 @@ The config is designed to be compatible with the [Celeste randomizer mod](https:
 Installation
 ------------
 
-Automatic:
+**Automatic**:
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
 2. The config is included by default and the D-sides will be available in the randomizer level select screen.
 
-Manual:
+**Manual**:
 1. Unzip the D-sides folder in your Celeste/Mods directory.
 2. Place the Config folder from this repository into the D-sides folder.
-![folder structure](docs/img/structure.png)
+![folder structure](docs/img/structure.PNG)
 3. The D-sides will now be available in the randomizer level select screen.
 
 
@@ -30,7 +30,7 @@ The difficulty modes are intended as follows:
 - *Expert:* Harder D-side rooms, may require some setupless moves (corner jumps, easy demodashes, etc.)
 - *Perfect:* Hardest D-side rooms, may require multiple setupless moves and/or obscure tech (e.g. updiag demos)
 
-These are loosely based off the original randomizer difficulty recommendations but are *not* equivalent. A good rule of thumb is that Normal and Hard are a level higher than their vanilla counterparts, and they start evening out in Expert. Perfect is probably easier than vanilla due to removing pixel-perfect demos and other frustrating moves.
+These are loosely based off the original randomizer difficulty recommendations but are *not* equivalent. A good rule of thumb is that Normal and Hard are a level higher than their vanilla counterparts, and they start evening out in Expert. Perfect is probably easier than in the main game due to removing pixel-perfect demos and other frustrating moves.
 
 If you find new routes or would like to suggest tweaks or changes to difficulty ratings, feel free to contact me! You can see the current difficulty ratings in the [documentation](docs/routing).
 
@@ -45,7 +45,9 @@ Credits
 -------
 
 **Creator**: Bigkahuna
+
 **Labber-in-Chief**: [Theta](https://www.twitch.tv/thetagc)
+
 **Playtesters**:
 * Etpio5
 * Mnstrman06
