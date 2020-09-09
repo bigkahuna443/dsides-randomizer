@@ -35,10 +35,18 @@ These are loosely based off the original randomizer difficulty recommendations b
 If you find new routes or would like to suggest tweaks or changes to difficulty ratings, feel free to contact me! You can see the current difficulty ratings in the [documentation](docs/routing).
 
 
+Known Issues / Planned Additions
+--------------------------------
+1. There are not a huge number of dashless screens, which means you may have to supplement from the base game/other mods to generate larger/interesting dashless maps.
+2. Camera work needs to be done for most reverse paths -- the routes with the worst camera were focused on for now. If you run across a route with a bad camera that significantly affects gameplay, let me know.
+3. Currently all non-exits/entrances are disabled for now, which means the "Strange Holes" setting doesn't really have an effect. I'll gradually add some strange holes in on a case-by-case basis, since turning them all on at once tends to break things.
+4. Will make the config compatible with new randomizer features as they are created.
+
+
 Contact
 -------
 
-If you encounter any issues/softlocks, you can reach me on Discord (Bigkahuna#0491). To minimize issues, use the latest version of the config and the randomizer mod. Please include randomizer version, seed, and settings in your report.
+If you encounter any issues/softlocks or have suggestions, you can reach me on Discord (Bigkahuna#0491). To minimize issues, use the latest version of the config and the randomizer mod. Please include randomizer version, seed, and settings in any bug reports.
 
 
 Credits
