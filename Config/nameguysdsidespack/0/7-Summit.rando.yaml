@@ -1136,6 +1136,11 @@ ASide:
     - Side: Down
       Idx: 3
       Kind: none
+    Tweaks:
+    - Name: "cameraTargetTrigger" # fix offscreen trigger
+      ID: 355
+      Update:
+        Height: 144
       
   - Room: "g-03"
     Holes:

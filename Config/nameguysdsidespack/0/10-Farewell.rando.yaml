@@ -1028,8 +1028,7 @@ ASide:
         Width: 320
         Height: 72
         Values:
-          cameraX: 0
-          cameraY: -1
+          cameraY: 1.0
        
   - Room: "cc-01"
     Holes:
@@ -1118,6 +1117,11 @@ ASide:
         - Idx: 0
           X: 16
           Y: 132
+    - Name: "towerviewer" # so you can check if key is present
+      Update:
+        Add: true
+        X: 120
+        Y: 144
           
   # cc-03 cut (doesn't work in randomizer with key logic)
   
@@ -1164,6 +1168,11 @@ ASide:
         - Idx: 0
           X: 20
           Y: 104
+    - Name: "towerviewer" # so you can check if key is present
+      Update:
+        Add: true
+        X: 88
+        Y: 160
         
   - Room: "cc-05"
     Holes:
@@ -1230,6 +1239,11 @@ ASide:
         - Idx: 0
           X: 1528
           Y: 104
+    - Name: "towerviewer" # so you can check if key is present
+      Update:
+        Add: true
+        X: 80
+        Y: 160
           
   - Room: "cc-06"
     Holes:
@@ -2674,6 +2688,12 @@ ASide:
     - Side: Up # secret
       Idx: 0
       Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
     # blocked
     - Side: Up
       Idx: 1
@@ -2687,20 +2707,6 @@ ASide:
     - Side: Down
       Idx: 3
       Kind: none
-    InternalEdges:
-    - To: "exit"
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
-      ReqIn:
-        Dashes: one
-        Difficulty: normal
-    Subrooms:
-    - Room: "exit"
-      Holes:
-      - Side: Right
-        Idx: 0
-        Kind: inout
     Tweaks:
     - Name: "spawn"
       X: 928
@@ -2717,32 +2723,11 @@ ASide:
       Update:
         X: 208
         Width: 16
-    - Name: "cameraOffsetTrigger"
-      ID: 10100
+    - Name: "cameraTargetTrigger" # fix offscreen trigger
+      ID: 10093
       Update:
-        X: 288
-        Width: 18
-    - Name: "cameraOffsetTrigger"
-      ID: 10115
-      Update:
-        X: 520
-        Width: 168
-    - Name: "cameraOffsetTrigger"
-      ID: 10144
-      Update:
-        X: 744
-        Y: -16
-        Width: 192
-        Height: 200
-    - Name: "cameraOffsetTrigger"
-      Update:
-        Add: true
-        X: 904
         Y: 0
-        Width: 16
-        Height: 24
-        Values:
-          cameraX: -1.0        
+        Height: 184
         
   - Room: "f-07s"
     Holes:
@@ -6624,7 +6609,7 @@ ASide:
   - Room: "n-13" # orb launch room
     Holes:
     - Side: Left
-      Idx: 0
+      Idx: 3
       Kind: inout
     - Side: Up
       Idx: 0
@@ -6645,9 +6630,6 @@ ASide:
       Kind: none
     - Side: Left
       Idx: 2
-      Kind: none
-    - Side: Left
-      Idx: 3
       Kind: none
     - Side: Right
       Idx: 0
@@ -7301,9 +7283,6 @@ ASide:
   
   - Room: "p-04"
     Holes:
-    - Side: Left # secret exit
-      Idx: 0
-      Kind: out
     - Side: Left
       Idx: 1
       Kind: inout
@@ -7314,6 +7293,9 @@ ASide:
         Dashes: one
         Difficulty: hard
     # blocked
+    - Side: Left # secret exit missable, could get softlocked
+      Idx: 0
+      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
@@ -7477,7 +7459,7 @@ ASide:
       Kind: in
     - Side: Left
       Idx: 1
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -8673,6 +8655,10 @@ ASide:
     - Name: "exitBlock"
       Update:
         Remove: true
+    - Name: "cameraTargetTrigger" # fix offscreen trigger
+      ID: 28512
+      Update:
+        Width: 136
         
   - Room: "t-06"
     Holes:
@@ -9427,6 +9413,17 @@ ASide:
         - Idx: 0
           X: 16
           Y: 128
+    - Name: "towerviewer" # so you can check if key is present
+      Update:
+        Add: true
+        X: 88
+        Y: 160
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 32
+        Y: 160
+        Width: 8
           
   - Room: "v-04"
     Holes:
@@ -9549,7 +9546,7 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: two
+        Dashes: one
         Difficulty: normal
     # blocked
     - Side: Left # secret entrance just a change respawn trigger lol
@@ -9566,6 +9563,19 @@ ASide:
       ID: 33840
       Update:
         Remove: true
+    - Name: "goldenBlock"
+      Update:
+        Remove: true
+    - Name: "floatySpaceBlock"
+      Update:
+        Add: true
+        X: 80
+        Y: 88
+        Width: 24
+        Height: 24
+        Values:
+          tiletype: "m" # Lostlevels
+        
         
   - Room: "w-01"
     Holes:
@@ -10479,6 +10489,11 @@ ASide:
       ID: 37237
       Update:
         Remove: true
+    - Name: "cameraTargetTrigger" # fix offscreen trigger
+      ID: 30542
+      Update:
+        X: 0
+        Width: 2686
         
   - Room: "x-11"
     Core:
@@ -11305,6 +11320,9 @@ ASide:
     Tweaks:
     - Name: "jumpThru"
       ID: 43489
+      Update:
+        Remove: true
+    - Name: "everest/changeInventoryTrigger"
       Update:
         Remove: true
         
