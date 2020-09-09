@@ -1,0 +1,953 @@
+ASide:
+  - Room: "a-01"
+    Holes:
+    - Side: Up
+      Idx: 8
+      Kind: inout
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+        
+  - Room: "a-02"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout     
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+    - Side: Up
+      Idx: 8
+      Kind: none
+    - Side: Up
+      Idx: 9
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    Tweaks:
+    - ID: 10992
+      Name: "jumpThru"
+      Update:
+        X: 32
+        Width: 16
+    - Name: "spawn"
+      X: 472
+      Y: 48
+      Update:
+        X: 448
+      
+  - Room: "a-03"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 3
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 265
+        Y: 24
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 256
+        Y: 24
+        Width: 16
+
+  - Room: "a-04"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: zero
+        Difficulty: normal
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
+    Tweaks:
+    - ID: 27649
+      Name: "jumpThru"
+      Update:
+        X: 24
+        Width: 24
+    - Name: "spawn"
+      X: 552
+      Y: 32
+      Update:
+        X: 529
+        Y: 40
+        
+  - Room: "a-05"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 7
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard 
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 275
+        Y: 80
+        
+  - Room: "a-06"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
+      ReqIn:
+        Dashes: one
+        Difficulty: perfect
+    Tweaks:
+    - ID: 43630
+      Name: "jumpThru"
+      Update:
+        X: 24
+        Width: 32
+        
+  - Room: "a-07"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+        
+  - Room: "b-01"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+    - Side: Up
+      Idx: 8
+      Kind: none
+    - Side: Up
+      Idx: 9
+      Kind: none
+    - Side: Up
+      Idx: 10
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    - Side: Down
+      Idx: 7
+      Kind: none
+    - Side: Down
+      Idx: 8
+      Kind: none
+    - Side: Down
+      Idx: 9
+      Kind: none
+    - Side: Down
+      Idx: 10
+      Kind: none
+    - Side: Down
+      Idx: 11
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: expert
+    Tweaks:
+    - Name: "spawn"
+      X: 56
+      Y: 152
+      Update:
+        Default: true
+        
+  - Room: "b-02"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 24
+      Y: 136
+      Update:
+        Default: true
+        
+  - Room: "b-03"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 4
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 290
+        Y: 24
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 280
+        Y: 24
+        Width: 16
+        
+  - Room: "b-04"
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 1
+      Kind: none
+    - Side: Left
+      Idx: 2
+      Kind: none
+    - Side: Left
+      Idx: 3
+      Kind: none
+    - Side: Left
+      Idx: 4
+      Kind: none
+    - Side: Left
+      Idx: 5
+      Kind: none
+    - Side: Left
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+    - Side: Up
+      Idx: 8
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    - Side: Down
+      Idx: 7
+      Kind: none
+    Tweaks:
+    - ID: 14875
+      Name: "jumpThru"
+      Update:
+        X: 32
+        Width: 16
+      
+  - Room: "b-05"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 1
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+    - Side: Up
+      Idx: 8
+      Kind: none
+    - Side: Up
+      Idx: 9
+      Kind: none
+    - Side: Up
+      Idx: 10
+      Kind: none
+    - Side: Up
+      Idx: 11
+      Kind: none
+    - Side: Up
+      Idx: 12
+      Kind: none
+    - Side: Up
+      Idx: 13
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    - Side: Down
+      Idx: 7
+      Kind: none
+    - Side: Down
+      Idx: 8
+      Kind: none
+    - Side: Down
+      Idx: 9
+      Kind: none
+    Tweaks:
+    - ID: 27218
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - ID: 2
+      Name: "invisibleBarrier"
+      Update:
+        Remove: true
+      
+  - Room: "b-06"
+    Holes:
+    - Side: Left
+      Idx: 1
+      Kind: inout
+    - Side: Up
+      Idx: 17
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+    - Side: Up
+      Idx: 8
+      Kind: none
+    - Side: Up
+      Idx: 9
+      Kind: none
+    - Side: Up
+      Idx: 10
+      Kind: none
+    - Side: Up
+      Idx: 11
+      Kind: none
+    - Side: Up
+      Idx: 12
+      Kind: none
+    - Side: Up
+      Idx: 13
+      Kind: none
+    - Side: Up
+      Idx: 13
+      Kind: none
+    - Side: Up
+      Idx: 15
+      Kind: none
+    - Side: Up
+      Idx: 16
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+      
+  - Room: "c-01"
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 1
+      Kind: none
+    - Side: Left
+      Idx: 2
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - ID: 12453
+      Name: "jumpThru"
+      Update:
+        X: 24
+        Width: 8
+    - Name: "spawn"
+      X: 552
+      Y: 96
+      Update:
+        X: 528
+      
+  - Room: "c-02"
+    ReqEnd:
+      Or:
+      - Dashes: one
+        Difficulty: expert
+      - Dashes: two
+        Difficulty: hard
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+    # blocked
+    - Side: Left
+      Idx: 1
+      Kind: none
+    - Side: Left
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Up
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 7
+      Kind: none
+    - Side: Up
+      Idx: 8
+      Kind: none
+    - Side: Up
+      Idx: 9
+      Kind: none
+    - Side: Up
+      Idx: 10
+      Kind: none
+    - Side: Up
+      Idx: 11
+      Kind: none
+    - Side: Up
+      Idx: 12
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
+    - Side: Right
+      Idx: 2
+      Kind: none
+    - Side: Right
+      Idx: 3
+      Kind: none
+    - Side: Right
+      Idx: 4
+      Kind: none
+    - Side: Right
+      Idx: 5
+      Kind: none
+    - Side: Right
+      Idx: 6
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    - Side: Down
+      Idx: 7
+      Kind: none
+    - Side: Down
+      Idx: 8
+      Kind: none
+    - Side: Down
+      Idx: 9
+      Kind: none
+    - Side: Down
+      Idx: 10
+      Kind: none

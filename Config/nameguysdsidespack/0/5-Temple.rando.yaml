@@ -1,0 +1,880 @@
+ASide:
+  - Room: "a-00"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqBoth:
+        Dashes: one
+        Difficulty: normal
+      
+  - Room: "b-01"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+
+  - Room: "b-02"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn:
+        Dashes: two
+        Difficulty: normal
+    Tweaks:
+    - ID: 9273
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - ID: 9473
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - Name: "spawn"
+      X: 312
+      Y: 64
+      Update:
+        X: 272
+        
+  - Room: "b-04"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+      
+  - Room: "b-03"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+      
+  - Room: "b-05"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 1
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - ID: 956
+      Name: "templeGate"
+      Update:
+        Remove: true
+      
+  - Room: "c-01" # key hub - split in two halves, key required to get to upper half
+    Hub: true
+    Holes:
+    - Side: Left
+      Idx: 1
+      Kind: inout
+    - Side: Right
+      Idx: 3
+      Kind: inout
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    InternalEdges:
+    - To: "up"
+      ReqBoth:
+        Dashes: one
+        Key: true
+        KeyholeID: 30647
+    Subrooms:
+    - Room: "up"
+      Holes:
+      - Side: Left
+        Idx: 0
+        Kind: inout
+      - Side: Right
+        Idx: 0
+        Kind: inout
+        ReqOut:
+          Key: true
+          KeyholeID: 97782
+        ReqIn:
+          Dashes: one
+          Key: true
+          KeyholeID: 97782
+      - Side: Right
+        Idx: 1
+        Kind: in
+      - Side: Right
+        Idx: 2
+        Kind: inout
+    Tweaks:
+    - Name: "refill"
+      Update:
+        Add: true
+        X: 160
+        Y: 716
+    - Name: "refill"
+      Update:
+        Add: true
+        X: 160
+        Y: 530
+    - Name: "refill"
+      Update:
+        Add: true
+        X: 160
+        Y: 480
+    - ID: 90732
+      Name: "crumbleBlock"
+      Update:
+        Remove: true
+    - ID: 22832
+      Name: "jumpThru"
+      Update:
+        Width: 16
+    - Name: "spawn"
+      X: 160
+      Y: 776
+      Update:
+        X: 152
+    - ID: 62817
+      Name: "jumpThru"
+      Update:
+        Width: 16
+    - Name: "spawn"
+      X: 160
+      Y: 600
+      Update:
+        X: 152
+    - ID: 97782
+      Name: "lockBlock"
+      Update:
+        X: 224
+        Y: 232
+    - ID: 98294
+      Name: "lockBlock"
+      Update:
+        Remove: true
+        
+  - Room: "c-02" # key room
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up # disable secret entrances, relies on special room config
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Collectable: 0
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+      
+  - Room: "c-03" # somewhat useless room in randomizer
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+      
+  - Room: "c-04" # key room
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+      # blocked
+    - Side: Down # secret exit blocked, messes with golden detach + key grab
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Collectable: 0
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn: # required death for now
+        Dashes: zero
+        Difficulty: normal
+    Tweaks:
+    - Name: "changeRespawnTrigger"
+      Update:
+        Remove: true
+    - Name: detachFollowersTrigger
+      Update:
+        Add: true
+        X: 224
+        Y: 72
+        Width: 32
+        Height: 32
+        Nodes:
+        - Idx: 0
+          X: 304
+          Y: 136
+        
+  - Room: "c-05"
+    Holes:
+    - Side: Left
+      Idx: 1
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    InternalEdges:
+    - Split: BottomToTop
+      ReqBoth:
+        Dashes: one
+        Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 56
+      Y: 288
+      Update:
+        Default: true
+        X: 88
+
+  - Room: "d-01"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: normal
+    Tweaks:
+    - ID: 1568
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - Name: "spawn"
+      X: 648
+      Y: 64
+      Update:
+        X: 632
+        
+  - Room: "d-02"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+      
+  - Room: "d-03"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 1
+      Kind: none
+      
+  - Room: "d-04" #elevator shaft
+    Hub: true
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    InternalEdges:
+    - To: "exit"
+      ReqBoth:
+        Dashes: one
+        Difficulty: hard
+    - To: "secret"
+      ReqOut:
+        Dashes: one
+        Difficulty: expert
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Right
+        Idx: 2
+        Kind: inout
+      InternalEdges:
+      - To: "secret"
+        ReqOut:
+          Dashes: one
+          Difficulty: perfect # very annoying
+        ReqIn:
+          Dashes: one
+          Difficulty: hard
+    - Room: "secret"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: out
+      - Side: Right
+        Idx: 1
+        Kind: in
+    Tweaks:
+    - Name: "spawn"
+      X: 112
+      Y: 64
+      Update:
+        Default: true
+    - Name: "spawn"
+      X: 304
+      Y: 1544
+      Update:
+        X: 152
+        
+  - Room: "d-00"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 1
+      Kind: inout
+        
+  - Room: "e-01"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+          - Dashes: one
+            Difficulty: hard
+          - Dashes: two
+            Difficulty: normal
+      ReqIn:
+        Dashes: two
+        Difficulty: expert
+    Tweaks:
+    - ID: 28161
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - Name: "spawn"
+      X: 784
+      Y: 72
+      Update:
+        X: 616
+        Y: 88
+        
+  - Room: "e-02"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 792
+      Y: 64
+      Update:
+        X: 768
+        
+  - Room: "e-03"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+    Tweaks:
+    - Name: "spawn"
+      X: 936
+      Y: 120
+      Update:
+        X: 912
+      
+  - Room: "e-04"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+      
+  - Room: "e-05"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Launch: -1 # baddy orb softlocks in ceiling
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 1
+    - Side: Right
+      Idx: 0
+    Tweaks:
+    - ID: 14411
+      Name: "jumpThru"
+      Update:
+        X: 40
+        Width: 8
+        
+  - Room: "e-06"
+    Hub: true
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 1
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    - Side: Up
+      Idx: 2
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+
+  #e-07 removed, complicated subroom setup + not interesting in randomizer
+          
+  - Room: "f-01"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+    Tweaks:
+    - ID: 48752
+      Name: "jumpThru"
+      Update:
+        X: 80
+        Width: 16
+    - Name: "spinner"
+      Update:
+        Remove: true
+    - Name: "spawn"
+      X: 80
+      Y: 160
+      Update:
+        X: 104
+        
+  - Room: "f-02"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+    Tweaks:
+    - ID: 57965
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-04"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: zero
+        Difficulty: normal
+    Tweaks:
+    - ID: 15345
+      Name: "templeGate"
+      Update:
+        Remove: true
+          
+  - Room: "f-03"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+    - Side: Down
+      Idx: 1
+    - Side: Down
+      Idx: 2
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 528
+        Y: 136
+    - ID: 447
+      Name: "templeGate"
+      Update:
+        Remove: true
+          
+  - Room: "f-05"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+    Tweaks:
+    - ID: 201
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-06"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+    Tweaks:
+    - ID: 9476
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-07"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+    - Side: Down
+      Idx: 1
+    Tweaks:
+    - ID: 5128
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-08"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Tweaks:
+    - ID: 223
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-09"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - ID: 22921
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-10"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard      
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    Tweaks:
+    - ID: 249
+      Name: "templeGate"
+      Update:
+        Remove: true
+        
+  - Room: "f-11"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out 
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - ID: 14526
+      Name: "templeGate"
+      Update:
+        Remove: true
+
+  - Room: "f-12"
+    ReqEnd:
+      Dashes: one
+      Difficulty: hard
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none

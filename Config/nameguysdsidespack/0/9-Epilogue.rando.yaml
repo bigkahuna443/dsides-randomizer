@@ -1,0 +1,597 @@
+ASide:
+  - Room: "a-00s"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      Launch: -1
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Collectable: 0
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+        
+  - Room: "a-00"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - To: "up"
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    Subrooms:
+    - Room: "up"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: inout
+        
+  - Room: "a-01"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+      
+  - Room: "a-02"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: RightToLeft
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: normal
+      ReqIn:
+        Dashes: one
+        Difficulty: normal
+      
+  - Room: "a-03"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - Split: RightToLeft
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+      
+  - Room: "a-04"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    ExtraSpace:
+    - X: 88
+      Y: 184
+      Width: 168
+      Height: 88
+      
+  - Room: "b-01"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    InternalEdges:
+    - Split: RightToLeft
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 64
+        Y: 24
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 56
+        Y: 24
+        Width: 16
+    - Name: "spikesUp"
+      Update:
+        Remove: true
+        
+  - Room: "b-02"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      Launch: 7
+    - Side: Left # secret exit
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: out
+    # blocked
+    - Side: Right
+      Idx: 0
+      Kind: none
+      
+  - Room: "b-03"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    - Side: Right # secret exit, dash block
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    Tweaks:
+    - Name: "spikesLeft"
+      Update:
+        Remove: true
+    - Name: "spikesRight"
+      Update:
+        Remove: true
+    - ID: 294
+      Name: "jumpThru"
+      Update:
+        X: 240
+        Width: 16
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 40
+        Y: 64
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 32
+        Y: 64
+        Width: 16
+        
+  # b-03s cut (boring straight room)
+      
+  - Room: "b-04"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    InternalEdges:
+    - Split: LeftToRight
+      ReqIn:
+        Dashes: one
+        Difficulty: normal
+        
+  - Room: "b-05"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    Tweaks:
+    - ID: 1525
+      Name: "exitBlock"
+      Update:
+        Remove: true
+      
+  - Room: "b-06"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 1
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Collectable: 0
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
+        
+  - Room: "b-07"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - Split: RightToLeft
+      ReqBoth:
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
+    Subrooms:
+    - Room: "corner"
+      Holes:
+      - Side: Left
+        Idx: 1
+        Kind: inout
+      - Side: Down
+        Idx: 0
+        Kind: inout
+    Tweaks:
+    - Name: "noRefillTrigger"
+      Update:
+        Remove: true
+      
+  - Room: "b-08"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      Launch: -1
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - To: "secret"
+      ReqIn:
+        Dashes: one
+        Difficulty: normal
+    Subrooms:
+    - Room: "secret"
+      Holes:
+      - Side: Right
+        Idx: 1
+        Kind: inout
+    Tweaks:
+    - Name: "everest/changeInventoryTrigger"
+      Update:
+        Remove: true
+    - Name: "noRefillTrigger"
+      Update:
+        Remove: true
+    - Name: "conditionBlock"
+      Update:
+        Remove: true
+    
+  - Room: "house"
+    End: true
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: in
+    - Side: Right
+      Idx: 0
+      Kind: in
+    - Side: Down
+      Idx: 0
+      Kind: in
+    - Side: Left
+      Idx: 1
+      Kind: in
+    Tweaks:
+    - Name: "noRefillTrigger"
+      Update:
+        Remove: true
+    - Name: "spikesUp"
+      Update:
+        Remove: true
+      
+  - Room: "house-b"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    InternalEdges:
+    - Split: RightToLeft
+      ReqOut:
+        Dashes: two
+        Difficulty: normal
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+          
+  - Room: "house-c"
+    Hub: true
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    - Side: Up
+      Idx: 0
+      Kind: inout
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      Launch: -1
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    Tweaks:
+    - Name: "everest/changeInventoryTrigger"
+      Update:
+        Remove: true
+    - ID: 1881
+      Name: "dashBlock"
+      Update:
+        Remove: true
+    - ID: 1359
+      Name: "dashBlock"
+      Update:
+        Remove: true
+    - Name: "dashBlock"
+      Update:
+        Add: true
+        X: 360
+        Y: 64
+        Width: 8
+        Height: 8
+        Values:
+          canDash: false
+          blendin: true
+          tiletype: "5" # Tower
+    - Name: "player"
+      X: 752
+      Y: 64
+      Update:
+        Default: true
+      
+  - Room: "house-d"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      Launch: -1
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: expert
+    Tweaks:
+    - Name: "everest/changeInventoryTrigger"
+      Update:
+        Remove: true
+          
+  - Room: "house-e"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      Launch: -1
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    Tweaks:
+    - Name: "everest/changeInventoryTrigger"
+      Update:
+        Remove: true
+    - ID: 0
+      Name: "dashBlock"
+      Update:
+        Remove: true
+    - Name: "dashBlock"
+      Update:
+        Add: true
+        X: 344
+        Y: 160
+        Width: 8
+        Height: 8
+        Values:
+          canDash: false
+          blendin: true
+          tiletype: "5" # Tower
+      
+  - Room: "house-f"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: inout
+      
+  # Currently no way to have multiple key requirements
+  - Room: "thegate"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: in
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Key: true
+        KeyholeID: 1163
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - Name: "noRefillTrigger"
+      Update:
+        Remove: true
+        
+  - Room: "bigmirror"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Collectable: 0
+      ReqBoth:
+        Dashes: one
+        Difficulty: normal
+    Tweaks:
+    - Name: "everest/changeInventoryTrigger"
+      Update:
+        Remove: true

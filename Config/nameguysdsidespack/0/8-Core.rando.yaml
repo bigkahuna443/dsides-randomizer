@@ -1,0 +1,682 @@
+# Everest core triggers required to set core flags correctly when enter and remove when leave
+# Can mess up progress in other rooms otherwise (fire bumpers, ice physics)
+
+ASide:
+  # a-00 removed (heart gate room)
+  
+  - Room: "a-01"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+
+  - Room: "a-02"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: expert
+    Tweaks:
+    - Name: "spawn"
+      X: 40
+      Y: 136
+      Update:
+        Default: true
+    - ID: 71
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - ID: 3021
+      Name: "invisibleBarrier"
+      Update:
+        Remove: true
+        
+  - Room: "a-03"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 698
+        Y: 24
+        
+  - Room: "a-04"
+    Core:
+      All: hot
+      Up: cold
+      Right: cold
+      Down: hot
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - To: "right"
+      ReqOut:
+        Dashes: two
+        Difficulty: expert
+      ReqIn:
+        Dashes: two
+        Difficulty: hard
+    - To: "up"
+      ReqOut:
+        Dashes: two
+        Difficulty: expert
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+    Subrooms:
+    - Room: "right"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: inout
+      InternalEdges:
+      - To: "up"
+        ReqBoth:
+          Dashes: two
+          Difficulty: hard
+    - Room: "up"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: inout
+    Tweaks:
+    - Name: "spawn"
+      X: 42
+      Y: 160
+      Update:
+        Default: true
+    - ID: 341
+      Name: "jumpThru"
+      Update:
+        X: 40
+        Width: 8
+    # Add a respawn change + core mode toggle in case the player gets the "there-and-back" spawn
+    - Name: coreModeToggle
+      Update:
+        Add: true
+        X: 1080
+        Y: 112
+        Values:
+          onlyIce: true
+    - Name: "changeRespawnTrigger"
+      Update:
+        Add: true
+        X: 1064
+        Y: 40
+        Width: 32
+        Height: 104
+          
+  - Room: "a-05" # mostly useless room in randomizer
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+          
+  - Room: "a-06"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: Normal
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 1
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - ID: 104
+      Name: "jumpThru"
+      Update:
+        Width: 16
+          
+  - Room: "b-01"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - ID: 2782
+      Name: "jumpThru"
+      Update:
+        Width: 16
+          
+  - Room: "b-02"
+    Core:
+      All: cold
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+          
+  - Room: "b-03"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 2
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: expert
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+          
+  - Room: "b-04"
+    Core:
+      All: hot
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - ID: 2111
+      Name: "jumpThru"
+      Update:
+        Width: 24
+          
+  - Room: "b-05"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 1
+      Kind: out
+      HighBound: 74
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+          
+  - Room: "b-06"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    Tweaks:
+    - ID: 1490
+      Name: "jumpThru"
+      Update:
+        X: 40
+        Width: 8
+    - ID: 3246
+      Name: "jumpThru"
+      Update:
+        Width: 8
+      
+  - Room: "c-01"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - ID: 927
+      Name: "exitBlock"
+      Update:
+        Remove: true
+          
+  - Room: "c-02"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Launch: -1 # baddy orb causes death from rising lava
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
+          
+  - Room: "c-03"
+    Core:
+      All: hot
+    Holes:
+    - Side: Down
+      Idx: 0
+      Launch: -1 # baddy orb causes death from rising lava
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: out
+      LowBound: 27
+      HighBound: 29
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+          
+  - Room: "c-04"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Launch: -1 # baddy orb causes death from rising lava
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: normal
+          
+  - Room: "c-05"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: out
+      Launch: 31
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
+    # blocked
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
+      
+  - Room: "d-01"
+    Core:
+      All: cold
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    Tweaks:
+    - ID: 963
+      Name: "jumpThru"
+      Update:
+        X: 48
+        Width: 32
+      
+  - Room: "d-02"
+    Core:
+      All: cold
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: hard
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+          
+  - Room: "d-03"
+    Core:
+      All: hot
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
+    Tweaks:
+    - Name: "spawn"
+      X: 1312
+      Y: 56
+      Update:
+        X: 1264
+    - ID: 264
+      Name: "exitBlock"
+      Update:
+        Remove: true
+    - ID: 2141
+      Name: "invisibleBarrier"
+      Update:
+        Remove: true
+          
+  - Room: "d-04"
+    Core:
+      All: hot
+      Left: hot
+      Right: cold
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: hard
+    Tweaks:
+    - ID: 3939
+      Name: "exitBlock"
+      Update:
+        Remove: true
+      
+  - Room: "d-05"
+    Core:
+      All: cold
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 3
+      Kind: out
+      ReqOut:
+        Dashes: two
+        Difficulty: perfect
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+      
+  - Room: "d-06"
+    Core:
+      All: hot
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - ID: 1442
+      Name: "jumpThru"
+      Update:
+        Width: 24
+          
+  - Room: "space"
+    ReqEnd:
+      Dashes: two
+      Difficulty: expert
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+    # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    ExtraSpace: # just to make really sure that screen wrapping isn't affected...
+    - X: 236
+      Y: -16
+      Width: 4724
+      Height: 16
+    - X: 236
+      Y: 320
+      Width: 4724
+      Height: 16
