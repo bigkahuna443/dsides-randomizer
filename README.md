@@ -56,7 +56,12 @@ Credits
 
 **Labber-in-Chief**: [Theta](https://www.twitch.tv/thetagc)
 
+**D-sides Creator**: [Monika](https://www.twitch.tv/monika523)
+
+**Randomizer Support**:
+* Rhelmot
+* Marlin
+
 **Playtesters**:
 * Etpio5
 * Mnstrman06
-* Monika523

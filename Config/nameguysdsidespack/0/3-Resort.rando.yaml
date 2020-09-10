@@ -779,7 +779,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      HighBound: 14
       ReqOut:
         Or:
         - Dashes: one
@@ -939,7 +938,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 18
       HighBound: 19
       ReqOut:
         Or:

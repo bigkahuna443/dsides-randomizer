@@ -515,13 +515,13 @@ ASide:
       Update:
         Add: true
         X: 290
-        Y: 24
+        Y: 40
     - Name: "jumpThru"
       Update:
         Add: true
-        X: 280
-        Y: 24
-        Width: 16
+        X: 288
+        Y: 40
+        Width: 8
         
   - Room: "b-04"
     Holes:

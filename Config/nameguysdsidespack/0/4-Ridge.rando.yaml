@@ -263,6 +263,7 @@ ASide:
       ID: 9299
       Update:
         X: 328
+        Y: 0
         Width: 8
         Height: 128
     - Name: "cameraOffsetTrigger"

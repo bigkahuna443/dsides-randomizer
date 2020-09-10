@@ -310,7 +310,6 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: out
-      HighBound: 74
       ReqOut:
         Dashes: two
         Difficulty: hard
@@ -402,8 +401,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
-      LowBound: 27
-      HighBound: 29
       ReqOut:
         Or:
         - Dashes: one

@@ -565,7 +565,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
-      HighBound: 18
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -1971,7 +1970,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 18
       HighBound: 18
       ReqOut:
         Dashes: one
@@ -4372,7 +4370,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
-      HighBound: 4
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -5011,8 +5008,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 4
-      HighBound: 5
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -5063,7 +5058,7 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: in
-      HighOpen: true # forces left wall for exit matching
+      HighBound: 47
     - Side: Up
       Idx: 0
       Kind: out
@@ -5138,7 +5133,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 12
       ReqOut:
         Or:
         - Dashes: one
@@ -5469,7 +5463,7 @@ ASide:
     - Name: "jumpThru"
       Update:
         Add: true
-        X: 24
+        X: 1152
         Y: 176
         Width: 8
     - Name: "cameraOffsetTrigger"
@@ -5880,28 +5874,20 @@ ASide:
       Idx: 0
       Kind: in
     - Side: Up
-      Idx: 2
-      Kind: in
-    InternalEdges:
-    - To: "exits"
+      Idx: 1
+      Kind: out
       ReqOut:
         Dashes: one
         Difficulty: hard
-    Subrooms:
-    - Room: "exits"
-      Holes:
-      - Side: Up
-        Idx: 1
-        Kind: out
-      - Side: Right
-        Idx: 0
-        Kind: out
-    Tweaks:
-    - ID: 16143
-      Name: "jumpThru"
-      Update:
-        X: 520
-        Width: 16
+    - Side: Up
+      Idx: 2
+      Kind: in
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
         
   - Room: "m-08s"
     Holes:
@@ -6045,7 +6031,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-      LowBound: 112
       HighBound: 127
     - Side: Up
       Idx: 0
@@ -6945,11 +6930,11 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: out
+      LowBound: 14
+      HighBound: 16
       ReqOut:
         Dashes: one
         Difficulty: normal
-      LowBound: 14
-      HighBound: 16
     # blocked
     - Side: Down
       Idx: 0
@@ -7549,7 +7534,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
-      HighBound: 11
       ReqOut:
         Or:
         - Dashes: one
@@ -7572,7 +7556,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
-      HighBound: 24
       ReqOut:
         Or:
         - Dashes: one
@@ -7620,8 +7603,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
-      LowBound: 14
-      HighBound: 16
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -7634,7 +7615,7 @@ ASide:
       Update:
         Remove: true
     - Name: "jumpThru"
-      ID: 24580
+      ID: 24850
       Update:
         Width: 16
         
@@ -7798,8 +7779,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 28
-      HighBound: 29
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -8067,6 +8046,12 @@ ASide:
       ReqBoth:
         Dashes: one
         Difficulty: normal
+    Tweaks:
+    - Name: "jumpThru"
+      ID: 26417
+      Update:
+        X: 816
+        Width: 24
         
   - Room: "r-08p"
     Holes:
@@ -8348,7 +8333,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 10
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -8794,7 +8778,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 1
       HighBound: 4
       ReqOut:
         Dashes: one
@@ -9288,7 +9271,7 @@ ASide:
       Update:
         X: 24
         Width: 8
-    - ID: 33787
+    - ID: 33786
       Name: "jumpThru"
       Update:
         Width: 8
@@ -9416,7 +9399,7 @@ ASide:
     - Name: "towerviewer" # so you can check if key is present
       Update:
         Add: true
-        X: 88
+        X: 34
         Y: 160
     - Name: "jumpThru"
       Update:
@@ -9424,6 +9407,11 @@ ASide:
         X: 32
         Y: 160
         Width: 8
+    ExtraSpace:
+    - X: 160
+      Y: 184
+      Width: 16
+      Height: 88
           
   - Room: "v-04"
     Holes:
@@ -9799,7 +9787,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 12
       ReqOut:
         Dashes: one
         Difficulty: expert
@@ -10057,7 +10044,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 180
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -10253,7 +10239,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 58
       ReqOut:
         Dashes: one
         Difficulty: expert
@@ -10976,7 +10961,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 87
       ReqOut:
         Dashes: one
         Difficulty: hard

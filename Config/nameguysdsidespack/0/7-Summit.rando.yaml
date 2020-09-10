@@ -860,7 +860,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 15
       HighBound: 16
       ReqOut:
         Dashes: two
