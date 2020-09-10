@@ -1072,7 +1072,7 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -1084,28 +1084,12 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: none
-    Tweaks:
-    - ID: 8491
-      Name: "jumpThru"
-      Update: 
-        Width: 8
-    - Name: "dashBlock"
-      Update:
-        Add: true
-        X: 168
-        Y: 2760
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "j" # SummitNoSnow
       
   - Room: "g-02"
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -1145,7 +1129,7 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out

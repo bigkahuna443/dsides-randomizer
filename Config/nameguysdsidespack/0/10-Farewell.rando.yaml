@@ -5888,6 +5888,16 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: hard
+    Tweaks:
+    - Name: "jumpThru"
+      ID: 16162
+      Update:
+        X: 400
+        Width: 8
+    - Name: "jumpThru"
+      ID: 16163
+      Update:
+        Width: 8
         
   - Room: "m-08s"
     Holes:
@@ -7052,7 +7062,7 @@ ASide:
     Holes:
     - Side: Left
       Idx: 2
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -7088,6 +7098,7 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
+      Launch: -1
     - Side: Up
       Idx: 0
       Kind: out
@@ -7147,7 +7158,11 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
+    - Side: Up
+      Idx: 0
+      Kind: out
+      Launch: 4
     # blocked
     - Side: Left
       Idx: 0
@@ -7164,11 +7179,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: none
-    InternalEdges:
-    - To: "exit"
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
     Subrooms:
     - Room: "keyentrance"
       Collectables:
@@ -7178,28 +7188,16 @@ ASide:
         Idx: 1
         Kind: in
       InternalEdges:
-      - To: "exit"
+      - To: "main"
         ReqOut:
           Dashes: one
           Difficulty: normal
-    - Room: "exit"
-      Holes:
-      - Side: Up
-        Idx: 0
-        Kind: out
-        Launch: 4
-    Tweaks:
-    - Name: "jumpThru"
-      ID: 20596
-      Update:
-        X: 24
-        Width: 24
         
   - Room: "p-02"
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Right
       Idx: 0
       Kind: out
@@ -7222,18 +7220,12 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
-    Tweaks:
-    - Name: "jumpThru"
-      ID: 21062
-      Update:
-        X: 16
-        Width: 48
         
   - Room: "p-03"
     Holes:
     - Side: Left
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Right
       Idx: 0
       Kind: out
@@ -7256,10 +7248,6 @@ ASide:
     - Side: Down
       Idx: 3
       Kind: none
-    Tweaks:
-    - Name: "exitBlock"
-      Update:
-        Remove: true
     ExtraSpace:
     - X: 2104
       Y: -24
@@ -7270,7 +7258,7 @@ ASide:
     Holes:
     - Side: Left
       Idx: 1
-      Kind: inout
+      Kind: in
     - Side: Right
       Idx: 0
       Kind: out
@@ -7333,7 +7321,7 @@ ASide:
     Holes:
     - Side: Left
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -7369,8 +7357,7 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: out
-      Launch: -1
+      Kind: in
     - Side: Right
       Idx: 1
       Kind: out
@@ -7430,10 +7417,6 @@ ASide:
     - Name: "noRefillTrigger"
       Update:
         Remove: true
-    - Name: "jumpThru"
-      ID: 23297
-      Update:
-        Remove: true
         
   - Room: "q-02"
     Core:
@@ -7465,10 +7448,6 @@ ASide:
     - Name: "noRefillTrigger"
       Update:
         Remove: true
-    - Name: "exitBlock"
-      ID: 23425
-      Update:
-        Remove: true
         
   - Room: "q-03"
     Core:
@@ -7476,7 +7455,7 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -7506,22 +7485,6 @@ ASide:
     - Name: "noRefillTrigger"
       Update:
         Remove: true
-    - Name: "jumpThru"
-      ID: 24128
-      Update:
-        X: 40
-        Width: 16
-    - Name: "dashBlock"
-      Update:
-        Add: true
-        X: 24
-        Y: 152
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "k" # Core
         
   - Room: "q-04"
     Core:
@@ -7599,7 +7562,7 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Up
       Idx: 0
       Kind: out
@@ -7614,10 +7577,6 @@ ASide:
     - Name: "noRefillTrigger"
       Update:
         Remove: true
-    - Name: "jumpThru"
-      ID: 24850
-      Update:
-        Width: 16
         
   - Room: "q-08"
     Core:
@@ -8486,7 +8445,7 @@ ASide:
     Holes:
     - Side: Down
       Idx: 0
-      Kind: inout
+      Kind: in
     - Side: Right
       Idx: 0
       Kind: out
@@ -8528,22 +8487,6 @@ ASide:
       Idx: 7
       Kind: none
     Tweaks:
-    - Name: "jumpThru"
-      ID: 27353
-      Update:
-        X: 80
-        Width: 8
-    - Name: "dashBlock"
-      Update:
-        Add: true
-        X: 48
-        Y: 144
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "n" # Scifi
     - Name: "spawn"
       X: 80
       Y: 152
@@ -8744,7 +8687,7 @@ ASide:
       Idx: 0
       Kind: inout
     - Side: Up
-      Idx: 0
+      Idx: 1
       Kind: out
       ReqOut:
         Or:

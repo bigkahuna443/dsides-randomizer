@@ -326,7 +326,7 @@ ASide:
       Kind: inout
     - Side: Right # hidden exit
       Idx: 0
-      Kind: none
+      Kind: out
       ReqOut:
         Or:
         - Dashes: one
