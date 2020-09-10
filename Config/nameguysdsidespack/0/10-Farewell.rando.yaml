@@ -1241,8 +1241,8 @@ ASide:
     - Name: "towerviewer" # so you can check if key is present
       Update:
         Add: true
-        X: 80
-        Y: 160
+        X: 1488
+        Y: 128
           
   - Room: "cc-06"
     Holes:
