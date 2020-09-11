@@ -5382,23 +5382,21 @@ ASide:
         Key: true
         KeyholeID: 14611
     # blocked
-    - Side: Down
-      Idx: 2
-      Kind: none
-    Subrooms:
-    - Room: "corner"
-      Holes:
-      - Side: Up
-        Idx: 1
-        Kind: inout
-      - Side: Right
-        Idx: 0
-        Kind: inout
+    - Side: Up # corner exits not interesting
+      Idx: 1
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
     - Room: "key"
       Holes:
       - Side: Down
         Idx: 1
         Kind: inout
+      - Side: Down
+        Idx: 2
+        Kind: inout
+        HighOpen: true # makes exit matching more flexible
       InternalEdges:
       - Collectable: 0
         ReqOut:

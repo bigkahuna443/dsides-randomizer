@@ -330,7 +330,13 @@ ASide:
       Idx: 0
       Kind: inout
     # blocked
+    - Side: Left # corner exits not interesting
+      Idx: 1
+      Kind: none
     - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
       Idx: 0
       Kind: none
     - Side: Down
@@ -344,15 +350,6 @@ ASide:
           Difficulty: hard
         - Dashes: one
           Difficulty: normal
-    Subrooms:
-    - Room: "corner"
-      Holes:
-      - Side: Left
-        Idx: 1
-        Kind: inout
-      - Side: Down
-        Idx: 0
-        Kind: inout
     Tweaks:
     - Name: "noRefillTrigger"
       Update:
