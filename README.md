@@ -8,6 +8,7 @@ The config is designed to be compatible with the [Celeste Randomizer](https://gi
 
 Installation
 ------------
+**Note**: Running mods with Celeste requires you to have installed [Everest](https://everestapi.github.io/).
 
 **Automatic**:
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
