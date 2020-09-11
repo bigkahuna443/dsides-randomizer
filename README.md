@@ -3,7 +3,7 @@ Celeste D-sides Randomizer
 
 This is a collection of randomizer configuration files and routing descriptions for the [D-sides pack](https://gamebanana.com/maps/202524) of maps for [Celeste](http://www.celestegame.com/). 
 
-The config is designed to be compatible with the [Celeste randomizer mod](https://github.com/rhelmot/CelesteRandomizer) developed by rhelmot.
+The config is designed to be compatible with the [Celeste Randomizer](https://github.com/rhelmot/CelesteRandomizer).
 
 
 Installation
