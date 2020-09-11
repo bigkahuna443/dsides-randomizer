@@ -3,11 +3,12 @@ Celeste D-sides Randomizer
 
 This is a collection of randomizer configuration files and routing descriptions for the [D-sides pack](https://gamebanana.com/maps/202524) of maps for [Celeste](http://www.celestegame.com/). 
 
-The config is designed to be compatible with the [Celeste randomizer mod](https://github.com/rhelmot/CelesteRandomizer) developed by rhelmot.
+The config is designed to be compatible with the [Celeste Randomizer](https://github.com/rhelmot/CelesteRandomizer).
 
 
 Installation
 ------------
+**Note**: Running mods with Celeste requires you to have installed [Everest](https://everestapi.github.io/).
 
 **Automatic**:
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
@@ -16,7 +17,9 @@ Installation
 **Manual**:
 1. Unzip the D-sides folder in your Celeste/Mods directory.
 2. Place the Config folder from this repository into the D-sides folder.
+
 ![folder structure](docs/img/structure.PNG)
+
 3. The D-sides will now be available in the randomizer level select screen.
 
 
