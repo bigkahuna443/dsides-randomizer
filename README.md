@@ -17,7 +17,9 @@ Installation
 **Manual**:
 1. Unzip the D-sides folder in your Celeste/Mods directory.
 2. Place the Config folder from this repository into the D-sides folder.
+
 ![folder structure](docs/img/structure.PNG)
+
 3. The D-sides will now be available in the randomizer level select screen.
 
 
