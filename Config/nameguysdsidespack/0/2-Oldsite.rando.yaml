@@ -181,17 +181,11 @@ ASide:
       Update:
         X: 40
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 24
+      Y: 160
       Update:
-        Add: true
-        X: 24
-        Y: 160
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "5" # Tower
+        Tile: "5" # Tower
         
   - Room: "b-03"
     Holes:

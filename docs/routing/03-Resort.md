@@ -12,13 +12,13 @@
 | b-01a (right) | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible, but bad spawn so cut |
 | b-01b (left) | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | b-01b (right) | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
-| b-01c |  |  |  |  |  |  | Cut (switch room) |
+| b-01c | - | - | - | - | - | - | Cut (switch room) |
 | b-02a | Normal | Normal | Normal | N/A | Hard | Normal |  |
 | b-02b | N/A | Hard | Hard | N/A | Expert | Hard |  |
 | b-02c | N/A | Hard | Normal | N/A | N/A | Hard | Switch room (not cut since a path exists where you don't hit switch) |
 | b-03a | N/A | Hard | Hard | N/A | N/A | N/A | 2DR difficult cycles + max height corner jump, possible but removed due to shitty spawn (kills goldens because detach breaks forward path) |
 | b-03b | N/A | Hard | Hard | N/A | Expert | Hard |  |
-| b-03c |  |  |  |  |  |  | Cut (switch room) |
+| b-03c | - | - | - | - | - | - | Cut (switch room) |
 | c-01 | N/A | Hard | Normal | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | c-02 | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | c-03 | N/A | Hard | Normal | N/A | Perfect | Hard | 1DR cycle hell + cornerboost, very precise (but cool) |

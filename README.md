@@ -5,12 +5,13 @@ This is a collection of randomizer configuration files and routing descriptions 
 
 The config is designed to be compatible with the [Celeste Randomizer](https://github.com/rhelmot/CelesteRandomizer).
 
+**Note**: For the best experience, it is recommended to play the D-sides first before playing the randomizer add-on.
 
 Installation
 ------------
 **Note**: Running mods with Celeste requires you to have installed [Everest](https://everestapi.github.io/).
 
-**Automatic**:
+**Automatic [not yet enabled]**:
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
 2. The config is included by default and the D-sides will be available in the randomizer level select screen.
 
@@ -34,6 +35,8 @@ The difficulty modes are intended as follows:
 - *Perfect:* Hardest D-side rooms, may require multiple setupless moves and/or obscure tech (e.g. updiag demos)
 
 These are loosely based off the original randomizer difficulty recommendations but are *not* equivalent. A good rule of thumb is that Normal and Hard are a level higher than their vanilla counterparts, and they start evening out in Expert. Perfect is probably easier than in the main game due to removing pixel-perfect demos and other frustrating moves.
+
+The ratings are based on difficulty of execution and assume that you have played the D-sides before. If you haven't, some screens may be harder than the ratings imply.
 
 If you find new routes or would like to suggest tweaks or changes to difficulty ratings, feel free to contact me! You can see the current difficulty ratings in the [documentation](docs/routing).
 

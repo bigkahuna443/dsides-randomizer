@@ -176,17 +176,16 @@ ASide:
       Update:
         X: 152
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 128
+      Y: 144
       Update:
-        Add: true
-        X: 128
-        Y: 144
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "7" # Cement
+        Tile: "7" # Cement
+    - Name: "fgtiles"
+      X: 136
+      Y: 144
+      Update:
+        Tile: "7" # Cement
       
   - Room: "b-02"
     Holes:
@@ -210,17 +209,11 @@ ASide:
       Update:
         X: 64
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 48
+      Y: 528
       Update:
-        Add: true
-        X: 32
-        Y: 528
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "7" # Cement
+        Tile: "4" # Girder
       
   - Room: "b-03"
     Holes:
@@ -497,17 +490,16 @@ ASide:
       Update:
         X: 64
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 40
+      Y: 160
       Update:
-        Add: true
-        X: 40
-        Y: 160
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "5" # Tower
+        Tile: "5" # Tower
+    - Name: "fgtiles"
+      X: 48
+      Y: 160
+      Update:
+        Tile: "5" # Tower
       
   - Room: "c-02"
     Holes:
@@ -646,17 +638,16 @@ ASide:
       ID: 66783
       Update:
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 168
+      Y: 152
       Update:
-        Add: true
-        X: 168
-        Y: 152
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "9" # Wood
+        Tile: "9" # Wood
+    - Name: "fgtiles"
+      X: 178
+      Y: 152
+      Update:
+        Tile: "9" # Wood
     - ID: 379
       Name: "jumpThru"
       Update:
@@ -796,17 +787,16 @@ ASide:
       Update:
         X: 152
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 128
+      Y: 152
       Update:
-        Add: true
-        X: 120
-        Y: 152
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "b" # Cliffside
+        Tile: "b" # Cliffside
+    - Name: "fgtiles"
+      X: 136
+      Y: 152
+      Update:
+        Tile: "b" # Cliffside
       
   - Room: "e-02h"
     Holes:
@@ -931,17 +921,11 @@ ASide:
       Update: 
         X: 152
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 144
+      Y: 152
       Update:
-        Add: true
-        X: 128
-        Y: 152
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "d" # Temple A
+        Tile: "d" # Temple A
         
   - Room: "f-02"
     Holes:
@@ -986,17 +970,16 @@ ASide:
       Update: 
         X: 80
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 56
+      Y: 152
       Update:
-        Add: true
-        X: 56
-        Y: 152
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "d" # Temple A
+        Tile: "d" # Temple A
+    - Name: "fgtiles"
+      X: 64
+      Y: 152
+      Update:
+        Tile: "d" # Temple A
       
   - Room: "f-04"
     Holes:

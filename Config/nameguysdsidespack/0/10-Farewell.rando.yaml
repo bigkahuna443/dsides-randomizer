@@ -648,17 +648,16 @@ ASide:
       Update:
         X: 88
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 64
+      Y: 152
       Update:
-        Add: true
-        X: 48
-        Y: 152
-        Width: 32
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
+    - Name: "fgtiles"
+      X: 72
+      Y: 152
+      Update:
+        Tile: "m" # Lostlevels
       
   - Room: "b-03"
     Holes:
@@ -1307,17 +1306,16 @@ ASide:
       Update:
         X: 152
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 128
+      Y: 152
       Update:
-        Add: true
-        X: 104
-        Y: 152
-        Width: 40
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
+    - Name: "fgtiles"
+      X: 136
+      Y: 152
+      Update:
+        Tile: "m" # Lostlevels
     - Name: "spawn"
       X: 2392
       Y: 112
@@ -2779,17 +2777,16 @@ ASide:
       ID: 10188
       Update:
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 72
+      Y: 152
       Update:
-        Add: true
-        X: 72
-        Y: 152
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
+    - Name: "fgtiles"
+      X: 80
+      Y: 152
+      Update:
+        Tile: "m" # Lostlevels
     - Name: "spawn"
       Update:
         Add: true
@@ -3181,17 +3178,11 @@ ASide:
       Update:
         X: 40
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 24
+      Y: 144
       Update:
-        Add: true
-        X: 24
-        Y: 144
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
       
   - Room: "f-99"
     Holes:
@@ -3980,17 +3971,11 @@ ASide:
       Update:
         X: 24
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 8
+      Y: 160
       Update:
-        Add: true
-        X: 8
-        Y: 160
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "4" # Girder
+        Tile: "4" # Girder
           
   - Room: "hh-06"
     Holes:
@@ -4412,17 +4397,16 @@ ASide:
       Update:
         X: 64
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 40
+      Y: 160
       Update:
-        Add: true
-        X: 32
-        Y: 160
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "n" # Scifi
+        Tile: "n" # Scifi
+    - Name: "fgtiles"
+      X: 48
+      Y: 160
+      Update:
+        Tile: "n" # Scifi
     - Name: "spikesLeft"
       Update:
         Remove: true
@@ -5039,17 +5023,11 @@ ASide:
       Update:
         X: 32
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 16
+      Y: 144
       Update:
-        Add: true
-        X: 16
-        Y: 144
-        Width: 8
-        Height: 16
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "4" # Girder
+        Tile: "4" # Girder
         
   - Room: "k-07"
     Holes:
@@ -6188,17 +6166,16 @@ ASide:
       ID: 17045
       Update:
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 112
+      Y: 768
       Update:
-        Add: true
-        X: 112
-        Y: 768
-        Width: 32
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "f" # CliffsideAlt
+        Tile: "f" # CliffsideAlt
+    - Name: "fgtiles"
+      X: 120
+      Y: 768
+      Update:
+        Tile: "f" # CliffsideAlt
     - Name: "cameraOffsetTrigger"
       ID: 17087
       Update:
@@ -6304,17 +6281,16 @@ ASide:
       Update:
         X: 32
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 8
+      Y: 152
       Update:
-        Add: true
-        X: 8
-        Y: 1452
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "b" # Cliffside
+        Tile: "b" # Cliffside
+    - Name: "fgtiles"
+      X: 16
+      Y: 152
+      Update:
+        Tile: "b" # Cliffside
         
   - Room: "n-06"
     Holes:
@@ -6677,17 +6653,11 @@ ASide:
       Update:
         X: 160
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 144
+      Y: 144
       Update:
-        Add: true
-        X: 168
-        Y: 144
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "b" # Cliffside
+        Tile: "b" # Cliffside
         
   - Room: "o-02"
     Holes:
@@ -8042,17 +8012,16 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 8
+      Y: 152
       Update:
-        Add: true
-        X: 56
-        Y: 96
-        Width: 8
-        Height: 16
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "n" # Scifi
+        Tile: "n" # Scifi
+    - Name: "fgtiles"
+      X: 8
+      Y: 160
+      Update:
+        Tile: "n" # Scifi
     - Name: "jumpThru"
       ID: 26462
       Update:
@@ -8178,17 +8147,16 @@ ASide:
       ID: 26677
       Update:
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 120
+      Y: 160
       Update:
-        Add: true
-        X: 120
-        Y: 160
-        Width: 16
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "n" # Scifi
+        Tile: "n" # Scifi
+    - Name: "fgtiles"
+      X: 128
+      Y: 160
+      Update:
+        Tile: "n" # Scifi
     - Name: "jumpThru"
       Update:
         Add: true
@@ -8243,17 +8211,11 @@ ASide:
       Update:
         X: 24
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 8
+      Y: 160
       Update:
-        Add: true
-        X: 8
-        Y: 1460
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "n" # Scifi
+        Tile: "n" # Scifi
         
   - Room: "s-02"
     Holes:
@@ -8662,17 +8624,16 @@ ASide:
       Update:
         X: 48
         Width: 16
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 24
+      Y: 152
       Update:
-        Add: true
-        X: 16
-        Y: 152
-        Width: 24
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
+    - Name: "fgtiles"
+      X: 32
+      Y: 152
+      Update:
+        Tile: "m" # Lostlevels
     - Name: "spikesRight"
       ID: 28764
       Update:
@@ -11199,17 +11160,16 @@ ASide:
       Update:
         X: 128
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 104
+      Y: 160
       Update:
-        Add: true
-        X: 80
-        Y: 160
-        Width: 40
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
+    - Name: "fgtiles"
+      X: 112
+      Y: 160
+      Update:
+        Tile: "m" # Lostlevels
     - Name: "spikesRight"
       Update:
         Remove: true
@@ -11350,17 +11310,11 @@ ASide:
       Update:
         X: 24
         Width: 8
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 8
+      Y: 152
       Update:
-        Add: true
-        X: 8
-        Y: 152
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "m" # Lostlevels
+        Tile: "m" # Lostlevels
     - Name: "spawn"
       Update:
         Add: true

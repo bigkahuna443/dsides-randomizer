@@ -619,17 +619,11 @@ ASide:
       ID: 2062
       Update:
         Remove: true
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 72
+      Y: 112
       Update:
-        Add: true
-        X: 72
-        Y: 112
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "g" # Reflection
+        Tile: "g" # Reflection
       
   - Room: "b-11ss"
     Holes:

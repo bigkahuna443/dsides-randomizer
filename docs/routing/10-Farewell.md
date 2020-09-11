@@ -12,7 +12,7 @@
 | a-08 | N/A | Hard | Hard | N/A | N/A | Hard | Requires jellyvator to bring jelly above seeker barrier OR throwing jelly between space blocks (e.g. if room has ceiling) |
 | a-09 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | a-10 | N/A | Normal | Normal | N/A | Expert | Expert | Reverse requires setupless corner jump |
-| aa-00-lobby | - | - | - | - | - | - | Key hub, movement free |
+| aa-00-lobby | Normal | Normal | Normal | Normal | Normal | Normal | Key hub, movement free |
 | aa-01 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
 | aa-02 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
 | aa-03 | N/A | Hard | Hard | N/A | N/A | N/A | Key room, requires jellyvator |
@@ -34,7 +34,7 @@
 | cc-00-lobby | - | - | - | - | - | - | Key hub, upper exits require 1 dash, 3 key blocks removed due to randomizer limitations |
 | cc-01 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | cc-02 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
-| cc-03 |  |  |  |  |  |  | Cut - one-shot key room, won't work in randomizer |
+| cc-03 | - | - | - | - | - | - | Cut - one-shot key room, won't work in randomizer |
 | cc-04 | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
 | cc-05 | N/A | Hard | Normal | N/A | N/A | N/A | Key room, removed respawn changes to prevent softlock (becomes harder) |
 | cc-06 | N/A | Hard | Normal | N/A | N/A | N/A | 2DR possible, not great spawn change option so cut |
@@ -275,15 +275,15 @@
 | u-08 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible, cut due to changes needed |
 | u-09 | N/A | Perfect | Hard | N/A | N/A | N/A | 1DF very, very inconsistent, a couple very rough sections |
 | u-10 | N/A | Expert | Expert | N/A | N/A | N/A | Without secret path, "requires" demo... assume player takes intended route. Orb launch room (no reverse) |
-| v-00-lobby |  |  |  |  |  |  | Key hub, too complex for randomizer, cut |
-| v-00-upper | - | - | - | - | - | - | "Key hub", right side requires two dashes, see config |
+| v-00-lobby | - | - | - | - | - | - | Key hub, too complex for randomizer, cut |
+| v-00-upper | - | - | - | - | - | - | "Key hub", right side requires two dashes |
 | v-00-upperer | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible, cut due to changes needed |
 | v-01 | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
 | v-02 | N/A | N/A | Normal | N/A | N/A | N/A | Key room, secret entrance cut |
 | v-03 | N/A | Hard | Normal | N/A | N/A | N/A | Key room, 1DF requires cornerboosts, make hub for secret exit |
 | v-04 | N/A | Normal | Normal | N/A | N/A | N/A | Key room, bottom entrance cut, top exit requires two dashes |
 | v-05 | N/A | Normal | Normal | N/A | N/A | N/A | Key room, top entrance cut |
-| v-06 |  |  |  |  |  |  | Cut for now (requires connections from other rooms, no structured path), might make a good collectable room later with some tweaks |
+| v-06 | - | - | - | - | - | - | Cut for now (requires connections from other rooms, no structured path), might make a good collectable room later with some tweaks |
 | v-07 | N/A | N/A | Hard | N/A | Hard | Normal | Key room, cut switch + gate for secret exit, 1DR requires jelly neutral, no golden detach needed as is possible to make it back from both ends |
 | w-00 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | w-01 | N/A | Normal | Normal | N/A | N/A | N/A |  |

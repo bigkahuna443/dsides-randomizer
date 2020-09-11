@@ -469,17 +469,16 @@ ASide:
       ID: 1359
       Update:
         Remove: true
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 360
+      Y: 64
       Update:
-        Add: true
-        X: 360
-        Y: 64
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "5" # Tower
+        Tile: "5" # Tower
+    - Name: "fgtiles"
+      X: 368
+      Y: 64
+      Update:
+        Tile: "5" # Tower
     - Name: "player"
       X: 752
       Y: 64
@@ -526,17 +525,16 @@ ASide:
       ID: 0
       Update:
         Remove: true
-    - Name: "dashBlock"
+    - Name: "fgtiles"
+      X: 344
+      Y: 160
       Update:
-        Add: true
-        X: 344
-        Y: 160
-        Width: 8
-        Height: 8
-        Values:
-          canDash: false
-          blendin: true
-          tiletype: "5" # Tower
+        Tile: "5" # Tower
+    - Name: "fgtiles"
+      X: 352
+      Y: 160
+      Update:
+        Tile: "5" # Tower
       
   - Room: "house-f"
     Holes:

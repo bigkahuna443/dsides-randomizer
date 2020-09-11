@@ -10,8 +10,8 @@
 | b-02 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | b-03 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | b-04 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| b-05 |  |  |  |  |  |  | Cut (coupled screen wrap puzzle screen) |
-| b-05x |  |  |  |  |  |  | Cut (coupled screen wrap puzzle screen) |
+| b-05 | - | - | - | - | - | - | Cut (coupled screen wrap puzzle screen) |
+| b-05x | - | - | - | - | - | - | Cut (coupled screen wrap puzzle screen) |
 | c-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | c-02 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | c-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
