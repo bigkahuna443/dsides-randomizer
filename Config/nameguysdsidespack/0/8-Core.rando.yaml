@@ -52,12 +52,10 @@ ASide:
       Y: 136
       Update:
         Default: true
-    - ID: 71
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 3021
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
         
@@ -141,8 +139,8 @@ ASide:
       Y: 160
       Update:
         Default: true
-    - ID: 341
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 341
       Update:
         X: 40
         Width: 8
@@ -201,8 +199,8 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 104
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 104
       Update:
         Width: 16
           
@@ -227,9 +225,10 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 2782
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 2782
       Update:
+        X: 48
         Width: 16
           
   - Room: "b-02"
@@ -295,8 +294,8 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 2111
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 2111
       Update:
         Width: 24
           
@@ -342,13 +341,13 @@ ASide:
       Idx: 2
       Kind: none
     Tweaks:
-    - ID: 1490
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1490
       Update:
         X: 40
         Width: 8
-    - ID: 3246
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 3246
       Update:
         Width: 8
       
@@ -370,8 +369,7 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 927
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
           
@@ -482,8 +480,8 @@ ASide:
       Idx: 3
       Kind: none
     Tweaks:
-    - ID: 963
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 963
       Update:
         X: 48
         Width: 32
@@ -540,12 +538,10 @@ ASide:
       Y: 56
       Update:
         X: 1264
-    - ID: 264
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 2141
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
           
@@ -583,8 +579,7 @@ ASide:
         Dashes: two
         Difficulty: hard
     Tweaks:
-    - ID: 3939
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
       
@@ -639,9 +634,10 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 1442
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1442
       Update:
+        X: 48
         Width: 24
           
   - Room: "space"

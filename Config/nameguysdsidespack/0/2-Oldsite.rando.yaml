@@ -62,8 +62,8 @@ ASide:
       Idx: 4
       Kind: none
     Tweaks:
-    - ID: 16604
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 16604
       Update:
         X: 40
         Width: 16
@@ -103,8 +103,8 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 5902
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 5902
       Update:
         X: 40
         Width: 24
@@ -130,12 +130,11 @@ ASide:
         - Dashes: one
           Difficulty: normal
     Tweaks:
-    - ID: 3380
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 3185
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 3185
       Update:
         Width: 8
         
@@ -161,8 +160,7 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 15873
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
       
@@ -241,8 +239,7 @@ ASide:
       Idx: 4
       Kind: none
     Tweaks:
-    - ID: 6750
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
       
@@ -265,8 +262,7 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 2693
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
       
@@ -309,12 +305,10 @@ ASide:
       Idx: 2
       Kind: none
     Tweaks:
-    - ID: 18060
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 64
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
       
@@ -350,8 +344,7 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 49750
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     

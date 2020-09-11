@@ -57,12 +57,7 @@ ASide:
         Dashes: two
         Difficulty: normal
     Tweaks:
-    - ID: 9273
-      Name: "exitBlock"
-      Update:
-        Remove: true
-    - ID: 9473
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "spawn"
@@ -70,8 +65,8 @@ ASide:
       Y: 64
       Update:
         X: 272
-        
-  - Room: "b-04"
+      
+  - Room: "b-03"
     Holes:
     - Side: Left
       Idx: 0
@@ -87,7 +82,7 @@ ASide:
       Idx: 0
       Kind: none
       
-  - Room: "b-03"
+  - Room: "b-04"
     Holes:
     - Side: Left
       Idx: 0
@@ -122,8 +117,7 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 956
-      Name: "templeGate"
+    - Name: "templeGate"
       Update:
         Remove: true
       
@@ -153,17 +147,14 @@ ASide:
         Kind: inout
       - Side: Right
         Idx: 0
-        Kind: inout
+        Kind: out
         ReqOut:
-          Key: true
-          KeyholeID: 97782
-        ReqIn:
           Dashes: one
           Key: true
           KeyholeID: 97782
       - Side: Right
         Idx: 1
-        Kind: in
+        Kind: inout
       - Side: Right
         Idx: 2
         Kind: inout
@@ -183,12 +174,11 @@ ASide:
         Add: true
         X: 160
         Y: 480
-    - ID: 90732
-      Name: "crumbleBlock"
+    - Name: "crumbleBlock"
       Update:
         Remove: true
-    - ID: 22832
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 22832
       Update:
         Width: 16
     - Name: "spawn"
@@ -196,8 +186,8 @@ ASide:
       Y: 776
       Update:
         X: 152
-    - ID: 62817
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 62817
       Update:
         Width: 16
     - Name: "spawn"
@@ -205,13 +195,13 @@ ASide:
       Y: 600
       Update:
         X: 152
-    - ID: 97782
-      Name: "lockBlock"
+    - Name: "lockBlock"
+      ID: 97782
       Update:
         X: 224
         Y: 232
-    - ID: 98294
-      Name: "lockBlock"
+    - Name: "lockBlock"
+      ID: 98294
       Update:
         Remove: true
         
@@ -321,8 +311,7 @@ ASide:
         Dashes: two
         Difficulty: normal
     Tweaks:
-    - ID: 1568
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "spawn"
@@ -448,8 +437,7 @@ ASide:
         Dashes: two
         Difficulty: expert
     Tweaks:
-    - ID: 28161
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "spawn"
@@ -549,8 +537,8 @@ ASide:
     - Side: Right
       Idx: 0
     Tweaks:
-    - ID: 14411
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 14411
       Update:
         X: 40
         Width: 8
@@ -600,8 +588,8 @@ ASide:
       Idx: 0
       Kind: out
     Tweaks:
-    - ID: 48752
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 48752
       Update:
         X: 80
         Width: 16
@@ -629,25 +617,8 @@ ASide:
     - Side: Down
       Idx: 0
     Tweaks:
-    - ID: 57965
-      Name: "templeGate"
-      Update:
-        Remove: true
-        
-  - Room: "f-04"
-    Holes:
-    - Side: Left
-      Idx: 0
-      Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: zero
-        Difficulty: normal
-    Tweaks:
-    - ID: 15345
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 57965
       Update:
         Remove: true
           
@@ -678,8 +649,25 @@ ASide:
         Add: true
         X: 528
         Y: 136
-    - ID: 447
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 447
+      Update:
+        Remove: true
+        
+  - Room: "f-04"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqOut:
+        Dashes: zero
+        Difficulty: normal
+    Tweaks:
+    - Name: "templeGate"
+      ID: 15345
       Update:
         Remove: true
           
@@ -698,8 +686,8 @@ ASide:
     - Side: Down
       Idx: 0
     Tweaks:
-    - ID: 201
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 201
       Update:
         Remove: true
         
@@ -718,8 +706,8 @@ ASide:
     - Side: Down
       Idx: 0
     Tweaks:
-    - ID: 9476
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 9476
       Update:
         Remove: true
         
@@ -740,8 +728,8 @@ ASide:
     - Side: Down
       Idx: 1
     Tweaks:
-    - ID: 5128
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 5128
       Update:
         Remove: true
         
@@ -757,8 +745,8 @@ ASide:
         Dashes: one
         Difficulty: hard
     Tweaks:
-    - ID: 223
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 223
       Update:
         Remove: true
         
@@ -777,8 +765,8 @@ ASide:
         - Dashes: two
           Difficulty: normal
     Tweaks:
-    - ID: 22921
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 22921
       Update:
         Remove: true
         
@@ -819,8 +807,8 @@ ASide:
       Idx: 3
       Kind: none
     Tweaks:
-    - ID: 249
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 249
       Update:
         Remove: true
         
@@ -846,8 +834,8 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 14526
-      Name: "templeGate"
+    - Name: "templeGate"
+      ID: 14526
       Update:
         Remove: true
 

@@ -552,8 +552,8 @@ ASide:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
-    - ID: 1186
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1186
       Update:
         Width: 16
         
@@ -572,8 +572,8 @@ ASide:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
-    - ID: 1431
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1431
       Update:
         X: 32
         Width: 16
@@ -609,8 +609,8 @@ ASide:
       Idx: 2
       Kind: none
     Tweaks:
-    - ID: 1513
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1513
       Update:
         X: 176
         Width: 16
@@ -643,8 +643,8 @@ ASide:
       Idx: 2
       Kind: none
     Tweaks:
-    - ID: 1527
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1527
       Update:
         X: 88
         Width: 16
@@ -835,8 +835,8 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 1508
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 1508
       Update:
         X: 40
         Width: 8
@@ -970,8 +970,8 @@ ASide:
         Dashes: one
         Difficulty: normal
     Tweaks:
-    - ID: 45377
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 45377
       Update:
         X: 296
         Width: 24
@@ -1302,8 +1302,8 @@ ASide:
         Idx: 0
         Kind: out
     Tweaks:
-    - ID: 4045
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 4045
       Update:
         X: 152
         Width: 8
@@ -2716,8 +2716,8 @@ ASide:
       Y: 144
       Update:
         Default: true
-    - ID: 9853
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 9853
       Update:
         X: 208
         Width: 16
@@ -2739,8 +2739,8 @@ ASide:
       Idx: 1
       Kind: in
     Tweaks:
-    - ID: 10224
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 10224
       Update:
         Remove: true
         
@@ -2775,8 +2775,8 @@ ASide:
         Idx: 1
         Kind: inout
     Tweaks:
-    - ID: 10188
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 10188
       Update:
         Width: 8
     - Name: "dashBlock"
@@ -2911,6 +2911,7 @@ ASide:
         Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
+      ID: 10197
       Update:
         X: 32
         Width: 16
@@ -2963,8 +2964,8 @@ ASide:
         Dashes: two
         Difficulty: hard
     Tweaks:
-    - ID: 10301
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 10301
       Update:
         X: 48
         Width: 16
@@ -4407,6 +4408,7 @@ ASide:
         Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
+      ID: 12593
       Update:
         X: 64
         Width: 8
@@ -4470,6 +4472,7 @@ ASide:
         Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
+      ID: 12547
       Update:
         X: 136
         Width: 56
@@ -5671,6 +5674,7 @@ ASide:
     - Name: "jumpThru"
       ID: 15150
       Update:
+        X: 160
         Width: 16
         
   - Room: "m-02"
@@ -5993,8 +5997,8 @@ ASide:
         Add: true
         X: 22
         Y: 24
-    - ID: 15735
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 15735
       Update:
         Remove: true
         
@@ -6671,6 +6675,7 @@ ASide:
     - Name: "jumpThru"
       ID: 18549
       Update:
+        X: 160
         Width: 8
     - Name: "dashBlock"
       Update:
@@ -7135,7 +7140,6 @@ ASide:
       Update:
         X: 24
     - Name: "fakeWall" # get rid of alternate path stuff so players aren't confused
-      ID: 20755
       Update:
         Remove: true
     - Name: "touchSwitch"
@@ -7600,8 +7604,8 @@ ASide:
     - Name: "jumpThru"
       ID: 25212
       Update:
-        X: 48
-        Width: 24
+        X: 40
+        Width: 32
     - Name: "spinner"
       X: 32
       Update:
@@ -8115,7 +8119,6 @@ ASide:
         Values:
           cameraX: -2.0
       
-        
   - Room: "r-10p"
     Holes:
     - Side: Left
@@ -8955,7 +8958,6 @@ ASide:
       Kind: none
     Tweaks:
     - Name: "exitBlock"
-      ID: 31595
       Update:
         Remove: true
     - Name: "invisibleBarrier"
@@ -9136,6 +9138,7 @@ ASide:
       Kind: none
     Tweaks:
     - Name: "jumpThru"
+      ID: 31397
       Update:
         X: 24
         Width: 16
@@ -9177,8 +9180,8 @@ ASide:
     - Name: "everest/changeInventoryTrigger"
       Update:
         Remove: true
-    - ID: 33604
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 33604
       Update:
         X: 104
         Width: 16
@@ -9207,17 +9210,17 @@ ASide:
     - Name: "everest/changeInventoryTrigger"
       Update:
         Remove: true
-    - ID: 33720
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 33720
       Update:
         X: 24
         Width: 8
-    - ID: 33786
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 33786
       Update:
         Width: 8
-    - ID: 33787
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 33787
       Update:
         X: 208
         Width: 8

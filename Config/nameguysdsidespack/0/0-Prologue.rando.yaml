@@ -71,9 +71,3 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: none
-    Tweaks:
-    - Name: "spawn"
-      Update:
-        Add: true
-        X: 24
-        Y: 136

@@ -113,8 +113,7 @@ ASide:
         Dashes: two
         Difficulty: expert
     Tweaks:
-    - ID: 254
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "spawn"
@@ -249,8 +248,7 @@ ASide:
         Dashes: two
         Difficulty: hard
     Tweaks:
-    - ID: 181
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "spawn"
@@ -445,8 +443,7 @@ ASide:
         - Dashes: two
           Difficulty: normal
     Tweaks:
-    - ID: 6573
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
     - Name: "spawn"
@@ -553,8 +550,8 @@ ASide:
       Idx: 2
       Kind: none
     Tweaks:
-    - ID: 4652
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 4652
       Update:
         Width: 24
       

@@ -32,9 +32,10 @@ ASide:
       Y: 192
       Update:
         X: 72
-    - ID: 182
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 182
       Update:
+        X: 40
         Width: 16
      
   - Room: "a-01"
@@ -170,8 +171,8 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 49243
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 49243
       Update:
         X: 152
         Width: 8
@@ -204,8 +205,8 @@ ASide:
       Kind: none
       Kind: none
     Tweaks:
-    - ID: 84292
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 84292
       Update:
         X: 64
         Width: 16
@@ -330,12 +331,10 @@ ASide:
       Idx: 6
       Kind: none
     Tweaks:
-    - ID: 9645
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 946
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
         
@@ -493,8 +492,8 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 26849
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 26849
       Update:
         X: 64
         Width: 8
@@ -569,9 +568,10 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 52
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 52
       Update:
+        X: 56
         Width: 16
     - Name: "cameraOffsetTrigger"
       ID: 83
@@ -642,8 +642,8 @@ ASide:
         Dashes: two
         Difficulty: expert
     Tweaks:
-    - ID: 66783
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 66783
       Update:
         Width: 8
     - Name: "dashBlock"
@@ -791,8 +791,8 @@ ASide:
       Y: 96
       Update:
         X: 1288
-    - ID: 4855
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 4855
       Update:
         X: 152
         Width: 8
@@ -907,12 +907,10 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 17921
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 9529
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
       
@@ -928,8 +926,8 @@ ASide:
         Dashes: two
         Difficulty: expert
     Tweaks:
-    - ID: 36355
-      Name: "jumpThru"
+    - Name: "jumpThru
+      ID: 36355
       Update: 
         X: 152
         Width: 8
@@ -983,8 +981,8 @@ ASide:
       Idx: 2
       Kind: none
     Tweaks:
-    - ID: 94527
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 94527
       Update: 
         X: 80
         Width: 8
@@ -1062,8 +1060,8 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - ID: 34866
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 34866
       Update: 
         X: 40
         Width: 16

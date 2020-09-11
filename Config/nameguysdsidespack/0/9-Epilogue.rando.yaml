@@ -216,8 +216,8 @@ ASide:
     - Name: "spikesRight"
       Update:
         Remove: true
-    - ID: 294
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 294
       Update:
         X: 240
         Width: 16
@@ -280,8 +280,7 @@ ASide:
       Idx: 4
       Kind: none
     Tweaks:
-    - ID: 1525
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
       
@@ -462,12 +461,12 @@ ASide:
     - Name: "everest/changeInventoryTrigger"
       Update:
         Remove: true
-    - ID: 1881
-      Name: "dashBlock"
+    - Name: "dashBlock"
+      ID: 1881
       Update:
         Remove: true
-    - ID: 1359
-      Name: "dashBlock"
+    - Name: "dashBlock"
+      ID: 1359
       Update:
         Remove: true
     - Name: "dashBlock"
@@ -523,8 +522,8 @@ ASide:
     - Name: "everest/changeInventoryTrigger"
       Update:
         Remove: true
-    - ID: 0
-      Name: "dashBlock"
+    - Name: "dashBlock"
+      ID: 0
       Update:
         Remove: true
     - Name: "dashBlock"

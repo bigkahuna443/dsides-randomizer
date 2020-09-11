@@ -93,8 +93,8 @@ ASide:
         - Dashes: two
           Difficulty: hard
     Tweaks:
-    - ID: 10992
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 10992
       Update:
         X: 32
         Width: 16
@@ -140,14 +140,14 @@ ASide:
     - Name: "spawn"
       Update:
         Add: true
-        X: 265
+        X: 266
         Y: 24
     - Name: "jumpThru"
       Update:
         Add: true
-        X: 256
+        X: 264
         Y: 24
-        Width: 16
+        Width: 8
 
   - Room: "a-04"
     Holes:
@@ -182,8 +182,8 @@ ASide:
         Dashes: two
         Difficulty: perfect
     Tweaks:
-    - ID: 27649
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 27649
       Update:
         X: 24
         Width: 24
@@ -278,8 +278,8 @@ ASide:
         Dashes: one
         Difficulty: perfect
     Tweaks:
-    - ID: 43630
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 43630
       Update:
         X: 24
         Width: 32
@@ -605,8 +605,8 @@ ASide:
       Idx: 7
       Kind: none
     Tweaks:
-    - ID: 14875
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 14875
       Update:
         X: 32
         Width: 16
@@ -696,12 +696,10 @@ ASide:
       Idx: 9
       Kind: none
     Tweaks:
-    - ID: 27218
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 2
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
       
@@ -829,8 +827,8 @@ ASide:
         - Dashes: two
           Difficulty: normal
     Tweaks:
-    - ID: 12453
-      Name: "jumpThru"
+    - Name: "jumpThru"
+      ID: 12453
       Update:
         X: 24
         Width: 8

@@ -414,12 +414,10 @@ ASide:
         - Dashes: one
           Difficulty: hard
     Tweaks:
-    - ID: 10286
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 10287
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
         
@@ -617,8 +615,8 @@ ASide:
       Idx: 0
       Kind: none
     Tweaks:
-    - ID: 2062
-      Name: "dashBlock"
+    - Name: "dashBlock"
+      ID: 2062
       Update:
         Remove: true
     - Name: "dashBlock"
@@ -1093,12 +1091,10 @@ ASide:
       Idx: 3
       Kind: none
     Tweaks:
-    - ID: 10659
-      Name: "exitBlock"
+    - Name: "exitBlock"
       Update:
         Remove: true
-    - ID: 10660
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
       
@@ -1133,8 +1129,7 @@ ASide:
         Dashes: one
         Difficulty: normal
     Tweaks:
-    - ID: 9570
-      Name: "invisibleBarrier"
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
         
