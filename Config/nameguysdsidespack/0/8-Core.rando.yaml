@@ -114,9 +114,6 @@ ASide:
       ReqOut:
         Dashes: two
         Difficulty: expert
-      ReqIn:
-        Dashes: zero
-        Difficulty: normal
     Subrooms:
     - Room: "right"
       Holes:

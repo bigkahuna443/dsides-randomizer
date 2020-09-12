@@ -3693,9 +3693,6 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: normal
-      ReqIn:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 664
@@ -3790,11 +3787,6 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
-    InternalEdges:
-    - Split: LeftToRight
-      ReqBoth:
-        Dashes: zero
-        Difficulty: normal
         
   - Room: "hh-01"
     Holes:
@@ -3811,11 +3803,6 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
-    InternalEdges:
-    - Split: LeftToRight
-      ReqBoth:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -3919,9 +3906,6 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
-        Dashes: zero
-        Difficulty: normal
       ReqIn:
         Dashes: one
         Difficulty: normal
@@ -4021,11 +4005,6 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
-    InternalEdges:
-    - Split: LeftToRight
-      ReqBoth:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 40
@@ -4074,11 +4053,6 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: none
-    InternalEdges:
-    - Split: LeftToRight
-      ReqBoth:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -4386,11 +4360,6 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
-    InternalEdges:
-    - Split: LeftToRight
-      ReqBoth:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       ID: 12593
@@ -5834,9 +5803,6 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: normal
-      ReqIn:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:       
     - Name: "spawn"
       X: 312
@@ -5959,9 +5925,6 @@ ASide:
     - Split: "BottomToTop"
       ReqOut:
         Dashes: one
-        Difficulty: normal
-      ReqIn:
-        Dashes: zero
         Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
@@ -6857,9 +6820,6 @@ ASide:
     - To: "exit"
       ReqOut:
         Dashes: one
-        Difficulty: normal
-      ReqIn:
-        Dashes: zero
         Difficulty: normal
     Subrooms:
     - Room: "exit"

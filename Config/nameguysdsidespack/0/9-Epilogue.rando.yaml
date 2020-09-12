@@ -22,7 +22,6 @@ ASide:
           Difficulty: normal
       ReqIn:
         Dashes: zero
-        Difficulty: normal
         
   - Room: "a-00"
     Holes:
@@ -84,10 +83,6 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: RightToLeft
-      ReqOut:
-        Or:
-        - Dashes: zero
-          Difficulty: normal
       ReqIn:
         Dashes: one
         Difficulty: normal

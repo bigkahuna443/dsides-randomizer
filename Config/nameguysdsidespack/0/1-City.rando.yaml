@@ -175,9 +175,6 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
-        Dashes: zero
-        Difficulty: normal
       ReqIn:
         Dashes: two
         Difficulty: perfect

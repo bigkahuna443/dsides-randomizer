@@ -578,28 +578,36 @@ ASide:
   # Room requires respawn reset with secret room, so top route cut
   - Room: "b-11"
     Holes:
-    - Side: Right
+    - Side: Left
       Idx: 0
       Kind: inout
     - Side: Right
-      Idx: 1
+      Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
+        Dashes: 1
         Difficulty: normal
     # blocked
-    - Side: Left # top route blocked
-      Idx: 0
-      Kind: none
     - Side: Left
-      Idx: 1
-      Kind: none
-    - Side: Right
       Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
       Kind: none
+    Subrooms:
+    - Room: "bottom"
+      Holes:
+      - Side: Right # copies Right:0 to avoid transitive routing
+        New: true
+        Kind: inout
+        LowBound: 37
+        HighBound: 39
+      - Side: Right
+        Idx: 1
+        Kind: out
+        ReqOut:
+          Dashes: 1
+          Difficulty: normal
       
   - Room: "b-11s"
     Holes:

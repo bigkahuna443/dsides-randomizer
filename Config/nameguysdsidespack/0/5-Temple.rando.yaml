@@ -224,7 +224,6 @@ ASide:
         Difficulty: normal
       ReqIn:
         Dashes: zero
-        Difficulty: normal
       
   - Room: "c-03" # somewhat useless room in randomizer
     Holes:
@@ -252,7 +251,6 @@ ASide:
         Difficulty: normal
       ReqIn: # required death for now
         Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "changeRespawnTrigger"
       Update:
@@ -367,9 +365,6 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: expert
-      ReqIn:
-        Dashes: zero
-        Difficulty: normal
     Subrooms:
     - Room: "exit"
       Holes:
@@ -662,9 +657,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      ReqOut:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "templeGate"
       ID: 15345

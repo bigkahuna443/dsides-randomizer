@@ -377,9 +377,6 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: TopToBottom
-      ReqOut:
-        Dashes: zero
-        Difficulty: normal
       ReqIn:
         Or:
         - Dashes: one
@@ -715,9 +712,6 @@ ASide:
           Difficulty: expert
         - Dashes: one
           Difficulty: normal
-      ReqIn:
-        Dashes: zero
-        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 32
