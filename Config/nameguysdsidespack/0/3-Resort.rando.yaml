@@ -665,9 +665,9 @@ ASide:
       ID: 3331
       Update:
         Remove: true
-    - Name: "fgtiles"
-      X: 56
-      Y: 288
+    - Name: "fgTiles"
+      X: 7
+      Y: 36
       Update:
         Tile: "c" # Pool Edges
         

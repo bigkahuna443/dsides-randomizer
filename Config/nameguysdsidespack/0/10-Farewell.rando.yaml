@@ -648,14 +648,14 @@ ASide:
       Update:
         X: 88
         Width: 16
-    - Name: "fgtiles"
-      X: 64
-      Y: 152
+    - Name: "fgTiles"
+      X: 8
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
-    - Name: "fgtiles"
-      X: 72
-      Y: 152
+    - Name: "fgTiles"
+      X: 9
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
       
@@ -1306,14 +1306,14 @@ ASide:
       Update:
         X: 152
         Width: 8
-    - Name: "fgtiles"
-      X: 128
-      Y: 152
+    - Name: "fgTiles"
+      X: 16
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
-    - Name: "fgtiles"
-      X: 136
-      Y: 152
+    - Name: "fgTiles"
+      X: 17
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
     - Name: "spawn"
@@ -2777,14 +2777,14 @@ ASide:
       ID: 10188
       Update:
         Width: 8
-    - Name: "fgtiles"
-      X: 72
-      Y: 152
+    - Name: "fgTiles"
+      X: 9
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
-    - Name: "fgtiles"
-      X: 80
-      Y: 152
+    - Name: "fgTiles"
+      X: 10
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
     - Name: "spawn"
@@ -3178,9 +3178,9 @@ ASide:
       Update:
         X: 40
         Width: 16
-    - Name: "fgtiles"
-      X: 24
-      Y: 144
+    - Name: "fgTiles"
+      X: 3
+      Y: 18
       Update:
         Tile: "m" # Lostlevels
       
@@ -3955,9 +3955,9 @@ ASide:
       Update:
         X: 24
         Width: 16
-    - Name: "fgtiles"
-      X: 8
-      Y: 160
+    - Name: "fgTiles"
+      X: 1
+      Y: 20
       Update:
         Tile: "4" # Girder
           
@@ -4366,14 +4366,14 @@ ASide:
       Update:
         X: 64
         Width: 8
-    - Name: "fgtiles"
-      X: 40
-      Y: 160
+    - Name: "fgTiles"
+      X: 5
+      Y: 20
       Update:
         Tile: "n" # Scifi
-    - Name: "fgtiles"
-      X: 48
-      Y: 160
+    - Name: "fgTiles"
+      X: 6
+      Y: 20
       Update:
         Tile: "n" # Scifi
     - Name: "spikesLeft"
@@ -4992,9 +4992,9 @@ ASide:
       Update:
         X: 32
         Width: 16
-    - Name: "fgtiles"
-      X: 16
-      Y: 144
+    - Name: "fgTiles"
+      X: 2
+      Y: 18
       Update:
         Tile: "4" # Girder
         
@@ -6129,14 +6129,14 @@ ASide:
       ID: 17045
       Update:
         Width: 16
-    - Name: "fgtiles"
-      X: 112
-      Y: 768
+    - Name: "fgTiles"
+      X: 14
+      Y: 96
       Update:
         Tile: "f" # CliffsideAlt
-    - Name: "fgtiles"
-      X: 120
-      Y: 768
+    - Name: "fgTiles"
+      X: 15
+      Y: 96
       Update:
         Tile: "f" # CliffsideAlt
     - Name: "cameraOffsetTrigger"
@@ -6244,14 +6244,14 @@ ASide:
       Update:
         X: 32
         Width: 8
-    - Name: "fgtiles"
-      X: 8
-      Y: 152
+    - Name: "fgTiles"
+      X: 1
+      Y: 19
       Update:
         Tile: "b" # Cliffside
-    - Name: "fgtiles"
-      X: 16
-      Y: 152
+    - Name: "fgTiles"
+      X: 2
+      Y: 19
       Update:
         Tile: "b" # Cliffside
         
@@ -6616,9 +6616,9 @@ ASide:
       Update:
         X: 160
         Width: 8
-    - Name: "fgtiles"
-      X: 144
-      Y: 144
+    - Name: "fgTiles"
+      X: 18
+      Y: 18
       Update:
         Tile: "b" # Cliffside
         
@@ -7972,14 +7972,14 @@ ASide:
       Idx: 1
       Kind: none
     Tweaks:
-    - Name: "fgtiles"
-      X: 8
-      Y: 152
+    - Name: "fgTiles"
+      X: 1
+      Y: 19
       Update:
         Tile: "n" # Scifi
-    - Name: "fgtiles"
-      X: 8
-      Y: 160
+    - Name: "fgTiles"
+      X: 1
+      Y: 20
       Update:
         Tile: "n" # Scifi
     - Name: "jumpThru"
@@ -8107,14 +8107,14 @@ ASide:
       ID: 26677
       Update:
         Width: 16
-    - Name: "fgtiles"
-      X: 120
-      Y: 160
+    - Name: "fgTiles"
+      X: 15
+      Y: 20
       Update:
         Tile: "n" # Scifi
-    - Name: "fgtiles"
-      X: 128
-      Y: 160
+    - Name: "fgTiles"
+      X: 16
+      Y: 20
       Update:
         Tile: "n" # Scifi
     - Name: "jumpThru"
@@ -8171,9 +8171,9 @@ ASide:
       Update:
         X: 24
         Width: 8
-    - Name: "fgtiles"
-      X: 8
-      Y: 160
+    - Name: "fgTiles"
+      X: 1
+      Y: 20
       Update:
         Tile: "n" # Scifi
         
@@ -8584,14 +8584,14 @@ ASide:
       Update:
         X: 48
         Width: 16
-    - Name: "fgtiles"
-      X: 24
-      Y: 152
+    - Name: "fgTiles"
+      X: 3
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
-    - Name: "fgtiles"
-      X: 32
-      Y: 152
+    - Name: "fgTiles"
+      X: 4
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
     - Name: "spikesRight"
@@ -11120,14 +11120,14 @@ ASide:
       Update:
         X: 128
         Width: 8
-    - Name: "fgtiles"
-      X: 104
-      Y: 160
+    - Name: "fgTiles"
+      X: 13
+      Y: 20
       Update:
         Tile: "m" # Lostlevels
-    - Name: "fgtiles"
-      X: 112
-      Y: 160
+    - Name: "fgTiles"
+      X: 14
+      Y: 20
       Update:
         Tile: "m" # Lostlevels
     - Name: "spikesRight"
@@ -11270,9 +11270,9 @@ ASide:
       Update:
         X: 24
         Width: 8
-    - Name: "fgtiles"
-      X: 8
-      Y: 152
+    - Name: "fgTiles"
+      X: 1
+      Y: 19
       Update:
         Tile: "m" # Lostlevels
     - Name: "spawn"

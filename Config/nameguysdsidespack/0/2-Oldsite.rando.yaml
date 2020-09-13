@@ -181,9 +181,9 @@ ASide:
       Update:
         X: 40
         Width: 16
-    - Name: "fgtiles"
-      X: 24
-      Y: 160
+    - Name: "fgTiles"
+      X: 3
+      Y: 20
       Update:
         Tile: "5" # Tower
         

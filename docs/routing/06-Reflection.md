@@ -25,7 +25,7 @@
 | b-08 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | b-09 | N/A | Expert | Hard | N/A | N/A | N/A |  |
 | b-10 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| b-11 | N/A | Normal | Normal | N/A | N/A | N/A |  |
+| b-11 | N/A | Normal | Normal | N/A | N/A | N/A | Can only use one route due to how routing works, so top route cut |
 | b-11s | Normal | Normal | Normal | Normal | Normal | Normal |  |
 | b-11ss | Normal | Normal | Normal | Normal | Normal | Normal |  |
 | b-11sss | N/A | N/A | N/A | N/A | Expert | Normal | Forwards not possible, requires feather from previous screen |

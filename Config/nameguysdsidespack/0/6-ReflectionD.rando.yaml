@@ -575,39 +575,28 @@ ASide:
       Idx: 0
       Kind: none
       
-  # Room requires respawn reset with secret room, so top route cut
+  # Can only use one route due to how routing works, so top route cut
   - Room: "b-11"
     Holes:
-    - Side: Left
+    - Side: Right
       Idx: 0
       Kind: inout
     - Side: Right
-      Idx: 0
+      Idx: 1
       Kind: out
       ReqOut:
         Dashes: 1
         Difficulty: normal
     # blocked
     - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Left
       Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
       Kind: none
-    Subrooms:
-    - Room: "bottom"
-      Holes:
-      - Side: Right # copies Right:0 to avoid transitive routing
-        New: true
-        Kind: inout
-        LowBound: 37
-        HighBound: 39
-      - Side: Right
-        Idx: 1
-        Kind: out
-        ReqOut:
-          Dashes: 1
-          Difficulty: normal
       
   - Room: "b-11s"
     Holes:
@@ -627,9 +616,9 @@ ASide:
       ID: 2062
       Update:
         Remove: true
-    - Name: "fgtiles"
-      X: 72
-      Y: 112
+    - Name: "fgTiles"
+      X: 9
+      Y: 14
       Update:
         Tile: "g" # Reflection
       

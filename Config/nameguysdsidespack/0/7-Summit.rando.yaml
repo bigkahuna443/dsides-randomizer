@@ -176,14 +176,14 @@ ASide:
       Update:
         X: 152
         Width: 8
-    - Name: "fgtiles"
-      X: 128
-      Y: 144
+    - Name: "fgTiles"
+      X: 16
+      Y: 18
       Update:
         Tile: "7" # Cement
-    - Name: "fgtiles"
-      X: 136
-      Y: 144
+    - Name: "fgTiles"
+      X: 17
+      Y: 18
       Update:
         Tile: "7" # Cement
       
@@ -202,16 +202,15 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
-      Kind: none
     Tweaks:
     - Name: "jumpThru"
       ID: 84292
       Update:
         X: 64
         Width: 16
-    - Name: "fgtiles"
-      X: 48
-      Y: 528
+    - Name: "fgTiles"
+      X: 6
+      Y: 66
       Update:
         Tile: "4" # Girder
       
@@ -490,14 +489,14 @@ ASide:
       Update:
         X: 64
         Width: 8
-    - Name: "fgtiles"
-      X: 40
-      Y: 160
+    - Name: "fgTiles"
+      X: 5
+      Y: 20
       Update:
         Tile: "5" # Tower
-    - Name: "fgtiles"
-      X: 48
-      Y: 160
+    - Name: "fgTiles"
+      X: 6
+      Y: 20
       Update:
         Tile: "5" # Tower
       
@@ -638,14 +637,14 @@ ASide:
       ID: 66783
       Update:
         Width: 8
-    - Name: "fgtiles"
-      X: 168
-      Y: 152
+    - Name: "fgTiles"
+      X: 21
+      Y: 19
       Update:
         Tile: "9" # Wood
-    - Name: "fgtiles"
-      X: 178
-      Y: 152
+    - Name: "fgTiles"
+      X: 22
+      Y: 19
       Update:
         Tile: "9" # Wood
     - ID: 379
@@ -787,14 +786,14 @@ ASide:
       Update:
         X: 152
         Width: 8
-    - Name: "fgtiles"
-      X: 128
-      Y: 152
+    - Name: "fgTiles"
+      X: 16
+      Y: 19
       Update:
         Tile: "b" # Cliffside
-    - Name: "fgtiles"
-      X: 136
-      Y: 152
+    - Name: "fgTiles"
+      X: 17
+      Y: 19
       Update:
         Tile: "b" # Cliffside
       
@@ -916,14 +915,14 @@ ASide:
         Dashes: two
         Difficulty: expert
     Tweaks:
-    - Name: "jumpThru
+    - Name: "jumpThru"
       ID: 36355
       Update: 
         X: 152
         Width: 8
-    - Name: "fgtiles"
-      X: 144
-      Y: 152
+    - Name: "fgTiles"
+      X: 18
+      Y: 19
       Update:
         Tile: "d" # Temple A
         
@@ -970,14 +969,14 @@ ASide:
       Update: 
         X: 80
         Width: 8
-    - Name: "fgtiles"
-      X: 56
-      Y: 152
+    - Name: "fgTiles"
+      X: 7
+      Y: 19
       Update:
         Tile: "d" # Temple A
-    - Name: "fgtiles"
-      X: 64
-      Y: 152
+    - Name: "fgTiles"
+      X: 8
+      Y: 19
       Update:
         Tile: "d" # Temple A
       
