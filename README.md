@@ -15,13 +15,14 @@ Installation
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
 2. The config is included by default and the D-sides will be available in the randomizer level select screen.
 
+![level select](docs/img/level_select.PNG)
+
 **Manual**:
-1. Unzip the D-sides folder in your Celeste/Mods directory.
-2. Place the Config folder from this repository into the D-sides folder.
+1. Download this project with the method of your choice and save it in your Celeste/Mods directory.
 
-![folder structure](docs/img/structure.PNG)
+![download](docs/img/download.PNG)
 
-3. The D-sides will now be available in the randomizer level select screen.
+2. The D-sides should now be available in the randomizer level select screen.
 
 
 Difficulty Modes

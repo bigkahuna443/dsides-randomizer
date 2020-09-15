@@ -234,7 +234,7 @@
 | q-11 | N/A | Expert | Hard | Hard | Hard | Hard | 2DF has a cool skip, reverse requires hot mode from right entrance |
 | q-12 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | q-13 | N/A | Hard | Hard | N/A | N/A | N/A | Not that difficult but annoying precise part |
-| r-00 | Normal | Normal | Normal | N/A | N/A | N/A |  |
+| r-00 | - | - | - | - | - | - | Unskippable heart gate, cut |
 | r-01 | N/A | Normal | Normal | N/A | N/A | Normal |  |
 | r-02 | N/A | Expert | Expert | N/A | N/A | N/A | Offscreen cheese makes "Hard" but not always possible |
 | r-03 | N/A | Normal | Normal | N/A | Perfect | Expert | 1DF requires multiple setupless corner jumps with difficult timing, 2DF requires a couple easier corner jumps |

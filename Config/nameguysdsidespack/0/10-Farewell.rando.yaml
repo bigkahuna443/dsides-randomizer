@@ -7711,25 +7711,7 @@ ASide:
       Width: 1496
       Height: 16
         
-  - Room: "r-00"
-    Holes:
-    - Side: Left
-      Idx: 0
-      Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: out
-    # blocked
-    - Side: Up
-      Idx: 0
-      Kind: none
-    - Side: Down
-      Idx: 0
-      Kind: none
-    Tweaks:
-    - Name: "noRefillTrigger"
-      Update:
-        Remove: true
+  # r-00 cut (unskippable heart gate)
         
   - Room: "r-01"
     Holes:
