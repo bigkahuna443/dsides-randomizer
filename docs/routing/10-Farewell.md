@@ -39,7 +39,7 @@
 | cc-05 | N/A | Hard | Normal | N/A | N/A | N/A | Key room, removed respawn changes to prevent softlock (becomes harder) |
 | cc-06 | N/A | Hard | Normal | N/A | N/A | N/A | 2DR possible, not great spawn change option so cut |
 | cc-07 | N/A | Hard | Normal | N/A | N/A | Expert |  |
-| cc-08 | N/A | Normal | Normal | N/A | Normal | Normal |  |
+| cc-08 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible, cut due to potential softlock if lockBlock spawns |
 | d-01 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | d-02 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | d-03 | N/A | Expert | Hard | N/A | N/A | N/A |  |

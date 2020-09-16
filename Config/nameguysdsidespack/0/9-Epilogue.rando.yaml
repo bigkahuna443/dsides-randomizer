@@ -14,14 +14,12 @@ ASide:
       Kind: none
     InternalEdges:
     - Collectable: 0
-      ReqOut:
+      ReqBoth:
         Or:
         - Dashes: zero
           Difficulty: expert
         - Dashes: one
           Difficulty: normal
-      ReqIn:
-        Dashes: zero
         
   - Room: "a-00"
     Holes:
@@ -305,15 +303,9 @@ ASide:
       Kind: none
     InternalEdges:
     - Collectable: 0
-      ReqOut:
+      ReqBoth:
         Dashes: one
         Difficulty: normal
-      ReqIn:
-        Or:
-        - Dashes: zero
-          Difficulty: expert
-        - Dashes: one
-          Difficulty: normal
         
   - Room: "b-07"
     Holes:
