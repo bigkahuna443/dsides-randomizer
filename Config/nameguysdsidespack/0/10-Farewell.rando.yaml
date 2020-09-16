@@ -8330,6 +8330,7 @@ ASide:
       Kind: none
       
   - Room: "s-08"
+    SpinnersShatter: true
     Holes:
     - Side: Left
       Idx: 0
