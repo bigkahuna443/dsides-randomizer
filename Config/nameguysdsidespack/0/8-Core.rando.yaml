@@ -1,6 +1,3 @@
-# Everest core triggers required to set core flags correctly when enter and remove when leave
-# Can mess up progress in other rooms otherwise (fire bumpers, ice physics)
-
 ASide:
   # a-00 removed (heart gate room)
   
