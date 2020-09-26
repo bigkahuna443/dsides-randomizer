@@ -38,13 +38,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 0
@@ -61,6 +55,14 @@ ASide:
     - Side: Down
       Idx: 4
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       ID: 16604
@@ -75,17 +77,19 @@ ASide:
       Kind: inout
     - Side: Up
       Idx: 0
-      Kind: out
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
-    # blocked
-    - Side: Down
-      Idx: 0
-      Kind: none
       
   - Room: "a-05"
     Holes:
@@ -96,8 +100,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     # blocked
     - Side: Down
       Idx: 1
@@ -126,9 +133,8 @@ ASide:
         - Dashes: two
           Difficulty: normal
       ReqIn:
-        Or:
-        - Dashes: one
-          Difficulty: normal
+        Dashes: one
+        Difficulty: normal
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -171,9 +177,11 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: 1
         Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
@@ -194,13 +202,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -232,7 +234,20 @@ ASide:
     - Side: Down
       Idx: 4
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
+    - Name: "spawn"
+      X: 32
+      Y: 168
+      Update:
+        Default: true
     - Name: "exitBlock"
       Update:
         Remove: true
@@ -244,17 +259,19 @@ ASide:
       Kind: inout
     - Side: Up
       Idx: 0
-      Kind: out
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
-    # blocked
-    - Side: Down
-      Idx: 0
-      Kind: none
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -269,10 +286,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -298,6 +312,11 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -312,24 +331,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Right # hidden exit
-      Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
-    - Side: Right
-      Idx: 1
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
     # blocked
     - Side: Up
       Idx: 0
@@ -337,6 +338,32 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: none
+    InternalEdges:
+    - To: "normalExit"
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    - To: "secretExit"
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    Subrooms:
+    - Room: "normalExit"
+      Holes:
+      - Side: Right
+        Idx: 1
+        Kind: inout
+    - Room: "secretExit"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: out
     Tweaks:
     - Name: "exitBlock"
       Update:

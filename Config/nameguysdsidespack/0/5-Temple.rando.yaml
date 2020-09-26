@@ -73,14 +73,16 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
       
   - Room: "b-04"
     Holes:
@@ -89,33 +91,47 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 32
+      Y: 64
+      Update:
+        Default: true
       
   - Room: "b-05"
     Holes:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Up
-      Idx: 1
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
-    # blocked
+    # strange
     - Side: Up
       Idx: 0
-      Kind: none
+      Kind: unknown
+    # blocked
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - To: "exit"
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Up
+        Idx: 1
+        Kind: inout
     Tweaks:
     - Name: "templeGate"
       Update:
@@ -134,29 +150,36 @@ ASide:
       Idx: 0
       Kind: inout
     InternalEdges:
-    - To: "up"
-      ReqBoth:
+    - To: "upper"
+      ReqOut:
         Dashes: one
         Key: true
         KeyholeID: 30647
+      ReqIn:
+        Key: true
+        KeyholeID: 30647
     Subrooms:
-    - Room: "up"
+    - Room: "upper"
       Holes:
       - Side: Left
         Idx: 0
         Kind: inout
       - Side: Right
-        Idx: 0
-        Kind: out
-        ReqOut:
-          Dashes: one
-          Key: true
-          KeyholeID: 97782
-      - Side: Right
         Idx: 1
         Kind: inout
       - Side: Right
         Idx: 2
+        Kind: inout
+      InternalEdges:
+      - To: "top"
+        ReqOut:
+          Dashes: one
+          Key: true
+          KeyholeID: 97782
+    - Room: "top"
+      Holes:
+      - Side: Right
+        Idx: 0
         Kind: inout
     Tweaks:
     - Name: "refill"
@@ -210,11 +233,12 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    # blocked
-    - Side: Up # disable secret entrances, relies on special room config
+    # strange
+    - Side: Up 
       Idx: 0
-      Kind: none
-    - Side: Down
+      Kind: unknown
+    # blocked
+    - Side: Down # disable secret entrance, relies on special room config
       Idx: 0
       Kind: none
     InternalEdges:
@@ -240,32 +264,21 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-      # blocked
-    - Side: Down # secret exit blocked, messes with golden detach + key grab
+    - Side: Down
       Idx: 0
-      Kind: none
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
     InternalEdges:
     - Collectable: 0
       ReqOut:
         Dashes: one
         Difficulty: normal
-      ReqIn: # required death for now
-        Dashes: zero
     Tweaks:
     - Name: "changeRespawnTrigger"
       Update:
         Remove: true
-    - Name: detachFollowersTrigger
-      Update:
-        Add: true
-        X: 224
-        Y: 72
-        Width: 32
-        Height: 32
-        Nodes:
-        - Idx: 0
-          X: 304
-          Y: 136
         
   - Room: "c-05"
     Holes:
@@ -341,14 +354,16 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 1
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
       
   - Room: "d-04" #elevator shaft
     Hub: true
@@ -424,10 +439,10 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Or:
-          - Dashes: one
-            Difficulty: hard
-          - Dashes: two
-            Difficulty: normal
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
       ReqIn:
         Dashes: two
         Difficulty: expert
@@ -482,22 +497,25 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
       Kind: none
     - Side: Down
       Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
     Tweaks:
     - Name: "spawn"
-      X: 936
-      Y: 120
+      X: 16
+      Y: 64
       Update:
-        X: 912
+        Default: true
       
   - Room: "e-04"
     Holes:
@@ -513,6 +531,7 @@ ASide:
     # blocked
     - Side: Down
       Idx: 0
+      Kind: none
       
   - Room: "e-05"
     Holes:
@@ -529,8 +548,10 @@ ASide:
     # blocked
     - Side: Down
       Idx: 1
+      Kind: none
     - Side: Right
       Idx: 0
+      Kind: none
     Tweaks:
     - Name: "jumpThru"
       ID: 14411
@@ -544,35 +565,39 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
-    - Side: Up
-      Idx: 1
-      Kind: out
+    InternalEdges:
+    - To: "exits"
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
-    - Side: Up
-      Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
-    - Side: Up
-      Idx: 2
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+    Subrooms:
+    - Room: "exits"
+      Holes:
+      - Side: Up
+        Idx: 1
+        Kind: out
+      - Side: Up
+        Idx: 0
+        Kind: out
+      - Side: Up
+        Idx: 2
+        Kind: out
+    Tweaks:
+    - Name: "jumpThru"
+      ID: 2517
+      Update:
+        X: 56
+        Width: 8
+    - Name: "fgTiles"
+      X: 5
+      Y: 246
+      Update:
+        Tile: "e" # TempleB
 
-  #e-07 removed, complicated subroom setup + not interesting in randomizer
+  # e-07 removed, not interesting
           
   - Room: "f-01"
     Holes:

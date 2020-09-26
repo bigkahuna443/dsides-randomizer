@@ -139,14 +139,16 @@ ASide:
       HighOpen: true # makes exit matching more flexible
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: two
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 1
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: two
+        Difficulty: normal
       
   - Room: "a-06"
     Holes:
@@ -155,14 +157,16 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
     
   - Room: "a-07"
     Holes:
@@ -171,13 +175,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -188,6 +186,20 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 32
+      Y: 88
+      Update:
+        Default: true
       
   - Room: "a-08"
     Holes:
@@ -196,10 +208,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: expert
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -219,6 +228,17 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: expert
+    Tweaks:
+    - Name: "spawn"
+      X: 40
+      Y: 144
+      Update:
+        Default: true
       
   - Room: "a-09"
     Holes:
@@ -227,13 +247,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -241,6 +255,20 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 24
+      Y: 128
+      Update:
+        Default: true
       
   - Room: "a-10"
     Holes:
@@ -293,13 +321,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -310,6 +332,20 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 104
+      Y: 144
+      Update:
+        Default: true
       
   - Room: "a-12"
     Holes:
@@ -406,7 +442,9 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: TopToBottom
       ReqOut:
         Or:
         - Dashes: zero
@@ -414,6 +452,11 @@ ASide:
         - Dashes: one
           Difficulty: hard
     Tweaks:
+    - Name: "spawn"
+      X: 104
+      Y: 72
+      Update:
+        Default: true
     - Name: "exitBlock"
       Update:
         Remove: true
@@ -428,7 +471,9 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: TopToBottom
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -440,10 +485,18 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: TopToBottom
       ReqOut:
         Dashes: one
         Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 24
+      Y: 80
+      Update:
+        Default: true
         
   - Room: "b-04"
     Holes:
@@ -452,7 +505,9 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: TopToBottom
       ReqOut:
         Or:
         - Dashes: one
@@ -467,10 +522,18 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: TopToBottom
       ReqOut:
         Dashes: one
         Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 128
+      Y: 96
+      Update:
+        Default: true
      
   - Room: "b-06"
     Holes:
@@ -479,10 +542,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 1
@@ -490,6 +550,17 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: TopToBottom
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 24
+      Y: 72
+      Update:
+        Default: true
       
   - Room: "b-07"
     Holes:
@@ -498,13 +569,21 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: TopToBottom
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 56
+      Y: 88
+      Update:
+        Default: true
         
   - Room: "b-08"
     Holes:
@@ -513,10 +592,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 1
@@ -527,6 +603,17 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: TopToBottom
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 48
+      Y: 88
+      Update:
+        Default: true
       
   - Room: "b-09"
     Holes:
@@ -535,13 +622,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 1
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 1
@@ -552,6 +633,14 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: TopToBottom
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       
   - Room: "b-10"
     Holes:
@@ -560,10 +649,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 1
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 1
@@ -574,6 +660,17 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: TopToBottom
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Tweaks:
+    - Name: "spawn"
+      X: 8
+      Y: 72
+      Update:
+        Default: true
       
   # Can only use one route due to how routing works, so top route cut
   - Room: "b-11"
@@ -583,10 +680,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 1
-      Kind: out
-      ReqOut:
-        Dashes: 1
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 0
@@ -597,6 +691,11 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: TopToBottom
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
       
   - Room: "b-11s"
     Holes:
@@ -633,18 +732,20 @@ ASide:
       
   - Room: "b-11sss" #can only be done in reverse
     Holes:
+    - Side: Right
+      Idx: 0
+      Kind: inout
     - Side: Left
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: RightToLeft
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
           Difficulty: normal
-    - Side: Right
-      Idx: 0
-      Kind: inout
     Tweaks:
     - Name: "spawn"
       Update:
@@ -712,17 +813,25 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
-    # blocked
-    - Side: Down
-      Idx: 0
-      Kind: none
+    Tweaks:
+    - Name: "spawn"
+      X: 80
+      Y: 152
+      Update:
+        Default: true
       
   - Room: "b-13"
     Holes:
@@ -739,6 +848,12 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    Tweaks:
+    - Name: "spawn"
+      X: 8
+      Y: 160
+      Update:
+        Default: true
       
   - Room: "boss-01"
     Holes:

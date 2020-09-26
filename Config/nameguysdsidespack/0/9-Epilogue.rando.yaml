@@ -1,4 +1,34 @@
 ASide:
+  - Room: "a-00"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: BottomToTop
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+    Subrooms:
+    - Room: "up"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: inout
+        
   - Room: "a-00s"
     Holes:
     - Side: Down
@@ -20,30 +50,6 @@ ASide:
           Difficulty: expert
         - Dashes: one
           Difficulty: normal
-        
-  - Room: "a-00"
-    Holes:
-    - Side: Left
-      Idx: 0
-      Kind: inout
-    # blocked
-    - Side: Right
-      Idx: 0
-      Kind: none
-    - Side: Down
-      Idx: 0
-      Kind: none
-    InternalEdges:
-    - To: "up"
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
-    Subrooms:
-    - Room: "up"
-      Holes:
-      - Side: Up
-        Idx: 0
-        Kind: inout
         
   - Room: "a-01"
     Holes:
@@ -81,6 +87,9 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: RightToLeft
+      ReqOut:
+        Dashes: zero
+        Difficulty: normal
       ReqIn:
         Dashes: one
         Difficulty: normal
@@ -153,6 +162,9 @@ ASide:
     InternalEdges:
     - Split: RightToLeft
       ReqOut:
+        Dashes: zero
+        Difficulty: normal
+      ReqIn:
         Dashes: one
         Difficulty: normal
     Tweaks:
@@ -187,6 +199,12 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: none
+    Tweaks:
+    - Name: "spawn"
+      X: 64
+      Y: 168
+      Update:
+        Default: true
       
   - Room: "b-03"
     Holes:
@@ -238,6 +256,12 @@ ASide:
       Kind: inout
     InternalEdges:
     - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
       ReqIn:
         Dashes: one
         Difficulty: normal
@@ -249,7 +273,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -272,6 +296,11 @@ ASide:
     - Side: Down
       Idx: 4
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: zero
+        Difficulty: hard
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -284,13 +313,7 @@ ASide:
       Kind: inout
     - Side: Left
       Idx: 1
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: zero
-          Difficulty: expert
-        - Dashes: one
-          Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -302,6 +325,13 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
+    - Split: TopToBottom
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
     - Collectable: 0
       ReqBoth:
         Dashes: one
@@ -316,13 +346,10 @@ ASide:
       Idx: 0
       Kind: inout
     # blocked
-    - Side: Left # corner exits not interesting
+    - Side: Left
       Idx: 1
       Kind: none
     - Side: Up
-      Idx: 0
-      Kind: none
-    - Side: Down
       Idx: 0
       Kind: none
     - Side: Down
@@ -336,6 +363,15 @@ ASide:
           Difficulty: hard
         - Dashes: one
           Difficulty: normal
+    Subrooms:
+    - Room: "strange"
+      Holes:
+      - Side: Left
+        Idx: 1
+        Kind: unknown
+      - Side: Down
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "noRefillTrigger"
       Update:
@@ -356,8 +392,8 @@ ASide:
       Kind: none
     InternalEdges:
     - To: "secret"
-      ReqIn:
-        Dashes: one
+      ReqBoth:
+        Dashes: one # need at least one dash to use pink refill for entry
         Difficulty: normal
     Subrooms:
     - Room: "secret"
@@ -366,6 +402,11 @@ ASide:
         Idx: 1
         Kind: inout
     Tweaks:
+    - Name: "spawn"
+      X: 144
+      Y: 56
+      Update:
+        Default: true
     - Name: "everest/changeInventoryTrigger"
       Update:
         Remove: true
@@ -375,6 +416,14 @@ ASide:
     - Name: "conditionBlock"
       Update:
         Remove: true
+    - Name: "wallBooster" # makes room transition look less weird
+      ID: 352
+      Update:
+        Height: 136
+    - Name: "wallBooster"
+      ID: 353
+      Update:
+        Height: 136
     
   - Room: "house"
     End: true
@@ -401,6 +450,16 @@ ASide:
     - Name: "spikesUp"
       Update:
         Remove: true
+    - Name: "wallBooster" # makes room transition look less weird
+      ID: 347
+      Update:
+        Y: 0
+        Height: 104
+    - Name: "wallBooster"
+      ID: 351
+      Update:
+        Y: 0
+        Height: 48
       
   - Room: "house-b"
     Holes:
@@ -421,6 +480,12 @@ ASide:
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
+    Tweaks:
+    - Name: "spawn"
+      X: 264
+      Y: 64
+      Update:
+        Default: true
           
   - Room: "house-c"
     Hub: true
@@ -480,7 +545,9 @@ ASide:
       Launch: -1
     - Side: Up
       Idx: 0
-      Kind: out
+      Kind: inout
+    InternalEdges:
+    - Split: BottomToTop
       ReqOut:
         Or:
         - Dashes: one
@@ -529,31 +596,7 @@ ASide:
       Idx: 0
       Kind: inout
       
-  # Currently no way to have multiple key requirements
-  - Room: "thegate"
-    Holes:
-    - Side: Up
-      Idx: 0
-      Kind: in
-    - Side: Right
-      Idx: 0
-      Kind: out
-      ReqOut:
-        Key: true
-        KeyholeID: 1163
-        Dashes: one
-        Difficulty: normal
-    # blocked
-    - Side: Left
-      Idx: 0
-      Kind: none
-    - Side: Down
-      Idx: 0
-      Kind: none
-    Tweaks:
-    - Name: "noRefillTrigger"
-      Update:
-        Remove: true
+  # thegate cut, doesn't work well in randomizer
         
   - Room: "bigmirror"
     Holes:

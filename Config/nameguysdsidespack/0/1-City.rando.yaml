@@ -3,7 +3,7 @@ ASide:
     Holes:
     - Side: Up
       Idx: 8
-      Kind: inout
+      Kind: out
       ReqOut:
         Or:
         - Dashes: one
@@ -175,6 +175,9 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
+      ReqOut:
+        Dashes: zero
+        Difficulty: normal
       ReqIn:
         Dashes: two
         Difficulty: perfect
@@ -527,10 +530,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 0
@@ -601,6 +601,11 @@ ASide:
     - Side: Down
       Idx: 7
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       ID: 14875
@@ -615,10 +620,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 1
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 1
@@ -692,7 +694,17 @@ ASide:
     - Side: Down
       Idx: 9
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
     Tweaks:
+    - Name: "spawn"
+      X: 64
+      Y: 160
+      Update:
+        Default: true
     - Name: "exitBlock"
       Update:
         Remove: true
@@ -707,10 +719,7 @@ ASide:
       Kind: inout
     - Side: Up
       Idx: 17
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Left
       Idx: 0
@@ -784,6 +793,11 @@ ASide:
     - Side: Down
       Idx: 5
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
       
   - Room: "c-01"
     Holes:

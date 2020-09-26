@@ -111,6 +111,9 @@ ASide:
       ReqOut:
         Dashes: two
         Difficulty: expert
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
     Subrooms:
     - Room: "right"
       Holes:
@@ -207,17 +210,19 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 1
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
-    # blocked
-    - Side: Down
-      Idx: 1
-      Kind: none
     Tweaks:
     - Name: "jumpThru"
       ID: 2782
@@ -234,10 +239,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: two
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -245,6 +247,11 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
           
   - Room: "b-03"
     Core:
@@ -255,10 +262,7 @@ ASide:
       Kind: inout
     - Side: Up
       Idx: 2
-      Kind: out
-      ReqOut:
-        Dashes: two
-        Difficulty: expert
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -269,6 +273,11 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: two
+        Difficulty: expert
           
   - Room: "b-04"
     Core:
@@ -279,14 +288,16 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: two
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 1
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
     Tweaks:
     - Name: "jumpThru"
       ID: 2111
@@ -323,10 +334,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: two
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 1
@@ -334,6 +342,11 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: two
+        Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       ID: 1490
@@ -453,10 +466,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -473,6 +483,11 @@ ASide:
     - Side: Down
       Idx: 3
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: two
+        Difficulty: hard
     Tweaks:
     - Name: "jumpThru"
       ID: 963
@@ -483,23 +498,26 @@ ASide:
   - Room: "d-02"
     Core:
       All: cold
+      Right: hot
     Holes:
     - Side: Left
       Idx: 0
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: LeftToRight
       ReqOut:
         Or:
         - Dashes: one
           Difficulty: perfect
         - Dashes: two
           Difficulty: hard
-    # blocked
-    - Side: Down
-      Idx: 0
-      Kind: none
           
   - Room: "d-03"
     Core:
@@ -616,10 +634,7 @@ ASide:
       Kind: inout
     - Side: Right
       Idx: 0
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -627,6 +642,11 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       ID: 1442
@@ -658,12 +678,3 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
-    ExtraSpace: # just to make really sure that screen wrapping isn't affected...
-    - X: 236
-      Y: -16
-      Width: 4724
-      Height: 16
-    - X: 236
-      Y: 320
-      Width: 4724
-      Height: 16
