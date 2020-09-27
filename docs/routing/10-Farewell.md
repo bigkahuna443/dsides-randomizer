@@ -1,7 +1,7 @@
 | Room | 0-dash (forwards) | 1-dash (forwards) | 2-dash (forwards) | 0-dash (reverse) | 1-dash (reverse) | 2-dash (reverse) | Comments |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|-|
-| a-00-intro | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | a-00 | N/A | Normal | Normal | N/A | N/A | N/A | Launch in screen, no reverse |
+| a-00-intro | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | a-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | a-02 | N/A | Hard | Normal | N/A | Perfect | Normal | 1DR very precise final dash |
 | a-03 | N/A | Normal | Normal | N/A | Normal | Normal | Secret exit opened up, 0DF from normal exit to secret |
@@ -70,9 +70,9 @@
 | dd-06 | N/A | Expert | Normal | N/A | N/A | N/A | Key room |
 | dd-07 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
 | dd-08 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
-| e-00 | N/A | Hard | Normal | N/A | N/A | N/A | Key room + exit, can be done backwards easily but not interesting so cut |
+| e-00 | N/A | Hard | Normal | N/A | N/A | N/A | Key room + exit, can be done backwards easily but not interesting so cut... collectable may not get included |
 | e-01 | N/A | Hard | Normal | N/A | Perfect | Hard | 1DR has very annoying jump at the beginning, 1DR+2DR have bubble jank at very end |
-| e-02 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF requires bunnyhop, ultra. Easy reverse but not interesting, cut |
+| e-02 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires bunnyhop, ultra |
 | e-03 | N/A | Hard | Normal | N/A | Hard | Normal |  |
 | e-04 | N/A | Hard | Normal | N/A | N/A | Normal |  |
 | e-05 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires bunnyhop, ultra |

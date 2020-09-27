@@ -392,8 +392,11 @@ ASide:
       Kind: none
     InternalEdges:
     - To: "secret"
-      ReqBoth:
-        Dashes: one # need at least one dash to use pink refill for entry
+      ReqOut: # can use pink refill for secret exit
+        Dashes: zero
+        Difficulty: normal
+      ReqIn:
+        Dashes: one
         Difficulty: normal
     Subrooms:
     - Room: "secret"
