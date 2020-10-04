@@ -1596,7 +1596,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Or:
-        - Dashes: one
+        - Dashes: zero
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
@@ -3191,7 +3191,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: expert
       ReqIn:
         Dashes: two
@@ -4456,7 +4456,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
       ReqIn:
         Or:
@@ -4497,10 +4497,13 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: perfect
+        - Dashes: one
+          Difficulty: normal
       ReqIn:
-        Dashes: one
+        Dashes: zero
         Difficulty: perfect
     Tweaks:
     - Name: "jumpThru"
@@ -4527,7 +4530,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqBoth:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
         
   - Room: "j-04"
@@ -4632,8 +4635,11 @@ ASide:
     InternalEdges:
     - To: "exit"
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
       ReqIn:
         Dashes: two
         Difficulty: normal
@@ -4673,11 +4679,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
     - Collectable: 0
       ReqBoth:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
     Tweaks:
     - Name: "spawn"
@@ -4748,9 +4754,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
     # blocked
     - Side: Left
       Idx: 0
@@ -4907,7 +4910,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
       ReqIn:
         Dashes: two
@@ -5185,7 +5188,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
       
   - Room: "k-11"
@@ -5578,8 +5581,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
     # blocked
     - Side: Left
       Idx: 0
@@ -5800,7 +5806,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqBoth:
-        Dashes: one
+        Dashes: zero
         Difficulty: expert
     Tweaks:       
     - Name: "cameraOffsetTrigger"
@@ -6020,8 +6026,11 @@ ASide:
         Dashes: one
         Difficulty: normal
       ReqIn:
-        Dashes: zero
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       Update:
@@ -7639,8 +7648,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       Update:
@@ -7816,7 +7828,7 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: hard
     # blocked
     - Side: Left
@@ -7840,19 +7852,6 @@ ASide:
     - Name: "changeRespawnTrigger"
       Update:
         Remove: true
-    - Name: "spawn" # spawn point out in the void (-x)
-      Y: 112
-      Update:
-        Remove: true
-    ExtraSpace: # just to make really sure that screen wrapping isn't affected...
-    - X: 104
-      Y: -16
-      Width: 1496
-      Height: 16
-    - X: 104
-      Y: 320
-      Width: 1496
-      Height: 16
         
   # r-00 cut (unskippable heart gate)
         
@@ -7914,7 +7913,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: expert
       
   - Room: "r-03"
@@ -8063,7 +8062,10 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqBoth:
+      ReqOut:
+        Dashes: zero
+        Difficulty: normal
+      ReqIn:
         Dashes: one
         Difficulty: normal
     Tweaks:
@@ -11560,7 +11562,7 @@ ASide:
       Kind: out
       ReqOut:
         Or:
-        - Dashes: one
+        - Dashes: zero
           Difficulty: hard
         - Dashes: two
           Difficulty: normal

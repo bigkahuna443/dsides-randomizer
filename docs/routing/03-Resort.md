@@ -2,23 +2,23 @@
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|-|
 | a-00 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | a-01 | N/A | Hard | Normal | N/A | Expert | Normal |  |
-| a-02 | N/A | Expert | Normal | N/A | N/A | Perfect | 2DR pretty precise, cycle hell |
-| a-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| a-02 | N/A | Hard, N/A (TBC) | Normal, N/A (TB) | N/A | N/A | Perfect | 2DR pretty precise, cycle hell |
+| a-03 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | a-04 | N/A | Expert | Hard | N/A | Expert | Normal |  |
-| a-05 | N/A | Hard | Normal | N/A | Expert | Expert | 1DR + 2DR not very difficult, but some tricky non-obvious dashes at the beginning |
+| a-05 | N/A | Hard, Expert (T), N/A (TB,TC) | Normal, Hard (TBC) | N/A | Expert | Expert | 1DF (T) has tight dash to books block, 1DR + 2DR not very difficult, but some tricky non-obvious dashes at the beginning |
 | a-06 | N/A | Expert | Hard | N/A | Expert | Hard |  |
 | b-00 | N/A | Hard | Hard | N/A | Hard | Hard | Hub room, designed to be completed in all directions |
-| b-01a (left) | N/A | Normal | Normal | N/A | Hard | Normal |  |
-| b-01a (right) | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible, but bad spawn so cut |
+| b-01a (left) | N/A | Normal | Normal | N/A | Normal | Normal |  |
+| b-01a (right) | N/A | Normal, Hard (T,C,B), N/A (BC) | Normal, Hard (TC), N/A (BC) | N/A | N/A | N/A | Reverse possible, but bad spawn so cut |
 | b-01b (left) | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | b-01b (right) | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
-| b-01c | - | - | - | - | - | - | Cut (switch room) |
-| b-02a | Normal | Normal | Normal | N/A | Hard | Normal |  |
-| b-02b | N/A | Hard | Hard | N/A | Expert | Hard |  |
-| b-02c | N/A | Hard | Normal | N/A | N/A | Hard | Switch room (not cut since a path exists where you don't hit switch) |
-| b-03a | N/A | Hard | Hard | N/A | N/A | N/A | 2DR difficult cycles + max height corner jump, possible but removed due to shitty spawn (kills goldens because detach breaks forward path) |
-| b-03b | N/A | Hard | Hard | N/A | Expert | Hard |  |
-| b-03c | - | - | - | - | - | - | Cut (switch room) |
+| b-01c | Normal | Normal | Normal | - | - | - | Crate switch room) |
+| b-02a | Normal | Normal | Normal | N/A | Hard | Normal | Towels switch room |
+| b-02b | N/A | Hard, Perfect (T), N/A (TB, TC) | Hard, N/A (TC) | N/A | Expert | Hard | 1DF (T) do a reverse ultra off the books, grab the crate, as the cycle changes do a hyper/demohyper off the gap |
+| b-02c | N/A | Hard, Expert (BC) | Normal | N/A | N/A | Hard | |
+| b-03a | N/A | Hard, N/A (B) | Hard, Expert (TCB) | N/A | N/A | N/A | 2DR difficult cycles + max height corner jump, possible but removed due to shitty spawn (kills goldens because detach breaks forward path) |
+| b-03b | N/A | Hard, N/A (B) | Normal | N/A | Expert | Hard |  |
+| b-03c | Normal | Normal | Normal | - | - | - | Books switch room |
 | c-01 | N/A | Hard | Normal | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | c-02 | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | c-03 | N/A | Hard | Normal | N/A | Perfect | Hard | 1DR cycle hell + cornerboost, very precise (but cool) |
