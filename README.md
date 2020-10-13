@@ -11,19 +11,10 @@ Installation
 ------------
 **Note**: Running mods with Celeste requires you to have installed [Everest](https://everestapi.github.io/).
 
-**Automatic [not yet enabled]**:
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
 2. The config is included by default and the D-sides will be available in the randomizer level select screen.
 
 ![level select](docs/img/level_select.PNG)
-
-**Manual**:
-1. Download this project with the method of your choice and save it in your Celeste/Mods directory.
-
-![download](docs/img/download.PNG)
-
-2. The D-sides should now be available in the randomizer level select screen.
-
 
 Difficulty Modes
 ----------------
@@ -35,7 +26,7 @@ The difficulty modes are intended as follows:
 - *Expert:* Harder D-side rooms, may require some setupless moves (corner jumps, easy demodashes, etc.)
 - *Perfect:* Hardest D-side rooms, may require multiple setupless moves and/or obscure tech (e.g. updiag demos)
 
-These are loosely based off the original randomizer difficulty recommendations but are *not* equivalent. A good rule of thumb is that Normal and Hard are a level higher than their vanilla counterparts, and they start evening out in Expert. Perfect is probably easier than in the main game due to removing pixel-perfect demos and other frustrating moves.
+These are loosely based off the original randomizer difficulty recommendations but are *not* equivalent. A good rule of thumb is that Normal and Hard are a level higher than their vanilla counterparts, and they start evening out in Expert. Perfect is probably easier than in the main game due to removing pixel-perfect demos and other frustrating moves. The reason for this difficulty organization was due to the low number of difficulty categories vs. the wide range of difficulty represented in the D-sides. If another difficulty category is added to the randomizer, the difficulties may be updated to match the vanilla randomizer more closely.
 
 The ratings are based on difficulty of execution and assume that you have played the D-sides before. If you haven't, some screens may be harder than the ratings imply.
 
@@ -48,7 +39,8 @@ Known Issues / Planned Additions
 2. Camera work needs to be done for most reverse paths -- the routes with the worst camera were focused on for now. If you run across a route with a bad camera that significantly affects gameplay, let me know.
 3. Currently most non-exits/entrances are disabled for now, which means the "Strange Holes" setting doesn't have a strong effect. I'll gradually add some strange holes in on a case-by-case basis, since turning them all on at once tends to break things.
 4. My skill level has definitely changed throughout labbing this, so some of my difficulty ratings may not be entirely consistent!
-5. I will make the config compatible with new randomizer features as they are created.
+5. A few 3D rooms may have some odd entrances/exits that are a half-tile off -- this is done to avoid softlocks due to how the roof decals are implemented.
+6. I will make the config compatible with new randomizer features as they are created.
 
 
 Contact

@@ -5,13 +5,14 @@ ASide:
       Idx: 0
       Kind: in
       Launch: 48
+      HighOpen: true # we don't want a match here
     - Side: Right
       Idx: 0
       Kind: inout
       ReqOut:
         Dashes: one
         Difficulty: normal
-    #blocked
+    # blocked
     - Side: Left
       Idx: 0
       Kind: none
@@ -28,7 +29,7 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: normal
-    #blocked
+    # blocked
     - Side: Left
       Idx: 0
       Kind: none
@@ -50,7 +51,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -68,7 +69,7 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -110,7 +111,7 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -167,7 +168,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -191,7 +192,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -227,7 +228,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -269,7 +270,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -294,7 +295,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -318,7 +319,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -342,7 +343,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -457,6 +458,15 @@ ASide:
       Kind: none
     - Side: Down
       Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
       Kind: none
     InternalEdges:
     - Collectable: 0
@@ -611,6 +621,9 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
@@ -743,6 +756,12 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
@@ -819,6 +838,9 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
@@ -858,13 +880,16 @@ ASide:
       Idx: 3
       Kind: none
     - Side: Right
-      Idx: 0
+      Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
       Kind: none
     - Side: Down
       Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
       Kind: none
     InternalEdges:
     - Split: LeftToRight
@@ -1186,13 +1211,13 @@ ASide:
         Difficulty: normal
     Tweaks:
     - Name: "spawn"
-      X: 1528
-      Y: 144
-      Update:
-        Default: true
-    - Name: "changeRespawnTrigger"
       Update:
         Remove: true
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 1528
+        Y: 144
     - Name: "exitBlock"
       Update:
         Remove: true
@@ -1327,7 +1352,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
-      LowBound: 22
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1937,12 +1961,12 @@ ASide:
       - Side: Up
         Idx: 0
         Kind: inout
-      - Side: Up
-        Idx: 1
-        Kind: inout
         ReqOut:
           Dashes: one
           Difficulty: normal
+      - Side: Up
+        Idx: 1
+        Kind: inout
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -1984,7 +2008,9 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
+      LowBound: 18
       HighBound: 18
+      HighOpen: false
     # blocked
     - Side: Up
       Idx: 0
@@ -2079,6 +2105,12 @@ ASide:
       Kind: inout
     # blocked
     - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
       Idx: 0
       Kind: none
     InternalEdges:
@@ -2252,6 +2284,9 @@ ASide:
       Kind: none
     - Side: Up
       Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
       Kind: none
     InternalEdges:
     - To: "exit"
@@ -2507,6 +2542,9 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
@@ -2530,6 +2568,9 @@ ASide:
     # blocked
     - Side: Up
       Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
       Kind: none
     InternalEdges:
     - Split: LeftToRight
@@ -2788,6 +2829,9 @@ ASide:
       Idx: 1
       Kind: inout
     # blocked
+    - Side: Up
+      Idx: 0
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
@@ -2839,9 +2883,6 @@ ASide:
       Idx: 0
       Kind: none
     - Side: Down
-      Idx: 0
-      Kind: none
-    - Side: Down
       Idx: 1
       Kind: none
     - Side: Down
@@ -2852,6 +2893,9 @@ ASide:
       Kind: none
     - Side: Down
       Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
       Kind: none
     InternalEdges:
     - Split: LeftToRight
@@ -3231,6 +3275,9 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
@@ -3371,7 +3418,7 @@ ASide:
       Kind: inout
     # blocked
     - Side: Left
-      Idx: 1
+      Idx: 0
       Kind: none
     - Side: Up
       Idx: 0
@@ -4018,6 +4065,9 @@ ASide:
       Idx: 0
       Kind: inout
     # blocked
+    - Side: Left
+      Idx: 1
+      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
@@ -5314,7 +5364,7 @@ ASide:
       Idx: 0
       Kind: none
     - Side: Down
-      Idx: 0
+      Idx: 1
       Kind: none
     InternalEdges:
     - To: "exit"
@@ -5374,7 +5424,7 @@ ASide:
       ReqBoth:
         Key: true
         KeyholeID: 14611
-    # blocked
+    Subrooms:
     - Room: "key"
       Holes:
       - Side: Down
@@ -5389,13 +5439,11 @@ ASide:
         ReqBoth:
           Dashes: one
           Difficulty: hard
-    Subrooms:
     - Room: "corner" # only for strange holes
       Holes:
       - Side: Up
         Idx: 1
         Kind: inout
-      # strange
       - Side: Right
         Idx: 0
         Kind: unknown
@@ -5904,6 +5952,13 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: unknown
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
     InternalEdges:
     - To: "secret"
       ReqOut:
@@ -5926,7 +5981,6 @@ ASide:
           Difficulty: hard
     - Room: "exit"
       Holes:
-      # strange
       - Side: Up
         Idx: 2
         Kind: unknown
@@ -6959,10 +7013,10 @@ ASide:
   - Room: "o-09"
     Holes:
     - Side: Up
-      Idx: 0
+      Idx: 1
       Kind: inout
     - Side: Left
-      Idx: 0
+      Idx: 1
       Kind: inout
     # blocked
     - Side: Right
@@ -6979,6 +7033,21 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: normal
+    Subrooms:
+    - Room: "corner"
+      Holes:
+      - Side: Left
+        Idx: 0
+        Kind: unknown
+      - Side: Up
+        Idx: 0
+        Kind: inout
+    Tweaks:
+    - Name: "spawn"
+      X: 48
+      Y: 16
+      Update:
+        Default: true
       
   - Room: "o-10"
     Hub: true
@@ -6986,10 +7055,6 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    # strange
-    - Side: Up
-      Idx: 1
-      Kind: unknown
     # blocked
     - Side: Down
       Idx: 0
@@ -7010,6 +7075,16 @@ ASide:
         Kind: out
         LowBound: 14
         HighBound: 16
+    - Room: "strange"
+      Holes:
+      - Side: Up
+        Idx: 1
+        Kind: unknown
+      InternalEdges:
+      - To: "exits"
+        ReqOut:
+          Dashes: one
+          Difficulty: normal
     Tweaks:
     - Name: "exitBlock"
       ID: 45730
@@ -7023,6 +7098,7 @@ ASide:
       Kind: inout
       LowBound: 14
       HighBound: 16
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -7035,6 +7111,9 @@ ASide:
       Kind: none
     - Side: Right
       Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
@@ -7259,6 +7338,9 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: none
+    - Side: Left
+      Idx: 1
+      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
@@ -7401,12 +7483,6 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: in
-    - Side: Right
-      Idx: 1
-      Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -7416,9 +7492,6 @@ ASide:
       Kind: none
     - Side: Up
       Idx: 2
-      Kind: none
-    - Side: Right # block secret exit, not interesting
-      Idx: 0
       Kind: none
     - Side: Down 
       Idx: 1
@@ -7456,6 +7529,20 @@ ASide:
     - Side: Down
       Idx: 12
       Kind: none
+    InternalEdges:
+    - To: "exits"
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
+    Subrooms:
+    - Room: "exits"
+      Holes:
+      - Side: Right # secret entrance, pretty pointless in randomizer
+        Idx: 0
+        Kind: unknown
+      - Side: Right
+        Idx: 1
+        Kind: out
     Tweaks:
     - Name: "noRefillTrigger"
       Update:
@@ -8090,10 +8177,13 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
-    - Side: Right
+    - Side: Down
       Idx: 1
       Kind: none
     InternalEdges:
@@ -8106,13 +8196,13 @@ ASide:
           Difficulty: normal
     Tweaks:
     - Name: "fgTiles"
-      X: 1
-      Y: 19
+      X: 7
+      Y: 12
       Update:
         Tile: "n" # Scifi
     - Name: "fgTiles"
-      X: 1
-      Y: 20
+      X: 7
+      Y: 13
       Update:
         Tile: "n" # Scifi
     - Name: "jumpThru"
@@ -8690,6 +8780,7 @@ ASide:
     - Side: Up
       Idx: 0
       Kind: out
+      LowBound: 40
       ReqOut:
         Or:
         - Dashes: one
@@ -9030,8 +9121,11 @@ ASide:
       Idx: 0
       Kind: inout
     # blocked
-    - Side: Left
+    - Side: Up
       Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
@@ -9255,7 +9349,7 @@ ASide:
       Idx: 0
       Kind: none
     - Side: Down
-      Idx: 0
+      Idx: 1
       Kind: none
     Tweaks:
     - Name: "jumpThru"
@@ -9428,6 +9522,7 @@ ASide:
       Kind: out
       LowBound: 28
       HighBound: 31
+      HighOpen: false
       ReqOut:
         Or:
         - Dashes: one
@@ -9572,40 +9667,28 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    # strange
-    - Side: Left # secret entrance just a change respawn trigger lol
-      Idx: 1
-      Kind: unknown
+    - Side: Right
+      Idx: 0
+      Kind: inout
     # blocked
+    - Side: Left # change respawn, breaks if no room beneath
+      Idx: 1
+      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
     - Side: Down
       Idx: 0
       Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
     InternalEdges:
-    - To: "exit"
+    - Split: LeftToRight
       ReqOut:
         Dashes: one
         Difficulty: normal
-    Subrooms:
-    - Room: "exit"
-      Holes:
-      - Side: Right
-        Idx: 0
-        Kind: inout
     Tweaks:
-    - Name: "detachFollowersTrigger"
-      Update:
-        Add: true
-        X: 0
-        Y: 168
-        Width: 16
-        Height: 16
-        Nodes:
-        - Idx: 0
-          X: 104
-          Y: 16
     - Name: "exitBlock"
       ID: 33840
       Update:
@@ -9882,6 +9965,9 @@ ASide:
       Idx: 0
       Kind: inout
     # blocked
+    - Side: Left
+      Idx: 1
+      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
@@ -10301,11 +10387,17 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
     - Side: Down
       Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
       Kind: none
     InternalEdges:
     - Split: LeftToRight
@@ -11680,6 +11772,9 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
     InternalEdges:
     - Split: BottomToTop
       ReqOut:
@@ -11715,6 +11810,10 @@ ASide:
       ReqBoth:
         Key: true
         KeyholeID: 44706
+    # blocked
+    - Side: Right
+      Idx: 0
+      Kind: none
     Tweaks:
     - Name: "jumpThru"
       ID: 44723
@@ -11743,6 +11842,10 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
+    # blocked
+    - Side: Right
+      Idx: 0
+      Kind: none
     Tweaks:
     - Name: "spawn"
       X: 224

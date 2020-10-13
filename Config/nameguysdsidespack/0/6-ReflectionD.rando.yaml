@@ -103,7 +103,7 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
-      Launch: 7
+      Launch: 6
     - Side: Up
       Idx: 0
       Kind: out
@@ -660,6 +660,9 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
     InternalEdges:
     - Split: TopToBottom
       ReqOut:
@@ -672,30 +675,55 @@ ASide:
       Update:
         Default: true
       
-  # Can only use one route due to how routing works, so top route cut
+  # Top route
   - Room: "b-11"
     Holes:
-    - Side: Right
+    - Side: Left
       Idx: 0
       Kind: inout
     - Side: Right
-      Idx: 1
+      Idx: 0
       Kind: inout
     # blocked
     - Side: Left
-      Idx: 0
+      Idx: 1
       Kind: none
-    - Side: Left
+    - Side: Right
       Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: TopToBottom
+    - Split: LeftToRight
       ReqOut:
         Dashes: one
         Difficulty: normal
+        
+  # # Bottom route
+  # - Room: "b-11COPY"
+    # Holes:
+    # - Side: Right
+      # Idx: 0
+      # Kind: inout
+    # - Side: Right
+      # Idx: 1
+      # Kind: inout
+    # # blocked
+    # - Side: Left
+      # Idx: 0
+      # Kind: none
+    # - Side: Left
+      # Idx: 1
+      # Kind: none
+    # - Side: Down
+      # Idx: 0
+      # Kind: none
+    # InternalEdges:
+    # - Split: TopToBottom
+      # ReqOut:
+        # Dashes: one
+        # Difficulty: normal
       
   - Room: "b-11s"
     Holes:
@@ -1360,6 +1388,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 20
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1388,6 +1417,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 19
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1414,6 +1444,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 18
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1440,6 +1471,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 14
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1466,6 +1498,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 13
+      HighOpen: false
       ReqOut:
         Or:
         - Dashes: zero
@@ -1495,6 +1528,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 19
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1521,6 +1555,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 18
+      HighOpen: false
       ReqOut:
         Or:
         - Dashes: one
@@ -1550,6 +1585,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 20
+      HighOpen: false
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1576,6 +1612,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 19
+      HighOpen: false
       ReqOut:
         Or:
         - Dashes: zero

@@ -113,10 +113,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    # strange
-    - Side: Up
-      Idx: 0
-      Kind: unknown
     # blocked
     - Side: Down
       Idx: 0
@@ -129,6 +125,9 @@ ASide:
     Subrooms:
     - Room: "exit"
       Holes:
+      - Side: Up
+        Idx: 0
+        Kind: unknown
       - Side: Up
         Idx: 1
         Kind: inout
@@ -276,7 +275,9 @@ ASide:
         Dashes: one
         Difficulty: normal
     Tweaks:
-    - Name: "changeRespawnTrigger"
+    - Name: "spawn"
+      X: 64
+      Y: 152
       Update:
         Remove: true
         
@@ -364,8 +365,14 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: hard
+    Tweaks:
+    - Name: "jumpThru"
+      ID: 20663
+      Update:
+        X: 96
+        Width: 8
       
-  - Room: "d-04" #elevator shaft
+  - Room: "d-04" # elevator shaft
     Hub: true
     Holes:
     - Side: Left

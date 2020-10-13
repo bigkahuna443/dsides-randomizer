@@ -17,6 +17,10 @@ ASide:
           Difficulty: expert
         - Dashes: two
           Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
 
   - Room: "a-02"
     Core:

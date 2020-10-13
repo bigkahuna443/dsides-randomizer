@@ -997,6 +997,7 @@ ASide:
       Idx: 0
       Kind: out
       HighBound: 19
+      HighOpen: false
       ReqOut:
         Or:
         - Dashes: one
