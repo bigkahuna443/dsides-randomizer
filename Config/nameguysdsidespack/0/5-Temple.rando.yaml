@@ -275,9 +275,7 @@ ASide:
         Dashes: one
         Difficulty: normal
     Tweaks:
-    - Name: "spawn"
-      X: 64
-      Y: 152
+    - Name: "changeRespawnTrigger"
       Update:
         Remove: true
         

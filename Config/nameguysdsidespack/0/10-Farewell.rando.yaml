@@ -1211,13 +1211,13 @@ ASide:
         Difficulty: normal
     Tweaks:
     - Name: "spawn"
+      X: 1528
+      Y: 144
+      Update:
+        Default: true
+    - Name: "changeRespawnTrigger"
       Update:
         Remove: true
-    - Name: "spawn"
-      Update:
-        Add: true
-        X: 1528
-        Y: 144
     - Name: "exitBlock"
       Update:
         Remove: true
