@@ -135,7 +135,7 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
-      Launch: 6
+      Launch: 5
       HighOpen: true # makes exit matching more flexible
     - Side: Right
       Idx: 0

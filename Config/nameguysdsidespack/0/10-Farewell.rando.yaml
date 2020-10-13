@@ -4468,7 +4468,7 @@ ASide:
       Idx: 0
       Kind: none
     - Side: Down
-      Idx: 0
+      Idx: 1
       Kind: none
     InternalEdges:
     - Split: LeftToRight
@@ -6040,8 +6040,13 @@ ASide:
     - Name: "spikesRight"
       ID: 16280
       Update:
-        Height: 120
+        Height: 104
     - Name: "exitBlock"
+      Update:
+        Remove: true
+    - Decal: bg
+      X: 188
+      Y: 132
       Update:
         Remove: true
           
@@ -7867,6 +7872,11 @@ ASide:
         Add: true
         X: 576
         Y: 40
+    - Name: "coreModeToggle"
+      Update:
+        Values:
+          onlyIce: false
+          persistent: false
     - Name: "noRefillTrigger"
       Update:
         Remove: true
@@ -9751,6 +9761,9 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
@@ -9766,11 +9779,6 @@ ASide:
         - Dashes: two
           Difficulty: normal
     Tweaks:
-    - Name: "spawn"
-      Update:
-        X: 784
-        Y: 88
-        Add: true
     - Name: "invisibleBarrier"
       Update:
         Remove: true
