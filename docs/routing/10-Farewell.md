@@ -57,7 +57,7 @@
 | d-14 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
 | d-15 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | d-16 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| d-17 | N/A | Expert | Expert | N/A | N/A | N/A | Possible in reverse if remove killbox but not interesting |
+| d-17 | Perfect | Expert | Expert | N/A | N/A | N/A | 0DF has tricky refill grabs; possible in reverse if remove killbox but not interesting |
 | d-18 | N/A | Expert, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
 | d-19 | N/A | Expert | Hard | N/A | N/A | N/A |  |
 | dd-00-lobby | - | - | - | - | - | - | Key hub, upper exits require 1 dash, requires 7 keys, 6 removed due to randomizer not allowing multiple key requirements |
@@ -69,7 +69,7 @@
 | dd-05 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
 | dd-06 | N/A | Expert | Normal | N/A | N/A | N/A | Key room |
 | dd-07 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
-| dd-08 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
+| dd-08 | Hard | Hard | Hard | N/A | N/A | N/A | Key room, 0DF has tricky start but not too bad |
 | e-00 | N/A | Hard | Normal | N/A | N/A | N/A | Key room + exit, can be done backwards easily but not interesting so cut... collectable may not get included |
 | e-01 | N/A | Hard | Normal | N/A | Perfect | Hard | 1DRd has very annoying jump at the beginning, 1DR+2DR have bubble jank at very end |
 | e-02 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires bunnyhop, ultra |
@@ -153,7 +153,7 @@
 | k-04 | Normal | Normal | Normal | N/A | N/A | Normal |  |
 | k-05 | N/A | Normal | Normal | N/A | Expert | Normal | 1DF requires a couple corner kicks, not bad |
 | k-06 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible but would require death on entry, cut |
-| k-07 | N/A | Normal | Normal | N/A | N/A | N/A | Required death on (normal) entry, add golden detach... reverse possible but messes up golden detach, cut |
+| k-07 | N/A | Normal | Normal | N/A | N/A | N/A | Required death on (normal) entry, add golden detach... reverse possible but messes up golden detach, cut; reverse to secret exit works |
 | k-07s | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
 | k-08 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | k-09 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF requires bunnyhop, ultra |
@@ -181,7 +181,7 @@
 | m-07 | N/A | Normal | Normal | Normal | Normal | Normal |  |
 | m-08 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | m-08s | N/A | Expert | Expert | N/A | N/A | N/A | Key room, pretty jank so put in expert |
-| m-09 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible, cut due to changes needed |
+| m-09 | Hard | Normal | Normal | N/A | N/A | N/A | 0DF has really weird neutral right at beginning; reverse possible, cut due to changes needed |
 | m-10 | N/A | Normal | Normal | Hard | Normal | Normal |  |
 | m-11 | N/A | Normal | Normal | N/A | N/A | Normal | Needs reverse super |
 | m-12 | N/A | Hard, N/A (T, B) | Normal, N/A (B) | N/A | N/A | N/A | Orb launch room, no reverse |
@@ -219,7 +219,7 @@
 | p-02 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | p-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | p-04 | N/A | Hard | Hard | N/A | N/A | N/A | Secret exit requires 0 dashes |
-| p-04s | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
+| p-04s | Hard | Normal | Normal | N/A | N/A | N/A | Key room, for 0DF let second block fall a little then jump to the block |
 | p-05 | N/A | Expert | Hard | N/A | N/A | N/A |  |
 | q-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | q-02 | N/A | Hard | Normal | N/A | N/A | N/A |  |
@@ -276,7 +276,7 @@
 | u-09 | N/A | Perfect | Hard | N/A | N/A | N/A | 1DF very, very inconsistent, a couple very rough sections |
 | u-10 | N/A | Expert | Expert | N/A | N/A | N/A | Without secret path, "requires" demo... assume player takes intended route. Orb launch room (no reverse) |
 | v-00-lobby | - | - | - | - | - | - | Key hub, too complex for randomizer, cut |
-| v-00-upper | - | - | - | - | - | - | "Key hub", right side requires two dashes |
+| v-00-upper | - | - | - | - | - | - | Hub annoying for randomizer, cut |
 | v-00-upperer | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible, cut due to changes needed |
 | v-01 | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
 | v-02 | N/A | N/A | Normal | N/A | N/A | N/A | Key room, secret entrance cut |
@@ -327,7 +327,7 @@
 | y-10 | N/A | Normal | Normal | N/A | Normal | Normal |  |
 | y-11 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | y-12 | N/A | Perfect | Perfect | N/A | N/A | N/A | White block timing makes it Perfect... have to have timing memorized before entering room |
-| z-00 | Normal | Normal | Normal | Normal | Normal | Normal | Movement free, remove top switch/gate |
+| z-00 | - | - | - | - | - | - | Hub annoying for randomizer, cut |
 | z-01 | N/A | Hard | Hard | N/A | N/A | N/A | Requires tight bubble hyper, reverse possible but boring so cut |
 | z-02 | Hard | Hard | Normal | N/A | N/A | N/A | 1DF requires respawning core block tech, reverse possible but boring so cut |
 | z-03 | N/A | Normal | Normal | N/A | Normal | Normal | Weird space block tech but very readable |

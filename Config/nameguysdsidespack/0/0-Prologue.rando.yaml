@@ -7,7 +7,7 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -27,7 +27,7 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: in
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none
@@ -70,7 +70,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
-    #blocked
+    # blocked
     - Side: Up
       Idx: 0
       Kind: none

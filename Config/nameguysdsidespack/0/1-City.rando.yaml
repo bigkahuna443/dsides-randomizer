@@ -103,6 +103,10 @@ ASide:
       Y: 48
       Update:
         X: 448
+    - Name: "spikesLeft"
+      ID: 17429
+      Update:
+        Height: 40
       
   - Room: "a-03"
     Holes:

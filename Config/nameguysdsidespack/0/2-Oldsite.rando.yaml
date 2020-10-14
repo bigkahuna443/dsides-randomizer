@@ -41,9 +41,6 @@ ASide:
       Kind: inout
     # blocked
     - Side: Down
-      Idx: 0
-      Kind: none
-    - Side: Down
       Idx: 1
       Kind: none
     - Side: Down
@@ -54,6 +51,9 @@ ASide:
       Kind: none
     - Side: Down
       Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
       Kind: none
     InternalEdges:
     - Split: LeftToRight

@@ -131,6 +131,9 @@ ASide:
       - Side: Up
         Idx: 1
         Kind: inout
+        ReqOut:
+          Dashes: one
+          Difficulty: hard
     Tweaks:
     - Name: "templeGate"
       Update:
@@ -664,10 +667,13 @@ ASide:
     # blocked
     - Side: Down
       Idx: 0
+      Kind: none
     - Side: Down
       Idx: 1
+      Kind: none
     - Side: Down
       Idx: 2
+      Kind: none
     Tweaks:
     - Name: "spawn"
       Update:
@@ -707,6 +713,7 @@ ASide:
     # blocked
     - Side: Down
       Idx: 0
+      Kind: none
     Tweaks:
     - Name: "templeGate"
       ID: 201
@@ -727,6 +734,7 @@ ASide:
     # blocked
     - Side: Down
       Idx: 0
+      Kind: none
     Tweaks:
     - Name: "templeGate"
       ID: 9476
@@ -747,8 +755,10 @@ ASide:
     # blocked
     - Side: Down
       Idx: 0
+      Kind: none
     - Side: Down
       Idx: 1
+      Kind: none
     Tweaks:
     - Name: "templeGate"
       ID: 5128
@@ -786,6 +796,10 @@ ASide:
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
     Tweaks:
     - Name: "templeGate"
       ID: 22921

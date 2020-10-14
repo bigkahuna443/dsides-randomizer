@@ -328,6 +328,9 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
           
   - Room: "b-06"
     Core:

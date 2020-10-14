@@ -692,7 +692,7 @@ ASide:
       Idx: 0
       Kind: none
     - Side: Right
-      Idx: 0
+      Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
@@ -987,6 +987,10 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
     InternalEdges:
     - To: "exits"
       ReqBoth:
@@ -1219,6 +1223,9 @@ ASide:
       Update:
         Remove: true
     - Name: "exitBlock"
+      Update:
+        Remove: true
+    - Name: "invisibleBarrier"
       Update:
         Remove: true
     - Name: "jumpThru"
@@ -1624,6 +1631,11 @@ ASide:
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
+    Tweaks:
+    - Name: "jumpThru" # random void jumpthru
+      ID: 44932
+      Update:
+        Remove: true
       
   - Room: "d-11"
     Holes:
@@ -1850,8 +1862,11 @@ ASide:
     InternalEdges:
     - Split: BottomToTop
       ReqOut:
-        Dashes: one
-        Difficulty: expert
+        Or:
+        - Dashes: zero
+          Difficulty: perfect
+        - Dashes: one
+          Difficulty: expert
     Tweaks:
     - Name: "spawn"
       X: 8
@@ -1906,6 +1921,9 @@ ASide:
     # blocked
     - Side: Up
       Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
       Kind: none
     - Side: Down
       Idx: 0
@@ -1974,6 +1992,15 @@ ASide:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
+    - Name: "floatySpaceBlock"
+      ID: 7757
+      Update:
+        Width: 16
+    - Name: "spring"
+      ID: 8367
+      Update:
+        X: 160
+        Y: 584
         
   - Room: "dd-01"
     Holes:
@@ -2230,7 +2257,7 @@ ASide:
     InternalEdges:
     - Collectable: 0
       ReqOut:
-        Dashes: one
+        Dashes: zero
         Difficulty: hard
           
   - Room: "e-00"
@@ -2278,6 +2305,7 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
+      Launch: -1
     # blocked
     - Side: Left
       Idx: 0
@@ -2749,6 +2777,7 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
+      Launch: -1
     - Side: Left
       Idx: 0
       Kind: inout
@@ -2950,7 +2979,7 @@ ASide:
       Kind: inout
     # blocked
     - Side: Down
-      Idx: 0
+      Idx: 1
       Kind: none
     InternalEdges:
     - Split: LeftToRight
@@ -3074,6 +3103,14 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
+    InternalEdges:
+    - Split: LeftToRight
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
       
   - Room: "f-14"
     Holes:
@@ -3808,6 +3845,9 @@ ASide:
       Idx: 0
       Kind: inout
     # blocked
+    - Side: Left
+      Idx: 1
+      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
@@ -4579,8 +4619,11 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqBoth:
+      ReqOut:
         Dashes: zero
+        Difficulty: normal
+      ReqIn:
+        Dashes: one
         Difficulty: normal
         
   - Room: "j-04"
@@ -4671,9 +4714,6 @@ ASide:
     - Side: Up # secret exit dash block
       Idx: 0
       Kind: out
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
     # strange
     - Side: Up
       Idx: 1
@@ -5080,11 +5120,6 @@ ASide:
       Kind: in
       LowBound: 4
       HighBound: 5
-    # strange
-    - Side: Up
-      Idx: 1
-      Kind: in
-      HighBound: 47
     # blocked
     - Side: Up
       Idx: 1
@@ -5106,6 +5141,10 @@ ASide:
     Subrooms:
     - Room: "exits"
       Holes:
+      - Side: Up
+        Idx: 1
+        Kind: unknown
+        HighBound: 47
       - Side: Up
         Idx: 0
         Kind: out
@@ -5155,6 +5194,9 @@ ASide:
     - Name: "jumpThru"
       Update:
         Width: 8
+    - Name: "invisibleBarrier"
+      Update:
+        Remove: true
         
   - Room: "k-08"
     Holes:
@@ -5948,10 +5990,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    # strange
-    - Side: Up
-      Idx: 0
-      Kind: unknown
     # blocked
     - Side: Down
       Idx: 0
@@ -5972,8 +6010,14 @@ ASide:
     - Room: "secret"
       Holes:
       - Side: Up
+        Idx: 0
+        Kind: unknown
+      - Side: Up
         Idx: 1
         Kind: inout
+        ReqOut:
+          Dashes: one
+          Difficulty: normal
       InternalEdges:
       - To: "exit"
         ReqOut:
@@ -6011,9 +6055,6 @@ ASide:
       Idx: 1
       Kind: inout
       Launch: -1
-    - Side: Down
-      Idx: 2
-      Kind: out
     # blocked
     - Side: Up
       Idx: 0
@@ -6024,9 +6065,12 @@ ASide:
     - Side: Up
       Idx: 2
       Kind: none
+    - Side: Down # close off key exit, make it bubble back; routing confusing otherwise
+      Idx: 2
+      Kind: none
     InternalEdges:
     - Collectable: 0
-      ReqBoth:
+      ReqOut:
         Dashes: one
         Difficulty: expert
     Tweaks:
@@ -6037,18 +6081,18 @@ ASide:
     - Name: "crumbleBlock"
       Update:
         Remove: true
-    - Name: "spikesRight"
-      ID: 16280
-      Update:
-        Height: 104
     - Name: "exitBlock"
       Update:
         Remove: true
-    - Decal: bg
-      X: 188
-      Y: 132
+    - Name: "exitBlock"
       Update:
-        Remove: true
+        Add: true
+        X: 584
+        Y: 136
+        Width: 32
+        Height: 48
+        Values:
+          tileType: "c" # Pool Edges
           
   - Room: "m-09"
     Holes:
@@ -6059,8 +6103,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
     # blocked
     - Side: Down
       Idx: 0
@@ -7161,6 +7208,7 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
+      Launch: -1
     - Side: Right
       Idx: 0
       Kind: inout
@@ -7298,6 +7346,9 @@ ASide:
       Idx: 0
       Kind: out
       Launch: 4
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
     # blocked
     - Side: Left
       Idx: 0
@@ -7444,8 +7495,11 @@ ASide:
     InternalEdges:
     - Collectable: 0
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
           
   - Room: "p-05"
     Holes:
@@ -7488,6 +7542,12 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: in
+    - Side: Right
+      Idx: 1
+      Kind: out
+      ReqOut:
+        Dashes: one
+        Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -7497,6 +7557,9 @@ ASide:
       Kind: none
     - Side: Up
       Idx: 2
+      Kind: none
+    - Side: Right # secret entrance, pretty pointless in randomizer
+      Idx: 0
       Kind: none
     - Side: Down 
       Idx: 1
@@ -7534,20 +7597,6 @@ ASide:
     - Side: Down
       Idx: 12
       Kind: none
-    InternalEdges:
-    - To: "exits"
-      ReqOut:
-        Dashes: one
-        Difficulty: hard
-    Subrooms:
-    - Room: "exits"
-      Holes:
-      - Side: Right # secret entrance, pretty pointless in randomizer
-        Idx: 0
-        Kind: unknown
-      - Side: Right
-        Idx: 1
-        Kind: out
     Tweaks:
     - Name: "noRefillTrigger"
       Update:
@@ -7943,6 +7992,14 @@ ASide:
         Dashes: one
         Difficulty: normal
     Tweaks:
+    - Name: "spawn" # I am NOT finding the co-ordinates of these
+      Update:
+        Remove: true
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 16
+        Y: 136
     - Name: "noRefillTrigger"
       Update:
         Remove: true
@@ -8681,6 +8738,11 @@ ASide:
     - Name: "exitBlock"
       Update:
         Remove: true
+    - Name: "jumpThru"
+      ID: 28101
+      Update:
+        X: 24
+        Y: 24
         
   - Room: "t-03"
     Holes:
@@ -9377,41 +9439,11 @@ ASide:
         Remove: true
         
   # v-00-lobby cut, puzzle hub overly complex for randomizer
-        
-  # Currently no way to have multiple key requirements
-  - Room: "v-00-upper"
-    Holes:
-    - Side: Down
-      Idx: 0
-      Kind: out
-    - Side: Down
-      Idx: 1
-      Kind: inout
-    - Side: Up
-      Idx: 0
-      Kind: in
-    - Side: Up
-      Idx: 1
-      Kind: inout
-    - Side: Up
-      Idx: 2
-      Kind: out
-      ReqOut:
-        Dashes: two
-        Difficulty: normal
-        Key: true
-        KeyholeID: 32891
-    Tweaks:
-    - Name: "everest/changeInventoryTrigger"
-      Update:
-        Remove: true
-    - Name: "jumpThru"
-      ID: 33604
-      Update:
-        X: 104
-        Width: 16
-        
+  
+  # v-00-upper cut, annoying hub for randomizer
+
   - Room: "v-00-upperer"
+    Hub: true
     Holes:
     - Side: Down
       Idx: 0
@@ -9613,6 +9645,9 @@ ASide:
       Kind: none
     - Side: Down
       Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
       Kind: none
     InternalEdges:
     - Collectable: 0
@@ -10875,6 +10910,9 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
@@ -11568,64 +11606,7 @@ ASide:
       Idx: 6
       Kind: none
       
-  - Room: "z-00"
-    Hub: true
-    Holes:
-    - Side: Down
-      Idx: 0
-      Kind: out
-    - Side: Down
-      Idx: 1
-      Kind: inout
-    - Side: Up
-      Idx: 0
-      Kind: in
-    - Side: Up
-      Idx: 1
-      Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: out
-    Tweaks:
-    - Name: "checkpointBlockerTrigger"
-      Update:
-        Remove: true
-    - Name: "everest/changeInventoryTrigger"
-      Update:
-        Remove: true
-    - Name: "jumpThru"
-      ID: 43858
-      Update:
-        X: 128
-        Width: 8
-    - Name: "fgTiles"
-      X: 13
-      Y: 20
-      Update:
-        Tile: "m" # Lostlevels
-    - Name: "fgTiles"
-      X: 14
-      Y: 20
-      Update:
-        Tile: "m" # Lostlevels
-    - Name: "spikesRight"
-      Update:
-        Remove: true
-    - Name: "spikesLeft"
-      Update:
-        Remove: true
-    - Name: "dashSwitchV"
-      ID: 45632
-      Update:
-        Remove: true
-    - Name: "templeGate"
-      ID: 45617
-      Update:
-        Remove: true
-    - Name: "crumbleBlock"
-      ID: 45531
-      Update:
-        Remove: true
+  # z-00 cut, annoying hub for randomizer
         
   - Room: "z-01"
     Holes:
