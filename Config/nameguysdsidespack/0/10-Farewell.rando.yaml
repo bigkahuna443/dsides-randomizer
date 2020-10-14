@@ -6257,10 +6257,10 @@ ASide:
       Idx: 1
       Kind: none
     - Side: Down
-      Idx: 0
+      Idx: 1
       Kind: none
     - Side: Down
-      Idx: 1
+      Idx: 2
       Kind: none
     InternalEdges:
     - Split: "LeftToRight"
