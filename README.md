@@ -7,14 +7,17 @@ The config is designed to be compatible with the [Celeste Randomizer](https://gi
 
 **Note**: For the best experience, it is recommended to play the D-sides first before playing the randomizer add-on.
 
+
 Installation
 ------------
 **Note**: Running mods with Celeste requires you to have installed [Everest](https://everestapi.github.io/).
 
 1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
-2. The config is included by default and the D-sides will be available in the randomizer level select screen.
+2. Download the [Celeste Randomizer](https://gamebanana.com/tools/6848).
+3. The config is included by default within the D-sides pack, and the D-sides will be available in the randomizer level select screen.
 
 ![level select](docs/img/level_select.PNG)
+
 
 Difficulty Modes
 ----------------
