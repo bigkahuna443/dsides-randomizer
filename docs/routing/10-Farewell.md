@@ -153,7 +153,7 @@
 | k-04 | Normal | Normal | Normal | N/A | N/A | Normal |  |
 | k-05 | N/A | Normal | Normal | N/A | Expert | Normal | 1DF requires a couple corner kicks, not bad |
 | k-06 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible but would require death on entry, cut |
-| k-07 | N/A | Normal | Normal | N/A | N/A | N/A | Required death on (normal) entry, add golden detach... reverse possible but messes up golden detach, cut; reverse to secret exit works |
+| k-07 | N/A | Normal | Normal | Normal | Normal | Normal | |
 | k-07s | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
 | k-08 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | k-09 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF requires bunnyhop, ultra |

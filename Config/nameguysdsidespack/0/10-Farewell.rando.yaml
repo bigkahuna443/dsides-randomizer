@@ -5172,9 +5172,7 @@ ASide:
     Holes:
     - Side: Left
       Idx: 0
-      Kind: in
-      LowBound: 4
-      HighBound: 5
+      Kind: inout
     # blocked
     - Side: Up
       Idx: 1
@@ -5190,7 +5188,7 @@ ASide:
       Kind: none
     InternalEdges:
     - To: "exits"
-      ReqOut:
+      ReqBoth:
         Dashes: one
         Difficulty: normal
     Subrooms:
@@ -5207,17 +5205,14 @@ ASide:
         Idx: 0
         Kind: inout
     Tweaks:
-    - Name: detachFollowersTrigger
+    - Name: "spikesUp"
+      ID: 13992
       Update:
-        Add: true
-        X: 0
-        Y: 24
-        Width: 24
-        Height: 32
-        Nodes:
-        - Idx: 0
-          X: 80
-          Y: 40
+        Remove: true
+    - Name: "spikesDown"
+      ID: 13994
+      Update:
+        Remove: true
           
   - Room: "k-07s"
     Holes:

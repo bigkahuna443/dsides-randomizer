@@ -483,8 +483,11 @@ ASide:
         Dashes: zero
         Difficulty: normal
       ReqIn:
-        Dashes: two
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Subrooms:
     - Room: "switch"
       Flags:
@@ -1182,17 +1185,18 @@ ASide:
         - Dashes: two
           Difficulty: hard
     Tweaks:
-    - Name: detachFollowersTrigger
+    - Name: "spinner"
+      X: 8
       Update:
-        Add: true
-        X: 0
-        Y: 0
-        Width: 16
-        Height: 112
-        Nodes:
-        - Idx: 0
-          X: 136
-          Y: 120
+        Remove: true
+    - Name: "spinner"
+      X: 24
+      Update:
+        Remove: true
+    - Name: "spinner"
+      X: 40
+      Update:
+        Remove: true
       
   - Room: "d-08"
     ReqEnd:
