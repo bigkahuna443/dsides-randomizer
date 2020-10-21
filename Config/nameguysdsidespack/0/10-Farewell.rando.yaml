@@ -366,7 +366,6 @@ ASide:
         X: 596
         Y: 32
       
-  # Currently no way to have multiple key requirements
   - Room: "aa-00-lobby"
     Hub: true
     Holes:
@@ -392,8 +391,13 @@ ASide:
       ReqBoth:
         Dashes: one
         Difficulty: normal
-        Key: true
-        KeyholeID: 1243
+        And:
+        - Key: true
+          KeyholeID: 1242
+        - Key: true
+          KeyholeID: 1243
+        - Key: true
+          KeyholeID: 1244
     Subrooms:
     - Room: "exit"
       Holes:
@@ -1018,7 +1022,6 @@ ASide:
       Update:
         Remove: true
       
-  # Currently no way to have multiple key requirements
   - Room: "cc-00-lobby"
     Hub: true
     Holes:
@@ -1038,7 +1041,7 @@ ASide:
       Idx: 0
       Kind: inout
     InternalEdges:
-    - To: "upper"
+    - To: "midleft"
       ReqOut:
         Dashes: one
         Difficulty: normal
@@ -1046,24 +1049,46 @@ ASide:
         Dashes: zero
         Difficulty: normal
     Subrooms:
-    - Room: "upper"
+    - Room: "midleft"
+      Holes:
+      - Side: Left
+        Idx: 1
+        Kind: inout
+      InternalEdges:
+      - To: "topleft"
+        ReqBoth:
+          And:
+          - Key: true
+            KeyholeID: 3898
+          - Key: true
+            KeyholeID: 3899
+    - Room: "topleft"
       Holes:
       - Side: Left
         Idx: 0
         Kind: inout
-      - Side: Left
-        Idx: 1
-        Kind: inout
+      InternalEdges:
+      - To: "top"
+        ReqBoth:
+          And:
+          - Key: true
+            KeyholeID: 3900
+          - Key: true
+            KeyholeID: 3976
+    - Room: "top"
+      Holes:
       - Side: Up
         Idx: 0
         Kind: inout
-        ReqOut:
-          Key: true
-          KeyholeID: 3976
     Tweaks:
     - Name: "exitBlock"
       Update:
         Remove: true
+    - Name: "spawn" # prevents skipping keyblocks from top entrance
+      Update:
+        Add: true
+        X: 32
+        Y: 24
     - Name: "cameraOffsetTrigger"
       Update:
         Add: true
@@ -1934,9 +1959,6 @@ ASide:
     Hub: true
     Holes:
     - Side: Left
-      Idx: 0
-      Kind: in
-    - Side: Left
       Idx: 1
       Kind: inout
     - Side: Left
@@ -1963,16 +1985,36 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
+    # blocked
+    - Side: Left # creates 2-dash keyskip that breaks logic
+      Idx: 0
+      Kind: none
     InternalEdges:
     - To: "upper"
       ReqOut:
-        Key: true
-        KeyholeID: 8461
-        Dashes: one
-        Difficulty: normal
+       And:
+        - Key: true
+          KeyholeID: 8457
+        - Key: true
+          KeyholeID: 8458
+        - Key: true
+          KeyholeID: 8459
+        - Key: true
+          KeyholeID: 8460
+        - Key: true
+          KeyholeID: 8461
+        - Key: true
+          KeyholeID: 8462
+        - Key: true
+          KeyholeID: 8463
       ReqIn:
-        Key: true
-        KeyholeID: 8461
+        And:
+        - Key: true
+          KeyholeID: 8461
+        - Key: true
+          KeyholeID: 8462
+        - Key: true
+          KeyholeID: 8463
     Subrooms:
     - Room: "upper"
       Holes:
@@ -1992,7 +2034,20 @@ ASide:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
-    - Name: "floatySpaceBlock"
+    - Name: "changeRespawnTrigger"
+      Update:
+        Remove: true
+    - Name: "spawn" # prevents skipping keyblocks from top entrance
+      Update:
+        Add: true
+        X: 160
+        Y: 32
+    - Name: "fgTiles" # close off unused exit
+      X: 8
+      Y: 24
+      Update:
+        Tile: "m" # Lostlevels
+    - Name: "floatySpaceBlock" # fix 0-dash softlock
       ID: 7757
       Update:
         Width: 16
@@ -5323,6 +5378,9 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
@@ -6204,8 +6262,12 @@ ASide:
         Or:
         - Dashes: one
           Difficulty: hard
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
         - Dashes: two
           Difficulty: normal
+          Flag: books:unset
     # blocked
     - Side: Right
       Idx: 0
@@ -7746,7 +7808,7 @@ ASide:
       Update:
         Remove: true
     - Name: "spinner"
-      ID: 24573
+      ID: 24753
       Update:
         Remove: true
         
@@ -10933,15 +10995,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: out
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
     # blocked
     - Side: Up
       Idx: 0
@@ -10949,6 +11002,22 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    InternalEdges:
+    - To: "power"
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+    Subrooms:
+    - Room: "power"
+      Flags:
+      - poweroff:set
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: out
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
@@ -11782,7 +11851,6 @@ ASide:
         X: 16
         Width: 24
         
-  # Currently no way to have multiple key requirements
   - Room: "z-06"
     Holes:
     - Side: Down
@@ -11797,8 +11865,19 @@ ASide:
       Idx: 0
       Kind: inout
       ReqBoth:
-        Key: true
-        KeyholeID: 44706
+        And:
+        - Key: true
+          KeyholeID: 44684
+        - Key: true
+          KeyholeID: 44706
+        - Key: true
+          KeyholeID: 44715
+        - Key: true
+          KeyholeID: 44717
+        - Key: true
+          KeyholeID: 44720
+        - Key: true
+          KeyholeID: 44721
     # blocked
     - Side: Right
       Idx: 0
@@ -11860,7 +11939,6 @@ ASide:
       Update:
         Height: 288
         
-  # Currently no way to have multiple key requirements
   - Room: "z-moom"
     Holes:
     - Side: Down
@@ -11869,8 +11947,23 @@ ASide:
     InternalEdges:
     - Collectable: 0
       ReqBoth:
-        Key: true
-        KeyholeID: 44734
+        And:
+        - Key: true
+          KeyholeID: 44733
+        - Key: true
+          KeyholeID: 44734
+        - Key: true
+          KeyholeID: 44735
+        - Key: true
+          KeyholeID: 44741
+        - Key: true
+          KeyholeID: 44742
+        - Key: true
+          KeyholeID: 44743
+        - Key: true
+          KeyholeID: 44737
+        - Key: true
+          KeyholeID: 44738
     Tweaks:
     - Name: "jumpThru"
       ID: 44756

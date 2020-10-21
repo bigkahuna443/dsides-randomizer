@@ -31,7 +31,7 @@
 | c-01-heartgate | N/A | Expert | Expert | N/A | N/A | N/A |  |
 | c-02 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | Normal |  |
 | c-03 | N/A | Normal | Normal | N/A | Normal | Normal | 1 dash to secret exit, 0 dash from secret exit to normal exit |
-| cc-00-lobby | - | - | - | - | - | - | Key hub, upper exits require 1 dash, 3 key blocks removed due to randomizer limitations |
+| cc-00-lobby | - | - | - | - | - | - | Key hub, upper exits require 1 dash |
 | cc-01 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | cc-02 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | cc-03 | - | - | - | - | - | - | Cut - one-shot key room, won't work in randomizer |
@@ -60,7 +60,7 @@
 | d-17 | Perfect | Expert | Expert | N/A | N/A | N/A | 0DF has tricky refill grabs; possible in reverse if remove killbox but not interesting |
 | d-18 | N/A | Expert, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
 | d-19 | N/A | Expert | Hard | N/A | N/A | N/A |  |
-| dd-00-lobby | - | - | - | - | - | - | Key hub, upper exits require 1 dash, requires 7 keys, 6 removed due to randomizer not allowing multiple key requirements |
+| dd-00-lobby | - | - | - | - | - | - | Key hub |
 | dd-01 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
 | dd-02 | N/A | Expert | Hard | N/A | N/A | N/A | Key room, expert (1-2D) for secret exit (requires a demo at the end) |
 | dd-02s | N/A | Expert | Expert | N/A | N/A | N/A | Demo key room (not difficult, but demos go in expert+) |

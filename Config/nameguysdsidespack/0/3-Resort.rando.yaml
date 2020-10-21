@@ -84,12 +84,20 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
       ReqIn:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: two
         Difficulty: perfect
     Tweaks:
@@ -131,6 +139,10 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: normal
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
       
   - Room: "a-04"
     Holes:
@@ -156,12 +168,20 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
       ReqIn:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: expert
@@ -207,12 +227,20 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
       ReqIn:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: two
         Difficulty: perfect
     Tweaks:
@@ -244,6 +272,10 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqBoth:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: expert
@@ -269,15 +301,18 @@ ASide:
     - Side: Right
       Idx: 1
       Kind: in
-    # blocked
-    - Side: Left
-      Idx: 1
-      Kind: none
     InternalEdges:
     - To: "exits"
       ReqOut:
         Dashes: one
         Difficulty: hard
+    - To: "books"
+      ReqOut:
+        Flag: books:set
+      ReqIn:
+        Dashes: one
+        Difficulty: normal
+        Flag: books:set
     Subrooms:
     - Room: "exits"
       Holes:
@@ -290,6 +325,22 @@ ASide:
       - Side: Down
         Idx: 0
         Kind: out
+    - Room: "books"
+      Holes:
+      - Side: Left
+        Idx: 1
+        Kind: inout
+        ReqIn:
+          Flag: books:set
+    Tweaks:
+    - Name: "spawn"
+      X: 16
+      Y: 56
+      Update:
+        Default: true
+    - Name: "invisibleBarrier"
+      Update:
+        Remove: true
       
   - Room: "b-01a"
     Holes:
@@ -300,6 +351,10 @@ ASide:
       Idx: 1
       Kind: out
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: one
         Difficulty: normal
     Subrooms:
@@ -315,6 +370,10 @@ ASide:
       InternalEdges:
       - Split: RightToLeft
         ReqBoth:
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
           Dashes: one
           Difficulty: normal
     Tweaks:
@@ -342,6 +401,10 @@ ASide:
     InternalEdges:
     - Split: BottomToTop
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: one
         Difficulty: hard
     Subrooms:
@@ -356,6 +419,10 @@ ASide:
       InternalEdges:
       - Split: TopToBottom
         ReqOut:
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
           Dashes: one
           Difficulty: normal
     Tweaks:
@@ -370,45 +437,72 @@ ASide:
       Update:
         Default: true
       
-  # - Room: "b-01c" # Crates switch
-    # Holes:
-    # - Side: Down # should remove jumpthrus
-      # Idx: 1
-      # Kind: in
-    # - Side: Down # requires switch
-      # Idx: 0 
-      # Kind: out
-    # # blocked
-    # - Side: Left
-      # Idx: 0
-      # Kind: none
+  - Room: "b-01c" # Boxes switch
+    Flags:
+    - boxes:set
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: inout
+    - Side: Down
+      Idx: 0 
+      Kind: inout
+    # blocked
+    - Side: Left
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - Split: RightToLeft
+      ReqBoth:
+        Flag: boxes:set
+    Tweaks:
+    - Name: "jumpThru"
+      ID: 1324
+      Update:
+        Width: 24
+    - Name: "jumpThru"
+      ID: 3844
+      Update:
+        X: 216
+        Width: 24
   
   - Room: "b-02a" # Towels switch
     Holes:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Down
-      Idx: 0
-      Kind: inout
-    # blocked
-    - Side: Left
-      Idx: 1
-      Kind: none
-    - Side: Right
-      Idx: 0
-      Kind: none
     InternalEdges:
-    - Split: TopToBottom
+    - To: "switch"
+      ReqBoth:
+        Flag: towels:set
+    - To: "towel"
+      ReqBoth:
+        Flag: towels:set
+    - To: "exit"
       ReqOut:
         Dashes: zero
         Difficulty: normal
       ReqIn:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: two
+        Difficulty: normal
+    Subrooms:
+    - Room: "switch"
+      Flags:
+      - towels:set
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: inout
+    - Room: "towel"
+      Holes:
+      - Side: Left
+        Idx: 1
+        Kind: inout
+    - Room: "exit"
+      Holes:
+      - Side: Down
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "changeRespawnTrigger"
       Update:
@@ -436,9 +530,17 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: one
         Difficulty: hard
       ReqIn:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: expert
@@ -469,12 +571,20 @@ ASide:
     InternalEdges:
     - Split: RightToLeft
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
       ReqIn:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: two
         Difficulty: hard
         
@@ -488,6 +598,10 @@ ASide:
       Kind: out
       Launch: -1
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Dashes: one
         Difficulty: hard
     # blocked
@@ -538,15 +652,23 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
-          Difficulty: hard
+          Difficulty: normal
       ReqIn:
+        And:
+        - Flag: towels:unset
+        - Flag: books:unset
+        - Flag: boxes:unset
         Or:
         - Dashes: one
-          Difficulty: normal
+          Difficulty: expert
         - Dashes: two
           Difficulty: hard
     Tweaks:
@@ -563,15 +685,24 @@ ASide:
         X: 536
         Y: 88
           
-  # - Room: "b-03c" # Books switch
-    # Holes:
-    # - Side: Left
-      # Idx: 0
-      # Kind: inout
-    # # blocked
-    # - Side: Down
-      # Idx: 0
-      # Kind: none
+  - Room: "b-03c" # Books switch
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    # blocked
+    - Side: Down
+      Idx: 0
+      Kind: none
+    InternalEdges:
+    - To: "switch"
+      ReqBoth:
+        Dashes: one
+        Difficulty: normal
+    Subrooms:
+    - Room: "switch"
+      Flags: 
+      - books:set
   
   - Room: "c-01"
     Holes:
@@ -996,6 +1127,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: out
+      LowBound: 18
       HighBound: 19
       HighOpen: false
       ReqOut:
