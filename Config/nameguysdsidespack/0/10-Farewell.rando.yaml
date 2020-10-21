@@ -5167,6 +5167,11 @@ ASide:
       Y: 18
       Update:
         Tile: "4" # Girder
+    - Name: "fgTiles"
+      X: 2
+      Y: 19
+      Update:
+        Tile: "4" # Girder
         
   - Room: "k-07"
     Holes:

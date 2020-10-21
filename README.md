@@ -43,7 +43,7 @@ Known Issues / Planned Additions
 3. Currently most non-exits/entrances are disabled for now, which means the "Strange Holes" setting doesn't have a strong effect. I'll gradually add some strange holes in on a case-by-case basis, since turning them all on at once tends to break things.
 4. My skill level has definitely changed throughout labbing this, so some of my difficulty ratings may not be entirely consistent!
 5. A few 3D rooms may have some odd entrances/exits that are a half-tile off -- this is done to avoid softlocks due to how the roof decals are implemented.
-6. I will make the config compatible with new randomizer features as they are created.
+6. I will make the config compatible with new randomizer features as they are created (e.g. clutter flag/lightning routing is currently being worked).
 
 
 Contact
