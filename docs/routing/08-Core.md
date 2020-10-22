@@ -14,8 +14,8 @@
 | b-05 | N/A | N/A | Hard | N/A | N/A | N/A | 1DF requires weird off-ledge reverse super at beginning, really annoying, cut |
 | b-06 | N/A | N/A | Normal | N/A | N/A | N/A |  |
 | c-01 | N/A | N/A | Normal | N/A | N/A | N/A | 1DF possible, way too precise lava neutrals required so cut |
-| c-02 | N/A | N/A | Hard | N/A | N/A | N/A |  |
-| c-03 | N/A | Hard | Normal | N/A | N/A | N/A |  |
+| c-02 | N/A | Hard | Normal | N/A | N/A | N/A |  |
+| c-03 | N/A | N/A | Normal | N/A | N/A | N/A |  |
 | c-04 | N/A | N/A | Normal | N/A | N/A | N/A |  |
 | c-05 | N/A | N/A | Hard | N/A | N/A | N/A | 1DF possible but cut, requires ice wall neutral at beginning and near-pixel perfect Kevin interaction at end |
 | d-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |

@@ -229,7 +229,7 @@
 | q-06 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | q-07 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | q-08 | Expert | Normal | Normal | N/A | N/A | N/A | Tricky to figure out but not hard to execute, 0DF annoying precise bumper boost |
-| q-09 | N/A | Normal | Normal | N/A | N/A | N/A |  |
+| q-09 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | q-10 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | q-11 | N/A | Expert | Hard | Hard | Hard | Hard | 2DF has a cool skip, reverse requires hot mode from right entrance |
 | q-12 | N/A | Hard | Normal | N/A | N/A | N/A |  |

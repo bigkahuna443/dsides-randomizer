@@ -96,9 +96,9 @@ ASide:
       Right: cold
       Down: hot
     Holes:
-    - Side: Down
+    - Side: Down # can be exited, but prevents cooler reverse path from showing up
       Idx: 0
-      Kind: inout
+      Kind: in
     # blocked
     - Side: Down
       Idx: 1
@@ -140,11 +140,6 @@ ASide:
       Y: 160
       Update:
         Default: true
-    - Name: "jumpThru"
-      ID: 341
-      Update:
-        X: 40
-        Width: 8
     # Add a respawn change + core mode toggle in case the player gets the "there-and-back" spawn
     - Name: coreModeToggle
       Update:
@@ -399,8 +394,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: two
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
           
   - Room: "c-03"
     Core:
@@ -414,11 +412,8 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: two
+        Difficulty: normal
     # blocked
     - Side: Left
       Idx: 0

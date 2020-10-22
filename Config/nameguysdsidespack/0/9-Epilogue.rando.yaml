@@ -434,12 +434,12 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: in
-    - Side: Left
-      Idx: 1
-      Kind: in
     # blocked
     - Side: Left # cut some entrances so this ending is chosen less often
       Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 1
       Kind: none
     - Side: Up
       Idx: 0

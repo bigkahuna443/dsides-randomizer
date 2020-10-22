@@ -35,4 +35,4 @@
 | d-05 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | d-06 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | d-07 | N/A | Expert | Hard | N/A | N/A | N/A | Reverse path cut since not fun (14-second cycles), detach trigger added to left spawn |
-| d-08 | N/A | Expert | Normal | N/A | N/A | N/A |  |
+| d-08 | N/A | Expert | Normal | N/A | N/A | N/A | There's an easy cheese for this but not obvious |

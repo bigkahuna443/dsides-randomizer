@@ -65,7 +65,11 @@ ASide:
       Kind: none
     Tweaks:
     - Name: "spinner"
-      X: 136
+      ID: 5926
+      Update:
+        Remove: true
+    - Name: "spinner"
+      ID: 6091
       Update:
         Remove: true
       
@@ -928,6 +932,11 @@ ASide:
     - Side: Down
       Idx: 5
       Kind: none
+    ExtraSpace:
+    - X: 744
+      Y: -32
+      Width: 104
+      Height: 32
       
   - Room: "boss-02"
     Holes:
@@ -947,6 +956,12 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
+    ExtraSpace:
+    - X: 200
+      Y: -376
+      Width: 16
+      Height: 952 # screen height + ~2x block height
+      
       
   - Room: "boss-03"
     Holes:
@@ -977,9 +992,9 @@ ASide:
       Kind: none
     ExtraSpace:
     - X: 136
-      Y: 184
+      Y: -1064
       Width: 176
-      Height: 1096
+      Height: 2328 # screen height + ~2x block height
     - X: 464
       Y: 184
       Width: 16
@@ -1195,6 +1210,11 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    ExtraSpace:
+    - X: 688
+      Y: -24
+      Width: 16
+      Height: 24
       
   - Room: "boss-12"
     Holes:

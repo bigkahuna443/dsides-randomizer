@@ -283,6 +283,12 @@ ASide:
         Dashes: one
         Difficulty: normal
     Tweaks:
+    - Name: "glider" # if you spawn in this room, jelly falls before you can get it
+      ID: 554
+      Update:
+        Y: 72
+        Values:
+          bubble: true
     - Name: "invisibleBarrier"
       Update:
         Remove: true
@@ -7905,8 +7911,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       Update:
@@ -9455,9 +9464,9 @@ ASide:
             Difficulty: hard
     ExtraSpace:
     - X: 4960
-      Y: 184
+      Y: -144
       Width: 16
-      Height: 264
+      Height: 576 # screen height + ~2x block height
     - X: 7208
       Y: -24
       Width: 208
@@ -11050,6 +11059,11 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    ExtraSpace:
+    - X: 6360
+      Y: 64
+      Width: 80
+      Height: 64
       
   - Room: "y-01"
     Holes:
@@ -11187,6 +11201,12 @@ ASide:
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
+    Tweaks:
+    - Name: "jumpThru"
+      ID: 38663
+      Update:
+        X: 48
+        Width: 24
       
   - Room: "y-03"
     Holes:
