@@ -129,11 +129,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: normal
       ReqIn:
         Or:
         - Dashes: one
@@ -183,8 +180,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: zero
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
       ReqIn:
         Dashes: two
         Difficulty: perfect
@@ -236,7 +236,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard 
+          Difficulty: expert 
         - Dashes: two
           Difficulty: normal
       ReqIn:
@@ -283,7 +283,7 @@ ASide:
           Difficulty: normal
       ReqIn:
         Dashes: one
-        Difficulty: perfect
+        Difficulty: master
     Tweaks:
     - Name: "jumpThru"
       ID: 43630
@@ -333,16 +333,11 @@ ASide:
         Or:
         - Dashes: zero
           Difficulty: expert
-        - Dashes: one
-          Difficulty: hard
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
       ReqIn:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+        Dashes: one
+        Difficulty: expert
         
   - Room: "b-01"
     Holes:
@@ -435,7 +430,7 @@ ASide:
         - Dashes: one
           Difficulty: perfect
         - Dashes: two
-          Difficulty: expert
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 56
@@ -466,15 +461,9 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
+      ReqBoth:
         Dashes: one
         Difficulty: normal
-      ReqIn:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 24
@@ -514,7 +503,7 @@ ASide:
       ReqIn:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
         - Dashes: two
           Difficulty: hard
     Tweaks:
@@ -707,8 +696,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 64
@@ -836,11 +828,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: normal
       ReqIn:
         Or:
         - Dashes: one
