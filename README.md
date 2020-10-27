@@ -50,7 +50,7 @@ Known Issues / Planned Additions
 Contact
 -------
 
-If you encounter any issues/softlocks or have suggestions, you can reach me on Discord (Bigkahuna#0491), ping me in the #randomizer channel in the main [Celeste Discord](https://discord.gg/g8Mw3XH), or join the [D-Sides randomizer server](https://discord.gg/MahZcmr). To minimize issues, use the latest version of the config and the randomizer mod. Please include randomizer version, seed, and settings in any bug reports.
+If you encounter any issues/softlocks or have suggestions, you can reach me on Discord (Bigkahuna#0491), ping me in the #randomizer channel in the main [Celeste Discord](https://discord.gg/celeste), or join the [D-Sides randomizer server](https://discord.gg/MahZcmr). To minimize issues, use the latest version of the config and the randomizer mod. Please include randomizer version, seed, and settings in any bug reports.
 
 
 Credits
