@@ -11059,6 +11059,10 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    Tweaks:
+    - Name: "goldenBlock"
+      Update:
+        Remove: true
     ExtraSpace:
     - X: 6360
       Y: 64
