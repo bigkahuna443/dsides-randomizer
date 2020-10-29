@@ -13,7 +13,7 @@
 | b-01b (left) | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | b-01b (right) | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | b-01c | Normal | Normal | Normal | Normal | Normal | Normal | Crate switch room |
-| b-02a | Normal | Normal | Normal | N/A | Hard | Normal | Towels switch room, reverse path has weird tight diagonal (hold right from spinner then dash diag upleft) |
+| b-02a | Normal | Normal | Normal | N/A | Hard | Normal | Towels switch room, 1DR has weird tight diagonal (hold right from spinner then dash diag upleft) |
 | b-02b | N/A | Hard, Master (T), N/A (TB, TC) | Hard, N/A (TC) | N/A | Expert | Hard | 1DF (T) do a reverse ultra off the books, grab the crate, as the cycle changes do a hyper/demohyper off the gap |
 | b-02c | N/A | Hard, Expert (BC) | Normal | N/A | N/A | Hard | 1DF (BC) reverse hyper into the towels, jump over spinners once, then dash through the refills to the end |
 | b-03a | N/A | Hard, N/A (B) | Hard, Expert (TBC) | N/A | N/A | N/A | 2DR difficult cycles + max height corner jump, possible but removed due to shitty spawn (kills goldens because detach breaks forward path) |

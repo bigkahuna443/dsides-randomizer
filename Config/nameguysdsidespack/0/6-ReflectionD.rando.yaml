@@ -353,6 +353,21 @@ ASide:
       Y: 144
       Update:
         Default: true
+    - Name: "spawn"
+      X: 784
+      Y: 64
+      Update:
+        X: 760
+        Y: 72
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 752
+        Y: 16
+        Width: 16
+        Height: 56
+        Values:
+          cameraX: -1.0
       
   - Room: "a-12"
     Holes:

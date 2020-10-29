@@ -331,7 +331,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: hard
+        Difficulty: expert
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -496,7 +496,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: hard
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       X: 136
@@ -529,7 +529,7 @@ ASide:
       Kind: out
       ReqOut:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
     # blocked
     - Side: Up
       Idx: 0
@@ -616,7 +616,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: hard
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       X: 88
@@ -663,7 +663,28 @@ ASide:
       ReqOut:
         Dashes: two
         Difficulty: expert
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
     Tweaks:
+    - Name: "spawn"
+      X: 1592
+      Y: 72
+      Update:
+        X: 1576
+    - Name: "cameraOffsetTrigger"
+      ID: 197
+      Update:
+        Remove: true
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 1568
+        Y: 48
+        Width: 16
+        Height: 24
+        Values:
+          cameraX: -1.0
     - Name: "jumpThru"
       ID: 66783
       Update:
@@ -740,7 +761,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: hard
+        Difficulty: expert
       
   - Room: "d-04"
     Holes:
@@ -761,7 +782,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
       
   - Room: "d-05"
     Holes:
@@ -865,7 +886,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: hard
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       X: 64
@@ -892,7 +913,7 @@ ASide:
         - Dashes: one
           Difficulty: perfect
         - Dashes: two
-          Difficulty: expert
+          Difficulty: master
     Tweaks:
     - Name: "spawn"
       X: 48
@@ -911,7 +932,7 @@ ASide:
       HighBound: 16
       ReqOut:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
     # blocked
     - Side: Up
       Idx: 0
@@ -1002,7 +1023,7 @@ ASide:
       Kind: out
       ReqOut:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
     # blocked
     - Side: Down
       Idx: 0
@@ -1085,7 +1106,7 @@ ASide:
       Launch: 19
       ReqOut:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
     # blocked
     - Side: Left
       Idx: 0
@@ -1200,7 +1221,7 @@ ASide:
       Launch: 606
       ReqOut:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
     # blocked
     - Side: Left
       Idx: 0
@@ -1224,7 +1245,7 @@ ASide:
   - Room: "g-04"
     ReqEnd:
       Dashes: two
-      Difficulty: expert
+      Difficulty: master
     Holes:
     - Side: Down
       Idx: 0

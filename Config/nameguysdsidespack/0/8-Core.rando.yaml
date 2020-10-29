@@ -1,5 +1,5 @@
 ASide:
-  # a-00 removed (heart gate room)
+  # a-00 cut (heart gate room)
   
   - Room: "a-01"
     Core:
@@ -16,7 +16,7 @@ ASide:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
     # blocked
     - Side: Down
       Idx: 0
@@ -77,11 +77,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       ReqIn:
         Dashes: two
-        Difficulty: perfect
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -96,9 +99,9 @@ ASide:
       Right: cold
       Down: hot
     Holes:
-    - Side: Down # can be exited, but prevents cooler reverse path from showing up
+    - Side: Down
       Idx: 0
-      Kind: in
+      Kind: inout
     # blocked
     - Side: Down
       Idx: 1
@@ -111,13 +114,10 @@ ASide:
       ReqIn:
         Dashes: two
         Difficulty: hard
-    - To: "up"
+    - To: "up" # reverse route just a fall, cut
       ReqOut:
         Dashes: two
         Difficulty: expert
-      ReqIn:
-        Dashes: zero
-        Difficulty: normal
     Subrooms:
     - Room: "right"
       Holes:
@@ -140,6 +140,11 @@ ASide:
       Y: 160
       Update:
         Default: true
+    - Name: "jumpThru"
+      ID: 341
+      Update:
+        X: 40
+        Width: 8
     # Add a respawn change + core mode toggle in case the player gets the "there-and-back" spawn
     - Name: coreModeToggle
       Update:
@@ -182,8 +187,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: two
-        Difficulty: Normal
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Left
       Idx: 0
@@ -275,8 +283,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: two
-        Difficulty: expert
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: expert
           
   - Room: "b-04"
     Core:
@@ -297,11 +308,23 @@ ASide:
       ReqOut:
         Dashes: two
         Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
     Tweaks:
     - Name: "jumpThru"
       ID: 2111
       Update:
         Width: 24
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 760
+        Y: 32
+        Width: 40
+        Height: 32
+        Values:
+          cameraX: -0.8
           
   - Room: "b-05"
     Core:
@@ -314,8 +337,11 @@ ASide:
       Idx: 1
       Kind: out
       ReqOut:
-        Dashes: two
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -348,7 +374,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: two
-        Difficulty: normal
+        Difficulty: hard
     Tweaks:
     - Name: "jumpThru"
       ID: 1490
@@ -371,8 +397,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: two
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Down
       Idx: 0
@@ -449,8 +478,11 @@ ASide:
       Kind: out
       Launch: 31
       ReqOut:
-        Dashes: two
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Right
       Idx: 0
@@ -488,8 +520,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: two
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "jumpThru"
       ID: 963
@@ -520,6 +555,19 @@ ASide:
           Difficulty: perfect
         - Dashes: two
           Difficulty: hard
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
+    Tweaks:
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 984
+        Y: 64
+        Width: 32
+        Height: 88
+        Values:
+          cameraX: -0.75
           
   - Room: "d-03"
     Core:
@@ -541,8 +589,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       ReqIn:
         Dashes: two
         Difficulty: perfect
@@ -587,11 +638,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       ReqIn:
         Dashes: two
-        Difficulty: hard
+        Difficulty: perfect
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -648,7 +702,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: expert
     Tweaks:
     - Name: "jumpThru"
       ID: 1442
@@ -659,7 +713,7 @@ ASide:
   - Room: "space"
     ReqEnd:
       Dashes: two
-      Difficulty: expert
+      Difficulty: master
     Holes:
     - Side: Left
       Idx: 0

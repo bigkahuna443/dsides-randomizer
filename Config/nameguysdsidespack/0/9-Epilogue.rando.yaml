@@ -189,16 +189,30 @@ ASide:
       Idx: 0
       Kind: inout
       Launch: 7
-    - Side: Left # secret exit
-      Idx: 0
-      Kind: inout
     - Side: Up
       Idx: 0
       Kind: out
+      ReqOut:
+        Dashes: zero
+        Difficulty: hard
     # blocked
     - Side: Right
       Idx: 0
       Kind: none
+    InternalEdges:
+    - To: "secret"
+      ReqOut:
+        Dashes: zero
+        Difficulty: hard
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+    Subrooms:
+    - Room: "secret"
+      Holes:
+      - Side: Left
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "spawn"
       X: 64
@@ -211,15 +225,29 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: inout
-    - Side: Up
-      Idx: 0
-      Kind: inout
     - Side: Right # secret exit, dash block
       Idx: 0
       Kind: out
       ReqOut:
         Dashes: one
         Difficulty: normal
+    InternalEdges:
+    - To: "exit"
+      ReqOut:
+        Or:
+        - Dashes: zero
+          Difficulty: hard
+        - Dashes: one
+          Difficulty: normal
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "spikesLeft"
       Update:
@@ -263,7 +291,7 @@ ASide:
         - Dashes: one
           Difficulty: normal
       ReqIn:
-        Dashes: one
+        Dashes: zero
         Difficulty: normal
         
   - Room: "b-05"
@@ -397,7 +425,7 @@ ASide:
         Difficulty: normal
       ReqIn:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
     Subrooms:
     - Room: "secret"
       Holes:
@@ -451,9 +479,6 @@ ASide:
     - Name: "noRefillTrigger"
       Update:
         Remove: true
-    - Name: "spikesUp"
-      Update:
-        Remove: true
     - Name: "wallBooster" # makes room transition look less weird
       ID: 347
       Update:
@@ -479,11 +504,8 @@ ASide:
         Dashes: two
         Difficulty: normal
       ReqIn:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 264
