@@ -10,7 +10,7 @@
 | a-07 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | a-08 | N/A | Expert | Expert | N/A | N/A | N/A |  |
 | a-09 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| a-10 | N/A | Hard | Hard | N/A | N/A | Perfect | Forwards not awful, but have to hunt for the right cycle :/, 2DR requires reverse ultra + buffer climb jump |
+| a-10 | N/A | Hard | Hard | N/A | N/A | Master | Forwards not awful, but have to hunt for the right cycle :/, 2DR requires reverse ultra + buffer climb jump |
 | a-11 | N/A | Master | Normal | N/A | N/A | Perfect | 1DF is so. annoying. 2DR very precise updiag demos, has been done RTA like once |
 | a-12 | N/A | Normal | Normal | N/A | Expert | Hard | Reverse has tight gap over Kevin, demo makes easier |
 | a-13 | N/A | Hard | Normal | N/A | Expert | Normal | 1DF requires water wallbounce, 1DR requires corner jump or very precise turnaround |

@@ -3,124 +3,124 @@
 | a-00 | N/A | Normal | Normal | N/A | N/A | N/A | Launch in screen, no reverse |
 | a-00-intro | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | a-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| a-02 | N/A | Hard | Normal | N/A | Perfect | Normal | 1DR very precise final dash |
+| a-02 | N/A | Hard | Normal | N/A | Master | Hard | 1DR very precise final dash |
 | a-03 | N/A | Normal | Normal | N/A | Normal | Normal | Secret exit opened up, 0DF from normal exit to secret |
-| a-04 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| a-05 | N/A | Hard | Hard | N/A | Normal | Normal | Forward requires jellyvator |
-| a-06 | N/A | Normal | Normal | N/A | Normal | Normal |  |
+| a-04 | N/A | Expert | Expert | N/A | N/A | N/A | Requires weird jelly turnaround tech |
+| a-05 | N/A | Expert | Expert | N/A | Hard | Normal | Forward requires jellyvator |
+| a-06 | N/A | Hard | Normal | N/A | Hard | Normal | 1DF requires fish super, 1DR uses fish superboost but it's given to you |
 | a-07 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| a-08 | N/A | Hard | Hard | N/A | N/A | Hard | Requires jellyvator to bring jelly above seeker barrier OR throwing jelly between space blocks (e.g. if room has ceiling) |
-| a-09 | N/A | Hard | Normal | N/A | N/A | N/A |  |
+| a-08 | N/A | Expert | Expert | N/A | N/A | Expert | Forwards requires jellyvator to bring jelly above seeker barrier OR between space blocks (e.g. if room has ceiling); reverse requires very particular neutrals (need enough stamina to grab jelly at end), may raise |
+| a-09 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | a-10 | N/A | Normal | Normal | N/A | Expert | Expert | Reverse requires setupless corner jump |
 | aa-00-lobby | Normal | Normal | Normal | Normal | Normal | Normal | Key hub, movement free |
 | aa-01 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
-| aa-02 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A | Key room |
-| aa-03 | N/A | Hard | Hard | N/A | N/A | N/A | Key room, requires jellyvator |
-| aa-04 | N/A | Hard | Normal | N/A | N/A | N/A | Key room, right side 1DF requires jellyvator |
-| aa-05 | N/A | Hard | Hard | N/A | N/A | N/A | Requires jellyvator |
-| aa-06 | N/A | Hard | Hard | N/A | N/A | N/A | Requires jellyvator |
+| aa-02 | N/A | Normal (P), Expert | Normal | N/A | N/A | N/A | Key room, 1DF requires jellyvator |
+| aa-03 | N/A | Expert | Normal | N/A | N/A | N/A | Key room, 1DF requires jellyvator |
+| aa-04 | N/A | Expert | Normal | N/A | N/A | N/A | 1DF requires jellyator, left side key room, 1DF slightly tricky jelly grab |
+| aa-05 | N/A | Expert | Expert | N/A | N/A | N/A | Requires jellyvator |
+| aa-06 | N/A | Expert | Normal | N/A | N/A | N/A | 1DF requires jellyvator |
 | b-01 | N/A | Expert | Hard | N/A | N/A | N/A | Reverse possible but boring, cut |
-| b-02 | N/A | Hard | Normal | N/A | N/A | N/A | 2DR possible with pixel-perfect reverse cloud super near end, not fun, cut |
-| b-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| b-04 | N/A | Hard | Hard, Normal (ltng) | N/A | Normal | Normal | Requires jellyvator |
+| b-02 | N/A | Hard | Normal | N/A | N/A | Perfect | 2DR possible with really annoying reverse cloud super near end |
+| b-03 | N/A | Hard | Normal | N/A | N/A | N/A |  |
+| b-04 | N/A | Expert | Normal (P), Expert | N/A | Normal | Normal | Forwards requires jellyvator |
 | b-05 | N/A | Normal | Normal | N/A | N/A | N/A | Added jelly, usually requires from previous room |
 | b-06 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| b-07 | N/A | Expert | Hard | N/A | N/A | N/A |  |
-| b-08 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| b-09 | N/A | Expert, Hard (ltng) | Hard | N/A | N/A | N/A |  |
+| b-07 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF requires fish superboosts |
+| b-08 | N/A | Normal (P), Expert | Normal (P), Hard | N/A | N/A | Normal (P) | 1DF requires jellyvator |
+| b-09 | N/A | Expert | Expert | N/A | N/A | N/A | Requires jellyvators |
 | c-01-heartgate | N/A | Expert | Expert | N/A | N/A | N/A |  |
-| c-02 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | Normal |  |
+| c-02 | N/A | Hard | Normal | N/A | Normal (P), N/A | Normal |  |
 | c-03 | N/A | Normal | Normal | N/A | Normal | Normal | 1 dash to secret exit, 0 dash from secret exit to normal exit |
 | cc-00-lobby | - | - | - | - | - | - | Key hub, upper exits require 1 dash |
-| cc-01 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
+| cc-01 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
 | cc-02 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | cc-03 | - | - | - | - | - | - | Cut - one-shot key room, won't work in randomizer |
-| cc-04 | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
+| cc-04 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | cc-05 | N/A | Hard | Normal | N/A | N/A | N/A | Key room, removed respawn changes to prevent softlock (becomes harder) |
 | cc-06 | N/A | Hard | Normal | N/A | N/A | N/A | 2DR possible, not great spawn change option so cut |
-| cc-07 | N/A | Hard | Normal | N/A | N/A | Expert |  |
-| cc-08 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse possible, cut due to potential softlock if lockBlock spawns |
-| d-01 | N/A | Normal | Normal | N/A | N/A | N/A |  |
+| cc-07 | N/A | Expert | Hard | N/A | N/A | Master | 2DR requires a falling block reverse or very precise refill grab |
+| cc-08 | N/A | Hard | Normal | N/A | N/A | N/A | Reverse possible, but shitty spawn + uninteresting collectable so cut|
+| d-01 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | d-02 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | d-03 | N/A | Expert | Hard | N/A | N/A | N/A |  |
-| d-04 | N/A | Perfect | Expert | N/A | N/A | N/A | Final core block moves very frustrating, 2 dashes makes a bit better |
-| d-05 | N/A | Expert | Expert | N/A | N/A | N/A | 2DR possible, too precise to be fun |
-| d-06 | N/A | Expert | Hard | N/A | N/A | Hard |  |
-| d-07 | N/A | Expert | Expert | N/A | N/A | N/A | 2DR possible but way too precise, cut |
-| d-08 | N/A | Perfect | Hard | N/A | N/A | N/A | 2DR is ultimate hell, 1DF on the edge of expert/perfect |
-| d-09 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse requires nearly pixel perfect bumper hit... not fun, cut |
+| d-04 | N/A | Master | Expert | N/A | N/A | N/A | Final core block moves very frustrating, 2 dashes makes a bit better |
+| d-05 | N/A | Expert | Expert | N/A | N/A | Perfect | 2DR possible, very very precise |
+| d-06 | N/A | Hard | Hard | N/A | N/A | Expert | 2DR requires a weird bubble move + some tricky falling block stuff  |
+| d-07 | N/A | Master | Expert | N/A | N/A | Perfect | There are some magic strats that make forwards better but it sucks; 2DR has very very precise gaps at end, done RTA once |
+| d-08 | N/A | Master | Expert | N/A | N/A | Perfect | 2DR is cycle hell, 1DF on the edge of expert/perfect |
+| d-09 | N/A | Hard | Hard | N/A | Master | Hard | Weird bumper interaction, forwards easy but 1DR requires very precise dash |
 | d-10 | Expert | Expert | Hard | N/A | N/A | N/A |  |
-| d-11 | N/A | Perfect, Expert (ltng) | Expert, Normal (ltng) | N/A | N/A | N/A | 2DR possible but not fun, cut... 1DF has terrible jump at the end, still hurts w/o lightning |
-| d-12 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| d-11 | N/A | Expert (P), Master | Normal (P), Expert | N/A | N/A | Perfect | 2DR possible but very very precise, 1DF has terrible jump at the end, still hurts w/o lightning (there is a specific timing that works but it's hard to figure out)  |
+| d-12 | N/A | Expert | Hard | N/A | N/A | N/A |  |
 | d-12s | N/A | N/A | Normal | N/A | N/A | N/A | Key room, normally need bubble from d-12 |
-| d-13 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| d-14 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| d-15 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| d-16 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| d-17 | Perfect | Expert | Expert | N/A | N/A | N/A | 0DF has tricky refill grabs; possible in reverse if remove killbox but not interesting |
-| d-18 | N/A | Expert, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| d-19 | N/A | Expert | Hard | N/A | N/A | N/A |  |
+| d-13 | N/A | Expert | Hard | N/A | N/A | N/A |  |
+| d-14 | N/A | Hard | Hard | Master (P) | Normal (P) | Normal (P) | 0DR has rough corner jumps |
+| d-15 | N/A | Expert | Expert | N/A | N/A | N/A | Requires corner jumps with setups, 1DF also requires ice wallbounce with setup |
+| d-16 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF requires bumper superboosts |
+| d-17 | Perfect | Master | Master | N/A | N/A | N/A | 0DF has tricky refill grabs; possible in reverse if remove killbox but not interesting |
+| d-18 | N/A | Hard (P), Expert | Hard | N/A | N/A | N/A |  |
+| d-19 | N/A | Expert | Expert | N/A | N/A | N/A |  |
 | dd-00-lobby | - | - | - | - | - | - | Key hub |
 | dd-01 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
-| dd-02 | N/A | Expert | Hard | N/A | N/A | N/A | Key room, expert (1-2D) for secret exit (requires a demo at the end) |
-| dd-02s | N/A | Expert | Expert | N/A | N/A | N/A | Demo key room (not difficult, but demos go in expert+) |
+| dd-02 | N/A | Expert | Hard | N/A | N/A | N/A | Key room, 1DF dream hypers, secret demo exit |
+| dd-02s | N/A | Expert | Expert | N/A | N/A | N/A | "Demo" key room (not difficult, but demos go in expert+) |
 | dd-03 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
-| dd-04 | N/A | Expert | Expert | N/A | N/A | N/A | Key room |
-| dd-05 | N/A | Hard | Hard | N/A | N/A | N/A | Key room |
-| dd-06 | N/A | Expert | Normal | N/A | N/A | N/A | Key room |
-| dd-07 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
-| dd-08 | Hard | Hard | Hard | N/A | N/A | N/A | Key room, 0DF has tricky start but not too bad |
+| dd-04 | N/A | Expert | Hard | N/A | N/A | N/A | Key room |
+| dd-05 | N/A | Expert | Expert | N/A | N/A | N/A | Key room, corner jumps with setups |
+| dd-06 | N/A | Expert | Hard | N/A | N/A | N/A | Key room, 1DF is weird, better with ultras |
+| dd-07 | N/A | Expert | Expert | N/A | N/A | N/A | Key room, can skip touch switches to make easier, 1DF needs bumper superboost |
+| dd-08 | Expert | Hard | Hard | N/A | N/A | N/A | Key room, 0DF has tricky start |
 | e-00 | N/A | Hard | Normal | N/A | N/A | N/A | Key room + exit, can be done backwards easily but not interesting so cut... collectable may not get included |
-| e-01 | N/A | Hard | Normal | N/A | Perfect | Hard | 1DRd has very annoying jump at the beginning, 1DR+2DR have bubble jank at very end |
-| e-02 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires bunnyhop, ultra |
-| e-03 | N/A | Hard | Normal | N/A | Hard, Normal (ltng) | Normal |  |
-| e-04 | N/A | Hard | Normal | N/A | N/A | Normal |  |
-| e-05 | N/A | Hard, Normal (ltng) | Normal | N/A | Normal | Normal | 1DF requires bunnyhop, ultra |
-| f-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| f-02 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF requires dream hyper, ultra, bunny hop |
-| f-03 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A | 2DR possible, two shitty tight jumps at the beginning, don't see anyone playing w/o savestates so cut |
-| f-04 | N/A | Expert, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| f-05 | N/A | Hard | Normal | N/A | Normal | Normal |  |
-| f-06 | N/A | Hard | Normal | N/A | N/A | Normal |  |
-| f-07 | N/A | Hard | Hard, Normal (ltng) | N/A | N/A | N/A | Forwards requires bubble hyper/super, reverse possible but not super interesting + camera work complex, cut |
-| f-07s | Normal | Normal | Normal | Normal | Normal | Normal |  |
-| f-07ss | N/A | Hard | Normal | N/A | Normal | Normal | Has alternate free exit |
-| f-07sss | N/A | Hard | Normal | N/A | N/A | N/A | Key room, 1DF requires bubble hypers |
-| f-08 | N/A | Hard | Normal | N/A | N/A | Normal | 1DF requires bubble super/hyper |
-| f-09 | N/A | Expert | Hard | N/A | N/A | Normal |  |
-| f-10 | N/A | Hard | Normal | N/A | N/A | Hard | 2DR requires dashing near bottom of screen, demo makes easier but not necessary |
-| f-11 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires bubble super |
-| f-12 | N/A | Expert | Expert | N/A | N/A | N/A |  |
-| f-13 | N/A | Expert | Normal | N/A | N/A | N/A |  |
-| f-14 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| f-15 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF requires bubble super, 2DR possible but boring, cut |
-| f-16 | N/A | Hard | Normal | N/A | N/A | N/A | 2DR possible, cut because of crazy demos and weird corner dream dash |
-| f-17 | N/A | Hard | Normal | N/A | N/A | N/A | Reverse possible but boring, cut |
+| e-01 | N/A | Expert | Hard | N/A | Master | Expert | 1DF has water tech, Reverse has annoying bubble jank at very end |
+| e-02 | N/A | Expert | Hard | N/A | Normal | Normal | 1DF requires bunnyhop, ultra |
+| e-03 | N/A | Expert | Normal | N/A | Hard | Normal | 1DF requires bunnyhops, ultra |
+| e-04 | N/A | Expert | Hard | N/A | N/A | Hard | 1DF has chain ultras |
+| e-05 | N/A | Hard (P), Expert | Normal (P), Hard | N/A | Hard | Normal | 1DF requires bunnyhop, ultra |
 | f-00 | Normal | Normal | Normal | Normal | Normal | Normal |  |
-| f-99 | N/A | Perfect, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A | Reverse possible, but very long and requires two bad buffer moves back to back so cut |
+| f-01 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF dream hypers  |
+| f-02 | N/A | Expert | Normal | N/A | N/A | N/A | 1DF requires dream hyper, ultra, bunny hop |
+| f-03 | N/A | Normal (P), Expert | Normal (P), Expert | N/A | Normal (P) | Normal (P), Perfect | Forwards has buffered climb jump, 2DR has two shitty tight jumps at the beginning, sucks (done RTA once) |
+| f-04 | N/A | Hard (P), Expert | Hard | N/A | N/A | N/A |  |
+| f-05 | N/A | Expert | Hard | N/A | Hard | Normal | 1DF has awkward Oshiro super |
+| f-06 | N/A | Expert | Normal | N/A | N/A | Hard | 1DF has bubble bunnyhop |
+| f-07 | N/A | Expert | Expert, Normal (P) | N/A | N/A | N/A | Forwards requires bubble hyper/super, reverse possible but not super interesting + camera work complex, cut |
+| f-07s | Normal | Normal | Normal | Normal | Normal | Normal |  |
+| f-07ss | N/A | Expert | Normal | N/A | Normal | Normal | 1DF required fastbubbling, has alternate free exit |
+| f-07sss | N/A | Expert | Normal | N/A | N/A | N/A | Key room, 1DF requires bubble hypers |
+| f-08 | N/A | Hard | Normal | N/A | N/A | Normal | Forwards intends bubble hypers/supers but more obvious/easy path without them |
+| f-09 | N/A | Master | Expert | N/A | N/A | Normal |  |
+| f-10 | N/A | Hard | Normal | N/A | N/A | Hard | 2DR requires dashing near bottom of screen, demo makes easier but not necessary |
+| f-11 | N/A | Expert | Normal | N/A | Normal | Normal | 1DF requires reverse bubble super |
+| f-12 | N/A | Master | Master | N/A | N/A | N/A | Rough conveyor section + subpixel lava wallbounce  |
+| f-13 | N/A | Expert | Hard | N/A | N/A | N/A |  |
+| f-14 | N/A | Expert | Expert | N/A | N/A | N/A | Disappearing dream blocks |
+| f-15 | N/A | Expert | Normal | N/A | N/A | N/A | 1DF requires reverse bubble super, 2DR possible but boring, cut |
+| f-16 | N/A | Expert | Normal | N/A | N/A | N/A | 1DF requires dream hypers, 2DR possible but has bad spawn, cut |
+| f-17 | N/A | Expert | Normal | N/A | N/A | N/A | 1DF requires lava wallbounce, reverse possible but boring, cut |
+| f-99 | N/A | Expert (P), Master | Normal (P), Expert | N/A | Master (P), N/A | Normal (P), Perfect | Reverse very long, 2DR has two bad buffer moves at end, 1DR has tricky corner jump into wallbounce at end |
 | g-01 | Expert | Expert | Expert | N/A | Perfect | Perfect | Reverse requires corner jumps + tricky stamina management off space blocks |
-| g-02 | N/A | Expert | Expert | N/A | Expert | Hard | 1DR requires a couple corner jumps, 2DR can go without them (corner jump makes a bit easier) |
-| g-03 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| g-04 | N/A | Normal | Normal | N/A | N/A | Normal |  |
-| g-05 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A |  |
-| g-06 | N/A | Normal | Normal | N/A | N/A | Normal |  |
-| g-07 | N/A | Hard | Normal | Hard | Normal | Normal |  |
+| g-02 | N/A | Master | Master | N/A | Expert | Hard | 1DR requires a corner jump, 2DR can go without them (corner jump makes a bit easier) |
+| g-03 | N/A | Normal (P), Expert | Normal (P), Hard | N/A | N/A | N/A | 1DF has awkward dash under lightning |
+| g-04 | N/A | Hard | Normal | N/A | N/A | Normal |  |
+| g-05 | N/A | Normal (P), Hard | Normal (P), Hard | N/A | Perfect (P) | Hard (P) | 1DR have to do wacky demo-hyper, 2DR can just do extended |
+| g-06 | N/A | Hard | Normal | N/A | Hard (P) | Normal | Fun strat for 1DR where take left move block all the way to the end |
+| g-07 | N/A | Hard | Hard | Hard | Hard | Normal |  |
 | g-08 | N/A | Hard | Normal | N/A | N/A | Hard |  |
-| g-09 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| h-01 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | Normal |  |
-| h-02 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A | 1DF requires bubble hyper into ultra |
+| g-09 | N/A | Hard | Normal | Perfect (P) | Perfect (P) | Perfect (P) | Reverse requires wacky wallbounce with respawning refill |
+| h-01 | N/A | Normal (P), Hard | Normal | N/A | N/A | Normal |  |
+| h-02 | N/A | Normal (P), Hard | Normal | N/A | N/A | N/A | 1DF requires bubble hyper into ultra |
 | h-03 | N/A | Normal | Normal | N/A | Hard | Normal |  |
 | h-04 | N/A | Normal | Normal | N/A | Normal | Normal |  |
 | h-05 | N/A | Normal | Normal | Normal | Normal | Normal |  |
 | h-06 | N/A | Normal | Normal | N/A | Hard | Normal |  |
-| h-07 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A |  |
+| h-07 | N/A | Normal (P), Hard | Normal | N/A | N/A | N/A |  |
 | h-08 | Normal | Normal | Normal | Normal | Normal | Normal |  |
 | hh-01 | Normal | Normal | Normal | Normal | Normal | Normal |  |
 | hh-02 | N/A | Normal | Normal | N/A | Normal | Normal |  |
 | hh-03 | N/A | Normal | Normal | N/A | N/A | Normal |  |
 | hh-04 | Normal | Normal | Normal | Hard | Normal | Normal | 0DR "hard" because of weird core block behavior |
 | hh-05 | N/A | Normal | Normal | N/A | Normal | Normal |  |
-| hh-06 | Normal (ltng) | Normal | Normal | N/A | N/A | N/A |  |
+| hh-06 | Normal (P) | Normal | Normal | N/A | N/A | N/A |  |
 | hh-07 | Normal | Normal | Normal | Normal | Normal | Normal |  |
 | hh-08 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | i-01 | Normal | Normal | Normal | Normal | Normal | Normal |  |
@@ -233,10 +233,10 @@
 | q-10 | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | q-11 | N/A | Expert | Hard | Hard | Hard | Hard | 2DF has a cool skip, reverse requires hot mode from right entrance |
 | q-12 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-13 | Hard, Normal (ltng) | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A | Not that difficult but annoying precise part|
+| q-13 | Hard, Normal (P) | Normal (P), Hard | Normal (P), Hard | N/A | N/A | N/A | Not that difficult but annoying precise part|
 | r-00 | - | - | - | - | - | - | Unskippable heart gate, cut |
 | r-01 | N/A | Normal | Normal | N/A | N/A | Normal |  |
-| r-02 | Expert, Hard (ltng) | Expert, Hard (ltng) | Expert, Hard (ltng) | N/A | N/A | N/A | Offscreen cheese makes "Hard" but not always possible |
+| r-02 | Hard (P), Expert | Hard (P), Expert | Hard (P), Expert | N/A | N/A | N/A | Offscreen cheese makes "Hard" but not always possible |
 | r-03 | N/A | Normal | Normal | N/A | Perfect | Expert | 1DF requires multiple setupless corner jumps with difficult timing, 2DF requires a couple easier corner jumps |
 | r-04 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires cornerboost, reverse not interesting but intended so included |
 | r-05 | N/A | Hard | Hard | N/A | N/A | Expert | Forwards requires cornerboosts, reverse requires some tricky dashes + corner jump that sort of has a setup |
@@ -244,15 +244,15 @@
 | r-07p | Normal | Normal | Normal | N/A | Normal | Normal |  |
 | r-08p | N/A | Hard | Normal | N/A | N/A | N/A |  |
 | r-09p | N/A | Expert | Hard | N/A | N/A | Perfect | 2DR requires corner jump + precise dash refill/block grab |
-| r-10p | N/A | Perfect, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A | 1DF very hard fast cycles... 2DF skips first half, easier to save... reverse possible but boring, cut |
+| r-10p | N/A | Hard (P), Perfect | Normal (P), Hard | N/A | N/A | N/A | 1DF very hard fast cycles... 2DF skips first half, easier to save... reverse possible but boring, cut |
 | r-11p | N/A | Normal | Normal | N/A | Normal | Normal |  |
 | s-01 | N/A | Hard | Normal | N/A | N/A | Perfect | 1DF requires cassette jumps, 2DR requires either cassette jump at very precise point or corner jump into cassette jump |
 | s-02 | N/A | Hard | Hard | N/A | N/A | Expert | 1DF requires cassette jump + bunnyhop, 2DF requires bunnyhop, reverse requires bunnyhop, corner jump |
 | s-03 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| s-04 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | Normal | Normal | Forwards requires cassette jump if can't go offscreen |
-| s-05 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | Normal | 1DF requires cassette boosts |
-| s-06 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A | 1DF requires cornerboost |
-| s-07 | N/A | Expert, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A | 2DF makes everything more easily saveable |
+| s-04 | N/A | Normal (P), Hard | Normal (P), Hard | N/A | Normal | Normal | Forwards requires cassette jump if can't go offscreen |
+| s-05 | N/A | Normal (P), Hard | Normal | N/A | N/A | Normal | 1DF requires cassette boosts |
+| s-06 | N/A | Normal (P), Hard | Normal | N/A | N/A | N/A | 1DF requires cornerboost |
+| s-07 | N/A | Hard (P), Expert | Normal (P), Hard | N/A | N/A | N/A | 2DF makes everything more easily saveable |
 | s-08 | Normal | Normal | Normal | N/A | N/A | N/A | Orb launch room, no reverse |
 | t-01 | N/A | Expert | Hard | N/A | N/A | N/A | Offscreen strats make room easier but not always possible |
 | t-02 | N/A | Hard | Hard | N/A | N/A | N/A |  |
@@ -287,21 +287,21 @@
 | v-07 | N/A | N/A | Hard | N/A | Hard | Normal | Key room, cut switch + gate for secret exit, 1DR requires jelly neutral, no golden detach needed as is possible to make it back from both ends |
 | w-00 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | w-01 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| w-02 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A |  |
-| w-03 | N/A | Hard | Hard, Normal (ltng) | N/A | N/A | N/A | Requires ultra |
-| w-04 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
+| w-02 | N/A | Normal (P), Hard | Normal | N/A | N/A | N/A |  |
+| w-03 | N/A | Hard | Normal (P), Hard | N/A | N/A | N/A | Requires ultra |
+| w-04 | N/A | Normal (P), Hard | Normal (P), Hard | N/A | N/A | N/A |  |
 | w-05 | N/A | Normal | Normal | N/A | N/A | Normal |  |
-| w-06 | N/A | Hard | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| w-07 | N/A | Expert, Normal (ltng) | Expert, Normal (ltng) | N/A | N/A | N/A | A few precise moves, 2DF makes easier |
+| w-06 | N/A | Hard | Hard, Normal (P) | N/A | N/A | N/A |  |
+| w-07 | N/A | Normal (P), Expert | Normal (P), Expert | N/A | N/A | N/A | A few precise moves, 2DF makes easier |
 | w-08 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| w-09 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A | Fish boosts a little annoying |
-| w-10 | N/A | Expert, Hard (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
-| w-11 | N/A | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
+| w-09 | N/A | Normal (P), Hard | Normal | N/A | N/A | N/A | Fish boosts a little annoying |
+| w-10 | N/A | Hard (P), Expert | Normal (P), Hard | N/A | N/A | N/A |  |
+| w-11 | N/A | Normal (P), Hard | Normal (P), Hard | N/A | N/A | N/A |  |
 | w-12 | N/A | Hard | Normal | N/A | N/A | N/A | 2DR possible, cut due to changes needed |
-| w-13 | N/A | Hard, Normal (ltng) | Normal | N/A | N/A | N/A |  |
+| w-13 | N/A | Normal (P), Hard | Normal | N/A | N/A | N/A |  |
 | w-14 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF requires jellyvator |
 | w-15 | N/A | Expert | Hard | N/A | N/A | N/A | Forwards requires cassette jump(s), 2DR requires setupless corner jumps + very precise cycle timing |
-| x-01 | Normal (ltng) | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
+| x-01 | Normal (P) | Normal (P), Hard | Hard, Normal (P) | N/A | N/A | N/A |  |
 | x-02 | N/A | Hard | Normal | N/A | Normal | Normal | 1DF requires bunnyhop |
 | x-03 | N/A | Expert | Expert | N/A | N/A | N/A | If you know the ideal strat it's Hard, but otherwise it's really bad |
 | x-04 | N/A | Hard | Hard | N/A | N/A | N/A | Requires ultra at beginning |
@@ -312,7 +312,7 @@
 | x-09 | N/A | Hard | Hard | N/A | N/A | N/A | After the first time not super hard to execute |
 | x-10 | N/A | Expert | Hard | N/A | N/A | N/A |  |
 | x-11 | N/A | Hard | Hard | N/A | N/A | Normal | 1DF requires bubble hypers/supers, 2DF can do without but makes harder |
-| x-12 | Normal (ltng) | Hard, Normal (ltng) | Hard, Normal (ltng) | N/A | N/A | N/A |  |
+| x-12 | Normal (P) | Normal (P), Hard | Normal (P), Hard | N/A | N/A | N/A |  |
 | x-13 | N/A | Hard | Normal | N/A | N/A | N/A | Possible 2DR if electricity off (wait for conditional tweaks) |
 | x_99_final_goodbye | N/A | Perfect | Perfect | N/A | N/A | N/A |  |
 | y-01 | N/A | Normal | Normal | N/A | N/A | Normal |  |

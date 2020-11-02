@@ -2,10 +2,10 @@
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|-|
 | a-00 | N/A | Normal | Normal | N/A | N/A | N/A |  |
 | a-01 | N/A | Hard | Normal | N/A | Hard | Normal | 1DR uses refill respawn |
-| a-02 | N/A | Hard, N/A (T,B,C) | Normal, N/A (TB) | N/A | N/A | Perfect | 2DR very precise, cycle hell |
-| a-03 | N/A | Normal, Hard (BC') | Normal | N/A | N/A | N/A | 1DF BC' requires neutral |
+| a-02 | N/A | Hard, N/A (T,B,C) | Normal, N/A (TB) | N/A | Perfect (T'B'C), N/A (T,B,C') | Hard (TB'C, T'B'C), Expert, Perfect (T'BC', TB'C'), N/A (TB, BC) | This screen is very complicated :(|
+| a-03 | N/A | Normal, Hard (BC') | Normal | N/A | Normal (C), N/A | Normal (C), N/A | 1DF BC' requires neutral |
 | a-04 | N/A | Hard | Hard | N/A | Normal | Normal |  |
-| a-05 | N/A | Expert, N/A (TB,TC) | Normal, Hard (TBC) | N/A | Expert | Hard | 1DF frustrating but has skips; (T) has tight dash to books block, 1DR + 2DR not very difficult, but some tricky non-obvious dashes at the beginning |
+| a-05 | N/A | Expert, N/A (TB,TC) | Normal, Hard (TBC) | N/A | Expert, N/A (TB, TC, BC) | Hard | 1DF frustrating but has skips; (T) has tight dash to books block, 1DR + 2DR not very difficult, but some tricky non-obvious dashes at the beginning |
 | a-06 | N/A | Expert | Hard | N/A | Expert | Hard | 1DF tricky cycles + needs 5jump |
 | b-00 | N/A | Hard | Hard | N/A | Hard | Hard | Hub room, designed to be completed in all directions |
 | b-01a (left) | N/A | Normal | Normal | N/A | Normal | Normal |  |
@@ -14,10 +14,10 @@
 | b-01b (right) | N/A | Hard | Hard | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | b-01c | Normal | Normal | Normal | Normal | Normal | Normal | Crate switch room |
 | b-02a | Normal | Normal | Normal | N/A | Hard | Normal | Towels switch room, 1DR has weird tight diagonal (hold right from spinner then dash diag upleft) |
-| b-02b | N/A | Hard, Master (T), N/A (TB, TC) | Hard, N/A (TC) | N/A | Expert | Hard | 1DF (T) do a reverse ultra off the books, grab the crate, as the cycle changes do a hyper/demohyper off the gap |
+| b-02b | N/A | Hard, Master (T), N/A (TB, TC) | Hard, N/A (TC) | N/A | Expert (T', TB'C') | Hard (T', TB'C'), Expert (TBC'), Master (TB'C) | 1DF (T) uses reverse into ultra, 2DR (Master) uses bunnyhop off of dust bunnies in water (not obvious at all) |
 | b-02c | N/A | Hard, Expert (BC) | Normal | N/A | N/A | Hard | 1DF (BC) reverse hyper into the towels, jump over spinners once, then dash through the refills to the end |
 | b-03a | N/A | Hard, N/A (B) | Hard, Expert (TBC) | N/A | N/A | N/A | 2DR difficult cycles + max height corner jump, possible but removed due to shitty spawn (kills goldens because detach breaks forward path) |
-| b-03b | N/A | Hard, N/A (B) | Normal | N/A | Master | Normal | 1DF has some very precise cycles |
+| b-03b | N/A | Hard, N/A (B) | Normal | N/A | Master (T'B, BC'), N/A (B, TC) | Hard (B'), N/A (B) | 1DR has some very precise cycles |
 | b-03c | Normal | Normal | Normal | Normal | Normal | Normal | Books switch room |
 | c-01 | N/A | Hard | Normal | N/A | N/A | N/A | Reverse possible but cut, boring falling room |
 | c-02 | N/A | Hard | Hard | N/A | N/A | N/A | Forwards second half not bad once you figure out cycle, reverse possible but cut, boring falling room |

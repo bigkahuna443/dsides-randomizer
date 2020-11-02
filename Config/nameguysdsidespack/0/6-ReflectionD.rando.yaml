@@ -296,7 +296,7 @@ ASide:
         Difficulty: hard
       ReqIn:
         Dashes: two
-        Difficulty: perfect
+        Difficulty: master
     Tweaks:
     - Name: "spawn"
       X: 56

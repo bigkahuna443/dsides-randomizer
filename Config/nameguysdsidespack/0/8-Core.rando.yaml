@@ -114,10 +114,13 @@ ASide:
       ReqIn:
         Dashes: two
         Difficulty: hard
-    - To: "up" # reverse route just a fall, cut
+    - To: "up"
       ReqOut:
         Dashes: two
         Difficulty: expert
+      ReqIn:
+        Dashes: zero
+        Difficulty: normal
     Subrooms:
     - Room: "right"
       Holes:
