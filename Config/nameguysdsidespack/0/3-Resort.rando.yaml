@@ -234,10 +234,6 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - To: "secret"
-      ReqIn:
-        Dashes: one
-        Difficulty: normal
     - To: "exit"
       ReqOut:
         Dashes: one
@@ -352,7 +348,7 @@ ASide:
       Idx: 1
       Kind: none
     InternalEdges:
-    - Split: LeftToRight
+    - To: "exit"
       ReqOut:
         Or:
         - Dashes: one
@@ -570,9 +566,6 @@ ASide:
     - Side: Down
       Idx: 1
       Kind: inout
-    - Side: Down
-      Idx: 0 
-      Kind: inout
     # blocked
     - Side: Left
       Idx: 0
@@ -582,13 +575,18 @@ ASide:
       ReqBoth:
         Dashes: one
         Difficulty: normal
-    - Split: RightToLeft
+    - To: "exit"
       ReqBoth:
         Flag: boxes:set
     Subrooms:
-    - Name: "switch"
+    - Room: "switch"
       Flags:
       - boxes:set
+    - Room: "exit"
+      Holes:
+      - Side: Down
+        Idx: 0 
+        Kind: inout
     Tweaks:
     - Name: "jumpThru"
       ID: 1324

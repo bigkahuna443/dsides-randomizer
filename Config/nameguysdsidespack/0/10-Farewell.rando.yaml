@@ -1872,13 +1872,13 @@ ASide:
           Flag: poweroff:set
         - Dashes: two
           Difficulty: perfect
-      Tweaks:
-      - Name: "spawn"
-        X: 1568
-        Y: 16
-        Update:
-          X: 1552
-          Y: 24
+    Tweaks:
+    - Name: "spawn"
+      X: 1568
+      Y: 16
+      Update:
+        X: 1552
+        Y: 24
     - Name: "cameraOffsetTrigger"
       ID: 6181
       Update:
@@ -3913,7 +3913,8 @@ ASide:
         Dashes: one
         Difficulty: hard
       ReqIn:
-        - Dashes: one
+        Or:
+        - Dashes: zero
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
