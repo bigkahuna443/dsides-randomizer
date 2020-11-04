@@ -174,66 +174,66 @@
 | l-11 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF has cornerjump with setup; orb launch room, no reverse |
 | m-01 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF has cornerjump with setup |
 | m-02 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| m-03 | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
-| m-04 | N/A | Hard | Normal | N/A | Normal | Normal | Reverse has kind of tight dash at end but not quite "Hard" |
+| m-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| m-04 | N/A | Expert | Normal | N/A | Hard | Hard | Reverse has kind of tight dash at end |
 | m-05 | Expert | Expert | Expert | Expert | Expert | Expert | Not super difficult but I would be upset if I got this in a "Hard" run |
-| m-06 | N/A | Hard | Hard | N/A | N/A | N/A | 2DR possible but cut, very precise land on falling block with dust bunny + Oshiro cycle...  |
-| m-07 | N/A | Normal | Normal | Normal | Normal | Normal |  |
-| m-08 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| m-08s | N/A | Expert | Expert | N/A | N/A | N/A | Key room, pretty jank so put in expert |
-| m-09 | Hard | Normal | Normal | N/A | N/A | N/A | 0DF has really weird neutral right at beginning; reverse possible, cut due to changes needed |
-| m-10 | N/A | Normal | Normal | Hard | Normal | Normal |  |
-| m-11 | N/A | Normal | Normal | N/A | N/A | Normal | Needs reverse super |
-| m-12 | N/A | Hard, N/A (T, B) | Normal, N/A (B) | N/A | N/A | N/A | Orb launch room, no reverse |
-| m-13 | N/A | Expert | Hard | N/A | N/A | N/A | Orb launch room, no reverse |
-| n-01 | N/A | Normal | Normal | N/A | Normal | Normal |  |
-| n-02 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| n-03 | N/A | Hard | Hard | N/A | N/A | Hard |  |
-| n-04 | N/A | Hard | Hard | N/A | N/A | Hard | 0/1DR possible but requires really annoying pixel perfect jump in beginning, cut |
-| n-05 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| n-06 | N/A | Hard | Normal | N/A | N/A | N/A | 1/2DR possible but not interesting, cut |
+| m-06 | N/A | Expert | Hard | N/A | N/A | N/A | 2DR possible but cut, very precise land on falling block with dust bunny + Oshiro cycle, hasn't been done RTA |
+| m-07 | N/A | Hard | Normal | Hard | Normal | Normal |  |
+| m-08 | N/A | Expert | Expert | N/A | N/A | N/A | Weird fastbubble cycles |
+| m-08s | N/A | Master | Master | N/A | N/A | N/A | Key room, very jank |
+| m-09 | Expert | Hard | Hard | N/A | N/A | N/A | 0DF has really weird turnaround neutral right at beginning; reverse possible, cut due to changes needed |
+| m-10 | N/A | Normal | Normal | Hard | Hard | Normal | Reverse has annoying anti-cycle jumps |
+| m-11 | N/A | Hard | Hard | N/A | N/A | Hard | 2DR needs reverse super |
+| m-12 | N/A | Hard, N/A (T, B) | Normal, Hard (TC), N/A (B) | N/A | N/A | N/A | Orb launch room, no reverse |
+| m-13 | N/A | Master | Hard | N/A | N/A | N/A | Orb launch room, no reverse |
+| n-01 | N/A | Expert | Normal | N/A | Normal | Normal | 1DF requires bubble hyper |
+| n-02 | N/A | Hard | Normal | N/A | N/A | N/A |  |
+| n-03 | N/A | Expert | Expert | N/A | N/A | Hard | Forwards has required fastbubble section |
+| n-04 | N/A | Expert | Hard | Perfect | Perfect | Hard | 0/1DR require really annoying pixel perfect jump in beginning |
+| n-05 | N/A | Expert | Expert | N/A | N/A | N/A | Basically a demohyper with a setup |
+| n-06 | N/A | Expert | Expert | N/A | N/A | N/A | Forwards has move block break boost tech 1/2DR possible but not interesting, cut |
 | n-07 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| n-08 | N/A | Expert | Hard | N/A | Hard | Normal |  |
-| n-09 | N/A | Hard | Normal | N/A | N/A | N/A | 1DF simple but very tight, cornerjump makes easier, secret exit normal |
-| n-09s | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
+| n-08 | N/A | Master | Hard | N/A | Expert | Hard |  |
+| n-09 | N/A | Hard | Hard | N/A | N/A | N/A | 1DF simple but very tight, cornerjump makes easier, secret exit normal |
+| n-09s | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | n-10 | N/A | Hard | Hard | N/A | Hard | Hard |  |
-| n-11 | N/A | Hard | Hard | N/A | N/A | N/A | Long screen but pretty simple execution... 2DR requires super precise annoying moves, cut |
-| n-12 | N/A | Expert | Hard | N/A | N/A | N/A |  |
-| n-13 | N/A | Expert | Hard | N/A | N/A | N/A | Orb launch room, no reverse |
-| o-o1outside | N/A | Hard | Normal | N/A | N/A | N/A | No reverse - dashblock on entry softlocks |
-| o-02 | N/A | N/A | N/A | N/A | N/A | Hard | 2DR a little tricky to figure out but not hard to execute, forward path cut - needs pixel-perfect lineup OR hyper from other room (not always possible) |
-| o-03 | N/A | Normal | Normal | N/A | N/A | N/A | Reverse is cool + possible, but pixel-perfect jump so cut |
-| o-04 | N/A | Hard | Normal | N/A | N/A | N/A | Reverse possible but not super interesting so cut |
-| o-05 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| o-06 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| o-07 | N/A | Expert | Hard | N/A | N/A | N/A | Secret exit needs 1 dash |
-| o-08 | N/A | Normal | Normal | Normal | Normal | Normal |  |
-| o-09 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| o-10 | N/A | Normal | Normal | N/A | N/A | N/A | Secret exit needs 1 dash |
-| o-10s | N/A | Normal | Normal | N/A | N/A | N/A | Key room |
+| n-11 | N/A | Expert | Expert | N/A | N/A | Perfect | Snowball section timed out, have to find cycle... 1DF requires bubble hypers, 2DR requires super precise annoying moves |
+| n-12 | N/A | Expert | Expert | N/A | N/A | N/A | Demohyper with setup |
+| n-13 | N/A | Master | Expert | N/A | N/A | N/A | Orb launch room, no reverse |
+| o-01outside | N/A | Hard | Normal | N/A | N/A | N/A | No reverse - dashblock on entry softlocks |
+| o-02 | N/A | Perfect | Perfect | N/A | N/A | Hard | 1DF pixel perfect dash into gap, 2DR a little tricky to figure out but not hard to execute, forward path cut - needs pixel-perfect lineup OR hyper from other room (not always possible) |
+| o-03 | N/A | Hard | Hard | N/A | N/A | N/A | Reverse is cool + possible, but pixel-perfect jump so cut |
+| o-04 | N/A | Expert | Hard | N/A | N/A | N/A | Reverse possible but not super interesting so cut |
+| o-05 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| o-06 | N/A | Expert | Hard | N/A | N/A | N/A |  |
+| o-07 | N/A | Expert | Expert | N/A | N/A | N/A | Tricky fastbubble section, may raise difficulty; secret exit needs 1 dash |
+| o-08 | N/A | Normal | Normal | Normal | Normal | Normal | Secret exit cut, needs bubble  |
+| o-09 | N/A | Hard | Normal | N/A | N/A | N/A |  |
+| o-10 | N/A | Hard | Normal | N/A | N/A | N/A | Secret exit needs 1 dash |
+| o-10s | N/A | Hard | Normal | N/A | N/A | N/A | Key room |
 | o-11 | N/A | Normal | Normal | N/A | N/A | N/A | Key room, secret exit disabled (requires bubble from last room) |
-| o-12 | N/A | Expert | Hard | N/A | N/A | N/A |  |
-| o-13 | N/A | Expert | Hard | N/A | N/A | N/A | Some rough seeker jank, orb launch room (no reverse) |
-| o-14 | N/A | Perfect | Expert | N/A | N/A | N/A | Orb launch room, no reverse |
-| p-01 | N/A | Hard | Hard | N/A | N/A | N/A | Orb launch room, no reverse |
-| p-02 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| p-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| p-04 | N/A | Hard | Hard | N/A | N/A | N/A | Secret exit requires 0 dashes |
-| p-04s | Hard | Normal | Normal | N/A | N/A | N/A | Key room, for 0DF let second block fall a little then jump to the block |
-| p-05 | N/A | Expert | Hard | N/A | N/A | N/A |  |
-| q-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| q-02 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-03 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-04 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-05 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-06 | N/A | Normal | Normal | N/A | N/A | N/A |  |
-| q-07 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-| q-08 | Expert | Normal | Normal | N/A | N/A | N/A | Tricky to figure out but not hard to execute, 0DF annoying precise bumper boost |
-| q-09 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-10 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-11 | N/A | Expert | Hard | Hard | Hard | Hard | 2DF has a cool skip, reverse requires hot mode from right entrance |
-| q-12 | N/A | Hard | Normal | N/A | N/A | N/A |  |
-| q-13 | Hard, Normal (P) | Normal (P), Hard | Normal (P), Hard | N/A | N/A | N/A | Not that difficult but annoying precise part|
+| o-12 | N/A | Expert | Expert | N/A | N/A | N/A |  |
+| o-13 | N/A | Expert | Expert | N/A | N/A | N/A | Some rough seeker jank, orb launch room (no reverse) |
+| o-14 | N/A | Master | Expert | N/A | N/A | N/A | Orb launch room, no reverse |
+| p-01 | N/A | Expert | Hard | N/A | N/A | N/A | Orb launch room, no reverse |
+| p-02 | N/A | Expert | Expert | N/A | N/A | N/A |  |
+| p-03 | N/A | Expert | Expert | N/A | N/A | N/A |  |
+| p-04 | N/A | Expert | Hard | N/A | N/A | N/A | Secret exit cut, potential softlock |
+| p-04s | Expert | Hard | Hard | N/A | N/A | N/A | Key room, for 0DF let second block fall a little then jump to the block |
+| p-05 | N/A | Master | Expert | N/A | N/A | N/A |  |
+| q-01 | N/A | Expert | Expert | N/A | N/A | N/A |  |
+| q-02 | N/A | Expert | Expert | N/A | N/A | N/A | Lava wallbounces with setups |
+| q-03 | N/A | Expert | Hard | N/A | N/A | N/A |  |
+| q-04 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| q-05 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF rough w/o buffered climb jumps |
+| q-06 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| q-07 | N/A | Expert | Expert | N/A | N/A | N/A | Second half easier with neutrals while grabbing |
+| q-08 | Perfect | Expert | Expert | N/A | N/A | N/A | Requires bumper superboost + weird jelly boost, 0DF annoying precise turnaround |
+| q-09 | N/A | Hard | Hard | N/A | N/A | N/A |  |
+| q-10 | N/A | Expert | Expert | N/A | N/A | N/A | Requires feather ricochets |
+| q-11 | N/A | Master | Expert | Expert | Expert | Expert | 2DF has a cool skip, reverse requires hot mode from right entrance |
+| q-12 | N/A | Expert | Expert | N/A | N/A | N/A | Requires lava wallbounce with setup |
+| q-13 | Normal (P), Hard | Normal (P), Hard | Normal (P), Hard | Normal (P), N/A | Normal (P), N/A | Normal (P), N/A | Not that difficult but annoying precise part|
 | r-00 | - | - | - | - | - | - | Unskippable heart gate, cut |
 | r-01 | N/A | Normal | Normal | N/A | N/A | Normal |  |
 | r-02 | Hard (P), Expert | Hard (P), Expert | Hard (P), Expert | N/A | N/A | N/A | Offscreen cheese makes "Hard" but not always possible |
