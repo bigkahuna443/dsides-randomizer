@@ -1787,13 +1787,13 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: hard
+        Difficulty: expert
       ReqIn:
         Or:
         - Dashes: one
           Difficulty: master
         - Dashes: two
-          Difficulty: hard
+          Difficulty: expert
       
   - Room: "d-10"
     Holes:
@@ -10056,7 +10056,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: perfect
+          Difficulty: master
         - Dashes: two
           Difficulty: expert
     Subrooms:
@@ -10075,7 +10075,7 @@ ASide:
         ReqOut:
           Or:
           - Dashes: one
-            Difficulty: perfect
+            Difficulty: master
           - Dashes: two
             Difficulty: expert
     ExtraSpace:
@@ -10470,8 +10470,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10514,10 +10517,29 @@ ASide:
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
+          Flag: poweroff:set
+      ReqIn:
+        Dashes: two
+        Difficulty: hard
+        Flag: poweroff:set
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 1256
+        Y: 160
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 1248
+        Y: 112
+        Width: 16
+        Height: 48
+        Values:
+          cameraX: -1.5
         
   - Room: "w-03"
     Holes:
@@ -10537,8 +10559,12 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+          Flag: poweroff:set
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10573,8 +10599,12 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10606,11 +10636,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
       ReqIn:
         Dashes: two
-        Difficulty: normal
+        Difficulty: hard
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
@@ -10691,8 +10724,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10708,6 +10747,7 @@ ASide:
     - Side: Right
       Idx: 0
       Kind: inout
+      LowBound: 12
     # blocked
     - Side: Left
       Idx: 1
@@ -10724,8 +10764,18 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: master
+        - Dashes: two
+          Difficulty: expert
+      ReqIn:
         Dashes: one
-        Difficulty: expert
+        Difficulty: normal
+        Flag: poweroff:set
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10758,7 +10808,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10792,9 +10842,10 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
+          Flag: poweroff:set
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10829,8 +10880,14 @@ ASide:
         Or:
         - Dashes: one
           Difficulty: expert
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: master
         - Dashes: two
           Difficulty: hard
+          Flag: poweroff:set
+        - Dashes: two
+          Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10859,17 +10916,47 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: expert
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: master
+          Flag: poweroff:set
+        - Dashes: two
+          Difficulty: hard
+          Flag: poweroff:set
     Tweaks:
     - Name: "spawn"
       Update:
         Add: true
-        X: 1416
+        X: 1408
         Y: 72
     - Name: "invisibleBarrier"
       Update:
         Remove: true
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 712
+        Y: 104
+        Width: 16
+        Height: 80
+        Values:
+          cameraX: -1.6
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 1400
+        Y: 0
+        Width: 16
+        Height: 72
+        Values:
+          cameraX: -1.6
       
   - Room: "w-12"
     Holes:
@@ -10897,6 +10984,7 @@ ASide:
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
+          Flag: poweroff:set
     Tweaks:
     - Name: "spawn"
       Update:
@@ -10933,15 +11021,40 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
           Difficulty: hard
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+          Flag: poweroff:set
         - Dashes: two
           Difficulty: normal
+          Flag: poweroff:set
     Tweaks:
     - Name: "spawn"
       Update:
         Add: true
-        X: 1064
+        X: 1032
         Y: 152
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 1024
+        Y: 0
+        Width: 16
+        Height: 152
+        Values:
+          cameraX: -1.6
+    - Name: "cameraOffsetTrigger"
+      ID: 35220
+      Update:
+        Y: 40
+        Height: 32
       
   - Room: "w-14"
     Holes:
@@ -10963,7 +11076,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     Tweaks:
@@ -10994,11 +11107,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+        Dashes: one
+        Difficulty: expert
       ReqIn:
         Dashes: two
         Difficulty: perfect
@@ -11009,13 +11119,12 @@ ASide:
     - Name: "cameraOffsetTrigger"
       Update:
         Add: true
-        X: 864
-        Y: 72
+        X: 1200
+        Y: 0
         Width: 16
-        Height: 48
+        Height: 40
         Values:
-          cameraX: -2.0
-          cameraY: 0
+          cameraX: -1.5
           
   - Room: "x-01"
     Holes:
@@ -11038,8 +11147,14 @@ ASide:
     InternalEdges:
     - Split: TopToBottom
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: zero
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11088,15 +11203,12 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
+      ReqBoth:
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
-      ReqIn:
-        Dashes: 1
-        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11146,8 +11258,12 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: expert
+        Or:
+        - Dashes: one
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: master
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11228,7 +11344,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: hard
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11263,8 +11379,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: expert
+        Or:
+        - Dashes: one
+          Difficulty: master
+        - Dashes: two
+          Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11328,9 +11447,9 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11367,7 +11486,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
         - Dashes: two
           Difficulty: hard
     Tweaks:
@@ -11414,7 +11533,7 @@ ASide:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11444,7 +11563,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: hard
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11512,8 +11631,11 @@ ASide:
         Or:
         - Dashes: one
           Difficulty: expert
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: master
         - Dashes: two
-          Difficulty: hard
+          Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11564,10 +11686,10 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: hard
+        Difficulty: expert
       ReqIn:
         Dashes: two
-        Difficulty: normal
+        Difficulty: hard
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
@@ -11617,8 +11739,12 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: zero
+          Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: expert
     Tweaks:
     - Name: "spawn"
       Update:
@@ -11642,25 +11768,54 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - To: "power"
+    - To: "exit"
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
-        - Dashes: two
           Difficulty: normal
+          Flag: poweroff:set
+        - Dashes: one
+          Difficulty: hard
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+          Flag: poweroff:set
+        - Dashes: two
+          Difficulty: hard
+          Flag: poweroff:set
     Subrooms:
-    - Room: "power"
+    - Room: "exit"
       Flags:
       - poweroff:set
       Holes:
       - Side: Right
         Idx: 0
-        Kind: out
+        Kind: inout
+        ReqIn:
+          Flag: poweroff:set
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
+    - Name: "cameraOffsetTrigger"
+      ID: 37002
+      Update:
+        Values:
+          cameraX: 2.5
+    - Name: "cameraOffsetTrigger"
+      ID: 37009
+      Update:
+        Remove: true
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 3080
+        Y: 0
+        Width: 16
+        Height: 128
+        Values:
+          cameraX: -2.0
         
   - Room: "x_99_final_goodbye"
     ReqEnd:
@@ -11729,11 +11884,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
       ReqIn:
         Dashes: two
-        Difficulty: normal
+        Difficulty: hard
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
@@ -11830,11 +11988,8 @@ ASide:
     InternalEdges:
     - Split: BottomToTop
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+        Dashes: one
+        Difficulty: expert
     Tweaks:
     - Name: "jumpThru"
       ID: 38663
@@ -11863,8 +12018,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
       ID: 38908
@@ -11979,15 +12137,12 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
+      ReqBoth:
         Or:
         - Dashes: one
           Difficulty: hard
         - Dashes: two
           Difficulty: normal
-      ReqIn:
-        Dashes: one
-        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       Update:
@@ -12005,7 +12160,7 @@ ASide:
       Kind: out
       ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -12035,8 +12190,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqBoth:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "invisibleBarrier"
       Update:
@@ -12068,8 +12226,11 @@ ASide:
     InternalEdges:
     - Split: TopToBottom
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       Update:
@@ -12152,9 +12313,15 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqBoth:
+      ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       ID: 39888
@@ -12277,7 +12444,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
     Tweaks:
     - Name: "goldenBlock"
       Update:
@@ -12342,7 +12509,7 @@ ASide:
       Kind: out
       ReqOut:
         Dashes: one
-        Difficulty: hard
+        Difficulty: expert
     # blocked
     - Side: Left
       Idx: 0
@@ -12367,7 +12534,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: zero
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     # blocked
@@ -12410,7 +12577,7 @@ ASide:
     - Split: LeftToRight
       ReqBoth:
         Dashes: one
-        Difficulty: normal
+        Difficulty: expert
     Tweaks:
     - Name: "jumpThru"
       ID: 44641
@@ -12445,7 +12612,7 @@ ASide:
     - Split: LeftToRight
       ReqBoth:
         Dashes: one
-        Difficulty: normal
+        Difficulty: expert
     Tweaks:
     - Name: "jumpThru"
       ID: 44680
@@ -12492,7 +12659,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: perfect
+          Difficulty: master
         - Dashes: two
           Difficulty: normal
       ReqIn:
