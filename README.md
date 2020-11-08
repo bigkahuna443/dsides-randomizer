@@ -22,12 +22,12 @@ Difficulty Modes
 ----------------
 The difficulties are intended to be equivalent to the vanilla randomizer difficulties, which are defined [here](https://github.com/rhelmot/CelesteRandomizer). The ratings are based on difficulty of execution and assume that you have played the D-sides before. If you haven't, some screens may be harder than the ratings imply. The current difficulty ratings for each screen and other information on routing can be found in the documentation [here](docs/routing/README.md). If you find new routes or would like to suggest tweaks or changes to difficulty ratings, feel free to contact me!
 
-Choosing a difficulty means any room can be included that is at that difficulty or lower. Here's a estimate of the pool size for each difficulty (based on the intended route and number of dashes):
-* Normal: 22% (22% total)
-* Hard: 36% (58% total)
-* Expert: 34% (92% total)
-* Master: 7% (99% total)
-* Perfect: 1% (100% total)
+Choosing a difficulty means any room can be included that is at that difficulty or lower. Here's a estimate of the pool size for each difficulty (all routes and dash numbers):
+* Normal: 42% (42% total)
+* Hard: 29% (71% total)
+* Expert: 21% (92% total)
+* Master: 4% (96% total)
+* Perfect: 4% (100% total)
 
 
 Known Issues / Planned Additions
