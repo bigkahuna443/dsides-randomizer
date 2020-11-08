@@ -214,6 +214,10 @@ ASide:
       Y: 160
       Update:
         Default: true
+    - Name: "fakeWall"
+      Update:
+        X: 0
+        Width: 24
       
   - Room: "a-04"
     Holes:
@@ -521,6 +525,25 @@ ASide:
     - Name: "invisibleBarrier"
       Update:
         Remove: true
+    - Name: "spawn"
+      X: 48
+      Y: 120
+      Update:
+        Y: 64
+    - Name: "changeRespawnTrigger"
+      Update:
+        Add: true
+        X: 32
+        Y: 104
+        Width: 16
+        Height: 16
+    - Name: "changeRespawnTrigger"
+      Update:
+        Add: true
+        X: 128
+        Y: 144
+        Width: 16
+        Height: 8
   
   - Room: "b-01b"
     Holes:
@@ -1357,8 +1380,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-      LowBound: 3
-      HighBound: 10
     - Side: Right
       Idx: 0
       Kind: inout

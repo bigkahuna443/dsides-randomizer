@@ -15,5 +15,3 @@
 | c-01 | N/A | Expert | Hard | N/A | N/A | N/A | 1DF last dash pretty annoying |
 | c-02 | N/A | Expert | Normal | N/A | N/A | N/A | If you don't know about stamina refunds, 1DF is rough |
 | c-03 | N/A | Hard | Hard | N/A | N/A | N/A |  |
-|  |  |  |  |  |  |  |  |
-| Notes: | spikes on dream blocks cut out most reverse routes |  |  |  |  |  |  |

@@ -1,3 +1,182 @@
 Music:
-  - Name: "event:/NG9D_music_1"
-  - Name: "event:/NG9D_music_2"
+- Name: "event:/NG9D_music_1"
+- Name: "event:/NG9D_music_2"
+
+Rulesets:
+- Name: "nameguysdsidespack_0_A"
+  LongName: "Expert Pathway (Monika's D-Sides)"
+  Algorithm: "Pathway"
+  Difficulty: "Expert"
+  Length: "Medium"
+  Darkness: "Never"
+  EnabledMaps:
+  - SID: "nameguysdsidespack/0/0-Prologue"
+    Mode: 0 # A-side
+  - SID: "nameguysdsidespack/0/1-City"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/2-Oldsite"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/3-Resort"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/4-Ridge"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/5-Temple"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/6-ReflectionD"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/7-Summit"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/8-Core"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/9-Epilogue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/10-Farewell"
+    Mode: 0
+- Name: "nameguysdsidespack_0_B"
+  LongName: "Expert Pathway 2-Dash (Monika's D-Sides)"
+  Algorithm: "Pathway"
+  Dashes: "Two"
+  Difficulty: "Expert"
+  Length: "Medium"
+  Darkness: "Never"
+  EnabledMaps:
+  - SID: "nameguysdsidespack/0/0-Prologue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/1-City"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/2-Oldsite"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/3-Resort"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/4-Ridge"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/5-Temple"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/6-ReflectionD"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/7-Summit"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/8-Core"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/9-Epilogue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/10-Farewell"
+    Mode: 0
+- Name: "nameguysdsidespack_0_C"
+  LongName: "Expert Labyrinth (Monika's D-Sides)"
+  Algorithm: "Labyrinth"
+  Difficulty: "Expert"
+  Length: "Medium"
+  Darkness: "Never"
+  EnabledMaps:
+  - SID: "nameguysdsidespack/0/0-Prologue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/1-City"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/2-Oldsite"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/3-Resort"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/4-Ridge"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/5-Temple"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/6-ReflectionD"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/7-Summit"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/8-Core"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/9-Epilogue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/10-Farewell"
+    Mode: 0
+- Name: "nameguysdsidespack_0_D"
+  LongName: "Expert Labyrinth 2-Dash (Monika's D-Sides)"
+  Algorithm: "Labyrinth"
+  Dashes: "Two"
+  Difficulty: "Expert"
+  Length: "Medium"
+  Darkness: "Never"
+  EnabledMaps:
+  - SID: "nameguysdsidespack/0/0-Prologue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/1-City"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/2-Oldsite"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/3-Resort"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/4-Ridge"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/5-Temple"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/6-ReflectionD"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/7-Summit"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/8-Core"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/9-Epilogue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/10-Farewell"
+    Mode: 0
+- Name: "nameguysdsidespack_0_E"
+  LongName: "Expert Endless (Monika's D-Sides)"
+  Algorithm: "Endless"
+  Difficulty: "Expert"
+  Darkness: "Never"
+  Lights: "On"
+  EnabledMaps:
+  - SID: "nameguysdsidespack/0/0-Prologue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/1-City"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/2-Oldsite"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/3-Resort"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/4-Ridge"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/5-Temple"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/6-ReflectionD"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/7-Summit"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/8-Core"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/9-Epilogue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/10-Farewell"
+    Mode: 0
+- Name: "nameguysdsidespack_0_F"
+  LongName: "Expert Endless 2-Dash (Monika's D-Sides)"
+  Algorithm: "Endless"
+  Dashes: "Two"
+  Difficulty: "Expert"
+  Darkness: "Never"
+  Lights: "On"
+  EnabledMaps:
+  - SID: "nameguysdsidespack/0/0-Prologue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/1-City"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/2-Oldsite"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/3-Resort"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/4-Ridge"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/5-Temple"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/6-ReflectionD"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/7-Summit"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/8-Core"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/9-Epilogue"
+    Mode: 0
+  - SID: "nameguysdsidespack/0/10-Farewell"
+    Mode: 0
