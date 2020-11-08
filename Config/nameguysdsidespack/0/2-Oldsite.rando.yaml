@@ -1,16 +1,5 @@
 ASide:
-  - Room: "a-01"
-    Holes:
-    - Side: Right
-      Idx: 0
-      Kind: inout
-    - Side: Left
-      Idx: 0
-      Kind: inout
-    # blocked
-    - Side: Up
-      Idx: 0
-      Kind: none
+  # a-01 cut, duplicate of 2A start
         
   - Room: "a-02"
     Holes:
@@ -21,8 +10,11 @@ ASide:
       Idx: 1
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: normal
     # blocked
     - Side: Up
       Idx: 0
@@ -60,7 +52,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     Tweaks:
@@ -85,11 +77,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: normal
       
   - Room: "a-05"
     Holes:
@@ -155,7 +144,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     # blocked
@@ -181,7 +170,7 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: 1
+        Dashes: one
         Difficulty: normal
     Tweaks:
     - Name: "jumpThru"
@@ -237,11 +226,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 32
@@ -315,8 +301,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -343,14 +332,14 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     - To: "secretExit"
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     Subrooms:
@@ -372,7 +361,7 @@ ASide:
   - Room: "c-03"
     ReqEnd:
       Dashes: one
-      Difficulty: expert
+      Difficulty: hard
     Holes:
     - Side: Left # hidden room
       Idx: 0

@@ -119,7 +119,7 @@ ASide:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
     # blocked
     - Side: Left
       Idx: 0
@@ -173,7 +173,7 @@ ASide:
     - Split: LeftToRight
       ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
     
   - Room: "a-07"
     Holes:
@@ -265,11 +265,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 24
@@ -299,7 +296,7 @@ ASide:
         Difficulty: hard
       ReqIn:
         Dashes: two
-        Difficulty: perfect
+        Difficulty: master
     Tweaks:
     - Name: "spawn"
       X: 56
@@ -344,15 +341,33 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
         - Dashes: two
           Difficulty: normal
+      ReqIn:
+        Dashes: two
+        Difficulty: perfect
     Tweaks:
     - Name: "spawn"
       X: 104
       Y: 144
       Update:
         Default: true
+    - Name: "spawn"
+      X: 784
+      Y: 64
+      Update:
+        X: 760
+        Y: 72
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 752
+        Y: 16
+        Width: 16
+        Height: 56
+        Values:
+          cameraX: -1.0
       
   - Room: "a-12"
     Holes:
@@ -374,12 +389,15 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqBoth:
+      ReqOut:
+        Dashes: one
+        Difficulty: normal
+      ReqIn:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
-          Difficulty: normal
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 40
@@ -496,8 +514,11 @@ ASide:
     InternalEdges:
     - Split: TopToBottom
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 24
@@ -533,8 +554,11 @@ ASide:
     InternalEdges:
     - Split: TopToBottom
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 128
@@ -645,7 +669,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
         - Dashes: two
           Difficulty: hard
       
@@ -797,7 +821,7 @@ ASide:
       Idx: 0
       Kind: inout
       
-  - Room: "b-11sssss"
+  - Room: "b-11sssss" # detaches don't work with life berries from endless...
     Holes:
     - Side: Left
       Idx: 0
@@ -956,12 +980,6 @@ ASide:
     - Side: Down
       Idx: 0
       Kind: none
-    ExtraSpace:
-    - X: 200
-      Y: -376
-      Width: 16
-      Height: 952 # screen height + ~2x block height
-      
       
   - Room: "boss-03"
     Holes:
@@ -972,8 +990,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -1038,7 +1059,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
         - Dashes: two
           Difficulty: hard
     # blocked
@@ -1091,7 +1112,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
         - Dashes: two
           Difficulty: hard
     # blocked
@@ -1136,8 +1157,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -1162,7 +1186,7 @@ ASide:
       Kind: out
       ReqOut:
         Dashes: one
-        Difficulty: expert
+        Difficulty: hard
     # blocked
     - Side: Right
       Idx: 0
@@ -1316,8 +1340,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     Tweaks:
     - Name: "finalBoss"
       Update:
@@ -1525,7 +1552,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: zero
-          Difficulty: perfect
+          Difficulty: expert
         - Dashes: one
           Difficulty: normal
     # blocked
@@ -1733,7 +1760,7 @@ ASide:
       All: cold
     ReqEnd:
       Dashes: one
-      Difficulty: expert
+      Difficulty: hard
     Holes:
     - Side: Left
       Idx: 0

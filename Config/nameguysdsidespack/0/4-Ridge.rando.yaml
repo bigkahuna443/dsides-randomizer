@@ -50,8 +50,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       
   - Room: "a-03"
     Holes:
@@ -116,11 +119,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       ReqIn:
         Dashes: two
-        Difficulty: expert
+        Difficulty: master
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -153,11 +159,14 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       ReqIn:
         Dashes: two
-        Difficulty: expert
+        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 784
@@ -211,13 +220,10 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
-        Dashes: one
-        Difficulty: normal
-      ReqIn:
+      ReqBoth:
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: hard
         - Dashes: two
           Difficulty: normal
     Tweaks:
@@ -374,7 +380,7 @@ ASide:
     - Split: BottomToTop
       ReqOut:
         Dashes: one
-        Difficulty: normal
+        Difficulty: hard
       
   - Room: "b-06"
     Holes:
@@ -705,8 +711,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     # blocked
     - Side: Up
       Idx: 0
@@ -732,11 +741,8 @@ ASide:
       
   - Room: "c-09"
     ReqEnd:
-      Or:
-      - Dashes: one
-        Difficulty: hard
-      - Dashes: two
-        Difficulty: normal
+      Dashes: one
+      Difficulty: hard
     Holes:
     - Side: Left
       Idx: 0

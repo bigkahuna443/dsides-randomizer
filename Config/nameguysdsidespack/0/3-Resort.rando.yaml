@@ -47,16 +47,10 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
+      ReqBoth:
         Or:
         - Dashes: one
           Difficulty: hard
-        - Dashes: two
-          Difficulty: normal
-      ReqIn:
-        Or:
-        - Dashes: one
-          Difficulty: expert
         - Dashes: two
           Difficulty: normal
     Tweaks:
@@ -71,54 +65,110 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: inout
     # blocked
-    - Side: Up
-      Idx: 0
-      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: LeftToRight
+    - To: "exit"
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
         - Dashes: two
           Difficulty: normal
+          Or:
+          - Flag: towels:unset
+          - Flag: books:unset
       ReqIn:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Dashes: two
-        Difficulty: perfect
+        Or:
+        - Dashes: one
+          Difficulty: perfect
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:set
+        - Dashes: two
+          Difficulty: hard
+          Or:
+          - And:
+            - Flag: towels:set
+            - Flag: books:unset
+            - Flag: boxes:set
+          - And:
+            - Flag: towels:unset
+            - Flag: books:unset
+            - Flag: boxes:set
+        - Dashes: two
+          Difficulty: expert
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: perfect
+          Or:
+          - And:
+            - Flag: towels:unset
+            - Flag: books:set
+            - Flag: boxes:unset
+          - And:
+            - Flag: towels:set
+            - Flag: books:unset
+            - Flag: boxes:unset
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: unknown
+      - Side: Right
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "spawn"
       X: 968
       Y: 64
       Update:
         X: 952
-      
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 944
+        Y: 48
+        Width: 16
+        Height: 16
+        Values:
+          cameraX: -1.0     
+    - Name: "yellowBlocks" # make shortcut possible
+      Update:
+        Add: true
+        X: 928
+        Y: 0
+        Width: 16
+        Height: 32
+    - Name: "fakeWall"
+      Update:
+        Remove: true
+    - Name: "crumbleBlock"
+      Update:
+        Remove: true
+        
   - Room: "a-03"
     Holes:
     - Side: Left
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Flag: boxes:set
+    - Side: Left
       Idx: 1
       Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: inout
     # blocked
-    - Side: Left
-      Idx: 0
-      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
@@ -135,22 +185,40 @@ ASide:
       Idx: 1
       Kind: none
     InternalEdges:
-    - Split: LeftToRight
+    - To: "exit"
       ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: normal
+          Or:
+          - Flag: books:unset
+          - Flag: boxes:set
+        - Dashes: one
+          Difficulty: hard
+          And:
+          - Flag: books:set
+          - Flag: boxes:unset
+      ReqIn:
         Dashes: one
         Difficulty: normal
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
+        Flag: boxes:set
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: inout
+    Tweaks:
+    - Name: "spawn"
+      X: 31
+      Y: 160
+      Update:
+        Default: true
       
   - Room: "a-04"
     Holes:
     - Side: Left
       Idx: 0
-      Kind: inout
-    - Side: Right
-      Idx: 1
       Kind: inout
     # blocked
     - Side: Up
@@ -166,47 +234,46 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: LeftToRight
+    - To: "exit"
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+        Dashes: one
+        Difficulty: hard
       ReqIn:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: normal
+        Dashes: one
+        Difficulty: normal
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: unknown
+        ReqIn:
+          Flag: boxes:set
+      - Side: Right
+        Idx: 1
+        Kind: inout
+    Tweaks:
+    - Name: "spawn"
+      X: 32
+      Y: 240
+      Update:
+        Default: true
       
   - Room: "a-05"
     Holes:
     - Side: Left
-      Idx: 1
-      Kind: inout
-    - Side: Right
       Idx: 0
+      Kind: inout
+      ReqBoth:
+        Flag: boxes:set
+    - Side: Left
+      Idx: 1
       Kind: inout
     # blocked
-    - Side: Left
-      Idx: 0
-      Kind: none
     - Side: Up
       Idx: 0
       Kind: none
     - Side: Up
-      Idx: 1
-      Kind: none
-    - Side: Right
       Idx: 1
       Kind: none
     - Side: Down
@@ -221,28 +288,45 @@ ASide:
     - Side: Down
       Idx: 3
       Kind: none
-    - Side: Down
-      Idx: 4
-      Kind: none
     InternalEdges:
-    - Split: LeftToRight
+    - To: "exit"
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
+          Or:
+          - Flag: towels:unset
+          - And:
+            - Flag: books:unset
+            - Flag: boxes:unset
         - Dashes: two
           Difficulty: normal
+          Or:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: hard
+          And:
+          - Flag: towels:set
+          - Flag: books:set
+          - Flag: boxes:set
       ReqIn:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Dashes: two
-        Difficulty: perfect
+        Or:
+        - Dashes: one
+          Difficulty: expert
+          Or:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: hard
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Right
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -253,13 +337,7 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Right
-      Idx: 0
-      Kind: inout
     # blocked
-    - Side: Up
-      Idx: 0
-      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
@@ -270,23 +348,50 @@ ASide:
       Idx: 1
       Kind: none
     InternalEdges:
-    - Split: LeftToRight
-      ReqBoth:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
+    - To: "exit"
+      ReqOut:
         Or:
         - Dashes: one
           Difficulty: expert
         - Dashes: two
           Difficulty: hard
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
+    Subrooms:
+    - Room: "exit"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: inout
+        ReqBoth:
+          Dashes: zero
+          Difficulty: normal
+          And:
+          - Flag: towels:set
+          - Flag: books:set
+          - Flag: boxes:set
+      - Side: Right
+        Idx: 0
+        Kind: inout
     Tweaks:
     - Name: "spawn"
       X: 776
       Y: 88
       Update:
         X: 738
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 728
+        Y: 72
+        Width: 16
+        Height: 16
+        Values:
+          cameraX: -0.8 
         
   - Room: "b-00" # huge mess hub
     Hub: true
@@ -297,10 +402,10 @@ ASide:
     # strange
     - Side: Up
       Idx: 0
-      Kind: in
+      Kind: unknown
     - Side: Right
       Idx: 1
-      Kind: in
+      Kind: unknown
     InternalEdges:
     - To: "exits"
       ReqOut:
@@ -329,7 +434,7 @@ ASide:
       Holes:
       - Side: Left
         Idx: 1
-        Kind: inout
+        Kind: unknown
         ReqIn:
           Flag: books:set
     Tweaks:
@@ -351,32 +456,59 @@ ASide:
       Idx: 1
       Kind: out
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: one
+          Difficulty: normal
+          Or:
+          - Flag: boxes:unset
+          - And:
+            - Flag: towels:unset
+            - Flag: books:unset
+        - Dashes: one
+          Difficulty: expert
+          And:
+          - Flag: towels:set
+          - Flag: books:unset
+          - Flag: boxes:set
+        - Dashes: two
+          Difficulty: normal
+          Or:
+          - Flag: boxes:unset
+          - And:
+            - Flag: towels:unset
+            - Flag: books:unset
+        - Dashes: two
+          Difficulty: hard
+          And:
+          - Flag: towels:set
+          - Flag: books:unset
+          - Flag: boxes:set
+    InternalEdges:
+    - To: "bottomleft"
+      ReqBoth:
+        Flag: boxes:set
     Subrooms:
-    - Room: "left"
+    - Room: "bottomleft"
       Holes:
-      - Side: Up
-        Idx: 0
-        Kind: inout
       - Side: Down
         Idx: 0
         Kind: inout
         Launch: -1
       InternalEdges:
-      - Split: RightToLeft
+      - To: "topleft"
         ReqBoth:
-          And:
-          - Flag: towels:unset
-          - Flag: books:unset
-          - Flag: boxes:unset
           Dashes: one
           Difficulty: normal
+    - Room: "topleft"
+      Holes:
+      - Side: Up
+        Idx: 0
+        Kind: inout
     Tweaks:
+    - Name: "jumpThru"
+      ID: 332
+      Update:
+        Remove: true
     - Name: "jumpThru"
       ID: 2676
       Update:
@@ -401,10 +533,6 @@ ASide:
     InternalEdges:
     - Split: BottomToTop
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Dashes: one
         Difficulty: hard
     Subrooms:
@@ -419,10 +547,6 @@ ASide:
       InternalEdges:
       - Split: TopToBottom
         ReqOut:
-          And:
-          - Flag: towels:unset
-          - Flag: books:unset
-          - Flag: boxes:unset
           Dashes: one
           Difficulty: normal
     Tweaks:
@@ -438,23 +562,31 @@ ASide:
         Default: true
       
   - Room: "b-01c" # Boxes switch
-    Flags:
-    - boxes:set
     Holes:
     - Side: Down
       Idx: 1
-      Kind: inout
-    - Side: Down
-      Idx: 0 
       Kind: inout
     # blocked
     - Side: Left
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: RightToLeft
+    - To: "switch"
+      ReqBoth:
+        Dashes: one
+        Difficulty: normal
+    - To: "exit"
       ReqBoth:
         Flag: boxes:set
+    Subrooms:
+    - Room: "switch"
+      Flags:
+      - boxes:set
+    - Room: "exit"
+      Holes:
+      - Side: Down
+        Idx: 0 
+        Kind: inout
     Tweaks:
     - Name: "jumpThru"
       ID: 1324
@@ -472,7 +604,7 @@ ASide:
       Idx: 0
       Kind: inout
     InternalEdges:
-    - To: "switch"
+    - To: "switchroom"
       ReqBoth:
         Flag: towels:set
     - To: "towel"
@@ -492,10 +624,16 @@ ASide:
     - Room: "switch"
       Flags:
       - towels:set
+    - Room: "switchroom"
       Holes:
       - Side: Right
         Idx: 0
         Kind: inout
+      InternalEdges:
+      - To: "switch"
+        ReqBoth:
+          Dashes: one
+          Difficulty: normal
     - Room: "towel"
       Holes:
       - Side: Left
@@ -533,22 +671,52 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+          Flag: towels:unset
+        - Dashes: one
+          Difficulty: master
+          And:
+          - Flag: towels:set
+            Or:
+            - Flag: books:unset
+            - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: hard
+          Or:
+          - Flag: towels:unset
+          - Flag: boxes:unset
       ReqIn:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: expert
+          Or:
+          - Flag: towels:unset
+          - And:
+            - Flag: towels:set
+            - Flag: books:unset
+            - Flag: boxes:unset
         - Dashes: two
           Difficulty: hard
+          Or:
+          - Flag: towels:unset
+          - And:
+            - Flag: towels:set
+            - Flag: books:unset
+            - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: expert
+          And:
+          - Flag: towels:set
+          - Flag: books:set
+          - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: master
+          And:
+          - Flag: towels:set
+          - Flag: books:unset
+          - Flag: boxes:set
     Tweaks:
     - Name: "spawn"
       Update:
@@ -561,6 +729,15 @@ ASide:
         X: 768
         Y: 64
         Width: 8
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 760
+        Y: 48
+        Width: 16
+        Height: 16
+        Values:
+          cameraX: -0.8
         
   - Room: "b-02c"
     Holes:
@@ -574,20 +751,20 @@ ASide:
     InternalEdges:
     - Split: RightToLeft
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
+          Or:
+          - Flag: books:unset
+          - Flag: boxes:unset
+        - Dashes: one
+          Difficulty: expert
+          And:
+          - Flag: books:set
+          - Flag: boxes:set
         - Dashes: two
           Difficulty: normal
       ReqIn:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Dashes: two
         Difficulty: hard
         
@@ -601,12 +778,22 @@ ASide:
       Kind: out
       Launch: -1
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+          Flag: books:unset
+        - Dashes: two
+          Difficulty: hard
+          Or:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: expert
+          And:
+          - Flag: towels:set
+          - Flag: books:set
+          - Flag: boxes:set
     # blocked
     - Side: Up
       Idx: 0
@@ -655,25 +842,24 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Or:
         - Dashes: one
           Difficulty: hard
+          Flag: books:unset
         - Dashes: two
           Difficulty: normal
       ReqIn:
-        And:
-        - Flag: towels:unset
-        - Flag: books:unset
-        - Flag: boxes:unset
         Or:
         - Dashes: one
-          Difficulty: expert
+          Difficulty: master
+          And:
+          - Flag: books:unset
+          - Or:
+            - Flag: towels:unset
+            - Flag: boxes:unset
         - Dashes: two
           Difficulty: hard
+          Flag: books:unset
     Tweaks:
     - Name: "exitBlock"
       Update:
@@ -685,8 +871,16 @@ ASide:
       X: 584
       Y: 80
       Update:
-        X: 536
-        Y: 88
+        X: 560
+    - Name: "cameraOffsetTrigger"
+      Update:
+        Add: true
+        X: 552
+        Y: 64
+        Width: 16
+        Height: 16
+        Values:
+          cameraX: -1.0 
           
   - Room: "b-03c" # Books switch
     Holes:
@@ -776,7 +970,7 @@ ASide:
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: hard
+          Difficulty: expert
         - Dashes: two
           Difficulty: normal
       ReqIn:
@@ -806,9 +1000,8 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
+        Dashes: one
+        Difficulty: hard
     # blocked
     - Side: Down
       Idx: 0
@@ -828,12 +1021,9 @@ ASide:
       Kind: inout
     InternalEdges:
     - Split: LeftToRight
-      ReqOut:
+      ReqBoth:
         Dashes: one
         Difficulty: hard
-      ReqIn:
-        Dashes: one
-        Difficulty: normal
     Tweaks:
     - Name: "spawn"
       X: 72
@@ -924,8 +1114,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
       ReqIn:
         Dashes: two
         Difficulty: normal
@@ -1006,7 +1199,13 @@ ASide:
       Kind: none
     InternalEdges:
     - Split: LeftToRight
-      ReqBoth:
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
+      ReqOut:
         Or:
         - Dashes: one
           Difficulty: expert
@@ -1113,8 +1312,11 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: expert
+        - Dashes: two
+          Difficulty: hard
     Tweaks:
     - Name: "spawn"
       X: 24
