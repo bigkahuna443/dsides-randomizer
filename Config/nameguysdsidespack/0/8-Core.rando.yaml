@@ -90,7 +90,14 @@ ASide:
       Update:
         Add: true
         X: 698
-        Y: 24
+        Y: 16
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 696
+        Y: 16
+        Values:
+          texture: "core"
         
   - Room: "a-04"
     Core:

@@ -9,7 +9,7 @@ Notation
 * F: forwards
 * R: reverse
 * N/A: not possible
-* P: power / lightning flag is set (i.e. turned off)
+* L: lightning / power flag is set (i.e. turned off)
 * T: towels flag is set
 * B: books flag is set
 * C: crates / boxes flag is set
@@ -44,7 +44,8 @@ Some screens are technically possible to complete in reverse, but were not inclu
 1. Screen isn't interesting (e.g. fall straight down) / camerawork too complex / bad spawn options. These are the main subjective reasons for cutting rooms, all of which will be in comments for that room in the routing tables.
 2. Rooms with a Badeline Boss or where a Badeline Orb launches you to the next screen are not possible in reverse due to how they are coded.
 3. Rooms with a Theo gate at the end are not possible in reverse.
-4. Rooms with multiple checkpoints (e.g. Summit flags) need to be forwards-only to avoid softlocks.
+4. Exits with a non-persistent dash block at the end (i.e. reappears after retry) are not possible in reverse.
+5. Rooms with multiple checkpoints (e.g. Summit flags) need to be forwards-only to avoid softlocks.
 
 
 Flags
