@@ -1,6 +1,6 @@
 Routing
 =======
-These tables contain the routing information for every chapter of the D-sides. There are also comments for some levels that have trickier solutions, or explanations on rating choices, cut routes, etc. If you would like to contribute to labbing or make suggestions, read the info below and then contact me with your findings (contact info [here](../../README.md#contact))!
+These tables contain the routing information for every chapter of the D-Sides. There are also comments for some levels that have trickier solutions, or explanations on rating choices, cut routes, etc. If you would like to contribute to labbing or make suggestions, read the info below and then contact me with your findings (contact info [here](../../README.md#contact))!
 
 
 Notation

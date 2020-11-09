@@ -1,19 +1,19 @@
-Celeste D-sides Randomizer
+Celeste D-Sides Randomizer
 ==========================
-This is a collection of randomizer configuration files and routing descriptions for the [D-sides pack](https://gamebanana.com/maps/202524) of maps for [Celeste](http://www.celestegame.com/). 
+This is a collection of randomizer configuration files and routing descriptions for the [D-Sides pack](https://gamebanana.com/maps/202524) of maps for [Celeste](http://www.celestegame.com/). 
 
 The config is designed to be compatible with the [Celeste Randomizer](https://github.com/rhelmot/CelesteRandomizer).
 
-For the best experience, it is recommended to play the D-sides first before playing the randomizer add-on.
+For the best experience, it is recommended to play the D-Sides first before playing the randomizer add-on.
 
 
 Installation
 ------------
 Running mods with Celeste requires you to have installed [Everest](https://everestapi.github.io/).
 
-1. Download the [D-sides pack](https://gamebanana.com/maps/202524).
+1. Download the [D-Sides pack](https://gamebanana.com/maps/202524).
 2. Download the [Celeste Randomizer](https://gamebanana.com/tools/6848).
-3. The config is included by default within the D-sides pack, and the D-sides will be available in the randomizer level select screen.
+3. The config is included by default within the D-Sides pack, and the D-Sides will be available in the randomizer level select screen.
 
 ![level select](docs/img/level_select.PNG)
 
@@ -50,7 +50,7 @@ Credits
 
 **Labber-in-Chief**: [Theta](https://www.twitch.tv/thetagc)
 
-**D-sides Creator**: [Monika](https://www.twitch.tv/monika523)
+**D-Sides Creator**: [Monika](https://www.twitch.tv/monika523)
 
 **Randomizer Support**:
 * Rhelmot
