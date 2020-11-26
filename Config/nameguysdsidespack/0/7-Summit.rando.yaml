@@ -907,7 +907,7 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: BottomToTOp
+    - Split: BottomToTop
       ReqOut:
         Or:
         - Dashes: one

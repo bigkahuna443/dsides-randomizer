@@ -15,7 +15,7 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: BottomToTop
+    - To: "up"
       ReqOut:
         Dashes: one
         Difficulty: normal
