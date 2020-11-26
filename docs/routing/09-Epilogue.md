@@ -12,7 +12,7 @@
 | b-03s | - | - | - | - | - | - | Cut (big empty screen) |
 | b-04 | Expert | Normal | Normal | Normal | Normal | Normal | 0DF requires double block boost |
 | b-05 | Hard | Hard | Hard | N/A | N/A | N/A |  |
-| b-06 | Expert | Normal | Normal | N/A | N/A | N/A | 0DF has very tight spinner gap, key requires one dash |
+| b-06 | Expert | Normal | Normal | N/A | N/A | Master | 0DF has very tight spinner gap, 2DR requires weird max-distance wallbounce + cornerboost |
 | b-07 | Hard | Normal | Normal | Hard | Normal | Normal |  |
 | b-08 | Normal | Normal | Normal | Normal | Normal | Normal | Use 2-dash to get to secret room, requires extended hyper to return from |
 | bigmirror | N/A | Hard | Hard | N/A | N/A | N/A | Strawberry room |

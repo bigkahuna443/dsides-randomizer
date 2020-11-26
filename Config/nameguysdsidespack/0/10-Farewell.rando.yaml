@@ -6399,6 +6399,10 @@ ASide:
     - Name: "exitBlock"
       Update:
         Remove: true
+    - Name: "spinner"
+      ID: 9348
+      Update:
+        X: 42
        
   - Room: "m-05"
     Holes:
@@ -6566,11 +6570,16 @@ ASide:
           Dashes: one
           Difficulty: hard
     Tweaks:
-    - Name: "fgTiles"
+    - Name: "fgTiles" # create passage between secret exit/main exit to avoid softlocks
       X: 58
       Y: 2
       Update:
         Tile: "0" # Empty
+    - Name: "objTiles" # indicate secret exit
+      X: 58
+      Y: 2
+      Update:
+        Tile: "16"
     - Name: "fgTiles"
       X: 59
       Y: 2
@@ -9890,7 +9899,7 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: TopToBottom
+    - Split: LeftToRight
       ReqOut:
         Dashes: one
         Difficulty: hard
@@ -11145,7 +11154,7 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: TopToBottom
+    - Split: LeftToRight
       ReqOut:
         Or:
         - Dashes: zero
@@ -12324,7 +12333,8 @@ ASide:
           Difficulty: normal
     Tweaks:
     - Name: "spawn"
-      ID: 39888
+      X: 952
+      Y: 40
       Update:
         X: 880
         Y: 48

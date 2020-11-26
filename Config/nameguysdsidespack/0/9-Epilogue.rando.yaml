@@ -339,9 +339,6 @@ ASide:
     - Side: Left
       Idx: 0
       Kind: inout
-    - Side: Left
-      Idx: 1
-      Kind: inout
     # blocked
     - Side: Up
       Idx: 0
@@ -353,18 +350,37 @@ ASide:
       Idx: 0
       Kind: none
     InternalEdges:
-    - Split: TopToBottom
+    - To: "exit"
       ReqOut:
         Or:
         - Dashes: zero
           Difficulty: expert
         - Dashes: one
           Difficulty: normal
-    - Collectable: 0
-      ReqBoth:
+    - To: "key"
+      ReqOut:
         Dashes: one
         Difficulty: normal
-        
+      ReqIn:
+        Dashes: two
+        Difficulty: master
+    Subrooms:
+    - Room: "key"
+      Collectables:
+      - Idx: 0
+      InternalEdges:
+      - To: "exit"
+        ReqOut:
+          Dashes: one
+          Difficulty: normal
+        ReqIn:
+          Dashes: two
+          Difficulty: normal
+    - Room: "exit"
+      Holes:
+      - Side: Left
+        Idx: 1
+        Kind: inout
   - Room: "b-07"
     Holes:
     - Side: Right

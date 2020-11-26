@@ -3,7 +3,7 @@ Music:
 - Name: "event:/NG9D_music_2"
 
 Rulesets:
-- Name: "nameguysdsidespack_0_A"
+- Name: "DA"
   LongName: "Expert Pathway [Monika's D-Sides] (A)"
   Algorithm: "Pathway"
   Difficulty: "Expert"
@@ -32,7 +32,7 @@ Rulesets:
     Mode: 0
   - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0
-- Name: "nameguysdsidespack_0_B"
+- Name: "DB"
   LongName: "Expert Pathway 2-Dash [Monika's D-Sides] (B)"
   Algorithm: "Pathway"
   Dashes: "Two"
@@ -62,7 +62,7 @@ Rulesets:
     Mode: 0
   - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0
-- Name: "nameguysdsidespack_0_C"
+- Name: "DC"
   LongName: "Expert Labyrinth [Monika's D-Sides] (C)"
   Algorithm: "Labyrinth"
   Difficulty: "Expert"
@@ -91,7 +91,7 @@ Rulesets:
     Mode: 0
   - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0
-- Name: "nameguysdsidespack_0_D"
+- Name: "DD"
   LongName: "Expert Labyrinth 2-Dash [Monika's D-Sides] (D)"
   Algorithm: "Labyrinth"
   Dashes: "Two"
@@ -121,7 +121,7 @@ Rulesets:
     Mode: 0
   - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0
-- Name: "nameguysdsidespack_0_E"
+- Name: "DE"
   LongName: "Expert Endless [Monika's D-Sides] (E)"
   Algorithm: "Endless"
   Difficulty: "Expert"
@@ -150,7 +150,7 @@ Rulesets:
     Mode: 0
   - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0
-- Name: "nameguysdsidespack_0_F"
+- Name: "DF"
   LongName: "Expert Endless 2-Dash [Monika's D-Sides] (F)"
   Algorithm: "Endless"
   Dashes: "Two"
