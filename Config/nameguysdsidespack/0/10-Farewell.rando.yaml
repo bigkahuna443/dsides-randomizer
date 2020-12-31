@@ -7827,11 +7827,6 @@ ASide:
       ReqOut:
         Dashes: one
         Difficulty: expert
-    Tweaks:
-    - Name: "spinner"
-      ID: 19561
-      Update:
-        Remove: true
         
   - Room: "o-13" # orb launch room
     Holes:

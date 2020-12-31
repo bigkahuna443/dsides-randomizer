@@ -359,8 +359,11 @@ ASide:
           Difficulty: normal
     - To: "key"
       ReqOut:
-        Dashes: one
-        Difficulty: normal
+        Or:
+        - Dashes: zero
+          Difficulty: expert
+        - Dashes: one
+          Difficulty: normal
       ReqIn:
         Dashes: two
         Difficulty: master

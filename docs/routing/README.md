@@ -32,6 +32,7 @@ Here is a list of routes that are known to be possible but have not been complet
 * 3D:a-02 (TBC and T'BC) 2DR
 * 3D:d-07 1DR/2DR
 * 6D:boss-17 0DF
+* 6D:lastroom 0DF
 * 9D:m-06 1DR/2DR
 
 If you beat any of these routes RTA, **send me a clip** and it will be added to the config.
