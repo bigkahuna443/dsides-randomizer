@@ -283,7 +283,7 @@ ASide:
           Difficulty: normal
       ReqIn:
         Dashes: one
-        Difficulty: master
+        Difficulty: expert
     Tweaks:
     - Name: "jumpThru"
       ID: 43630

@@ -130,7 +130,7 @@
 | i-05 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | i-06 | N/A | Hard | Hard | N/A | N/A | Expert | 2DR pretty tight |
 | i-07 | N/A | Hard | Hard | N/A | N/A | Expert | 2DR has tight spinner gap core jump |
-| i-08 | N/A | Normal | Normal | N/A | N/A | Perfect | 2DR requires updiag demo and tight diagonal through dream block |
+| i-08 | N/A | Normal | Normal | N/A | N/A | Expert | 2DR has a fun diag demo chain :) |
 | i-09 | N/A | Master | Master | N/A | N/A | N/A |  |
 | i-10 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | i-11 | Normal | Normal | Normal | Normal | Normal | Normal |  |

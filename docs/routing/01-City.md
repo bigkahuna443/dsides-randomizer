@@ -5,7 +5,7 @@
 | a-03 | N/A | Normal | Normal | N/A | Expert | Hard | 1DF has setupless cornerjump, not bad though |
 | a-04 | Hard | Normal | Normal | N/A | N/A | Perfect | 0DF has kinda tricky zip mover jump, 2DR requires three setupless corner jumps to grab zip mover while saving dash|
 | a-05 | N/A | Expert | Normal | N/A | N/A | Perfect | 1DF requires corner jumps with setups, 2DR requires several setupless corner jumps |
-| a-06 | Expert | Normal | Normal | N/A | Perfect | Master | 0DF requires cornerboost (jump from left wall), 1DR + 2DR require updiag demo, 1DR has precise first jump as well (can save if you miss with cornerboost but annoying) |
+| a-06 | Expert | Normal | Normal | N/A | Expert | Expert | 0DF requires cornerboost (jump from left wall), 1DR + 2DR require updiag demo |
 | a-07 | Expert | Expert | Hard | N/A | Expert | Expert | 0DF requires 4-tile overhang, 0+1Df requires corner jump (not super bad), reverse requires corner jumps with weird setups |
 | b-01 | N/A | Expert | Hard | N/A | Perfect | Hard | 1DR stupid precise, many setupless corner jumps, barely RTA; 2DR pretty cool though |
 | b-02 | N/A | Normal | Normal | N/A | Normal | Normal |  |

@@ -4846,7 +4846,7 @@ ASide:
         Difficulty: normal
       ReqIn:
         Dashes: two
-        Difficulty: perfect
+        Difficulty: expert
     Tweaks:
     - Name: "spawn"
       X: 696
