@@ -11901,6 +11901,8 @@ ASide:
       Update:
         Remove: true
     - Name: "spawn"
+      X: 1792
+      Y: 128
       Update:
         X: 1682
         Y: 96

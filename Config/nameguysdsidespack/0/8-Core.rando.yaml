@@ -527,11 +527,8 @@ ASide:
     InternalEdges:
     - Split: LeftToRight
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+        Dashes: one
+        Difficulty: hard
     Tweaks:
     - Name: "jumpThru"
       ID: 963
@@ -670,7 +667,7 @@ ASide:
       Kind: out
       ReqOut:
         Dashes: two
-        Difficulty: perfect
+        Difficulty: master
     # blocked
     - Side: Up
       Idx: 0

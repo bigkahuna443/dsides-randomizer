@@ -280,40 +280,42 @@ ASide:
     - Side: Up
       Idx: 1
       Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
     - Side: Down
       Idx: 0
       Kind: none
     - Side: Down
       Idx: 1
       Kind: none
-    - Side: Down
-      Idx: 2
-      Kind: none
-    - Side: Down
-      Idx: 3
-      Kind: none
     InternalEdges:
     - To: "exit"
       ReqOut:
         Or:
         - Dashes: one
-          Difficulty: expert
-          Or:
+          Difficulty: hard
+          And:
           - Flag: towels:unset
-          - And:
+          - Or:
+            - Flag: books:unset
+            - Flag: boxes:unset
+        - Dashes: one
+          Difficulty: expert
+          And:
+          - Flag: towels:set
+            Or:
             - Flag: books:unset
             - Flag: boxes:unset
         - Dashes: two
           Difficulty: normal
           Or:
           - Flag: towels:unset
-          - Flag: books:unset
           - Flag: boxes:unset
         - Dashes: two
           Difficulty: hard
           And:
           - Flag: towels:set
-          - Flag: books:set
           - Flag: boxes:set
       ReqIn:
         Or:
@@ -322,7 +324,6 @@ ASide:
           Or:
           - Flag: towels:unset
           - Flag: books:unset
-          - Flag: boxes:unset
         - Dashes: two
           Difficulty: hard
     Subrooms:
@@ -354,11 +355,8 @@ ASide:
     InternalEdges:
     - To: "exit"
       ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: expert
-        - Dashes: two
-          Difficulty: hard
+        Dashes: one
+        Difficulty: hard
       ReqIn:
         Or:
         - Dashes: one
@@ -798,25 +796,8 @@ ASide:
       Kind: inout
     - Side: Down
       Idx: 0
-      Kind: out
+      Kind: inout
       Launch: -1
-      ReqOut:
-        Or:
-        - Dashes: one
-          Difficulty: hard
-          Flag: books:unset
-        - Dashes: two
-          Difficulty: hard
-          Or:
-          - Flag: towels:unset
-          - Flag: books:unset
-          - Flag: boxes:unset
-        - Dashes: two
-          Difficulty: expert
-          And:
-          - Flag: towels:set
-          - Flag: books:set
-          - Flag: boxes:set
     # blocked
     - Side: Up
       Idx: 0
@@ -827,12 +808,40 @@ ASide:
     - Side: Down
       Idx: 2
       Kind: none
+    InternalEdges:
+    - Split: RightToLeft
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: hard
+          Flag: books:unset
+        - Dashes: two
+          Difficulty: normal
+          And:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
+        - Dashes: two
+          Difficulty: hard
+          Or:
+          - Flag: towels:unset
+          - Flag: books:unset
+          - Flag: boxes:unset
+      ReqIn:
+        Dashes: two
+        Difficulty: master
     Tweaks:
     - Name: "spawn"
       X: 579
       Y: 40
       Update:
         Default: true
+    - Name: "spawn"
+      X: 64
+      Y: 112
+      Update:
+        X: 88
+        Y: 120
     - Name: "exitBlock"
       ID: 2152
       Update:
@@ -955,8 +964,11 @@ ASide:
       Idx: 0
       Kind: out
       ReqOut:
-        Dashes: one
-        Difficulty: hard
+        Or:
+        - Dashes: one
+          Difficulty: hard
+        - Dashes: two
+          Difficulty: normal
     # blocked
     - Side: Right
       Idx: 0

@@ -1,3 +1,35 @@
+Backgrounds:
+# Non-Opaque
+- Texture: "bgs/nameguysdsides_stylegrounds/celeste_start_floatingtree"
+  CoverBottom: 28
+  CoverTop: 164
+  LoopY: true
+  ScrollFactorX: 0.1
+  ScrollFactorY: 0.1
+- Texture: "bgs/nameguysdsides_stylegrounds/celeste_1_city_buildings"
+  CoverBottom: 12
+  CoverTop: 350
+  LoopY: true
+  OffY: -30
+  ScrollFactorX: 0.1
+  ScrollFactorY: 0.1
+- Texture: "bgs/nameguysdsides_stylegrounds/celeste_2_oldsite_dreamblocks"
+  CoverBottom: 7
+  CoverTop: 164
+  LoopY: true
+  OffX: -122
+  OffY: -104
+  ScrollFactorX: 0.3
+  ScrollFactorY: 0.3
+- Texture: "bgs/nameguysdsides_stylegrounds/celeste_3_resort_dustbois"
+  CoverBottom: 10
+  CoverTop: 185
+  LoopY: true
+  OffX: -122
+  OffY: -104
+  ScrollFactorX: 0.3
+  ScrollFactorY: 0.3
+
 Music:
 - Name: "event:/NG9D_music_1"
 - Name: "event:/NG9D_music_2"
@@ -7,7 +39,6 @@ Rulesets:
   LongName: "Expert Pathway [Monika's D-Sides] (A)"
   Algorithm: "Pathway"
   Difficulty: "Expert"
-  Length: "Medium"
   Darkness: "Never"
   EnabledMaps:
   - SID: "nameguysdsidespack/0/0-Prologue"
@@ -37,7 +68,6 @@ Rulesets:
   Algorithm: "Pathway"
   Dashes: "Two"
   Difficulty: "Expert"
-  Length: "Medium"
   Darkness: "Never"
   EnabledMaps:
   - SID: "nameguysdsidespack/0/0-Prologue"
@@ -125,8 +155,10 @@ Rulesets:
   LongName: "Expert Endless [Monika's D-Sides] (E)"
   Algorithm: "Endless"
   Difficulty: "Expert"
+  EndlessLives: 5
   Darkness: "Never"
   Lights: "On"
+  Strawberries: Low
   EnabledMaps:
   - SID: "nameguysdsidespack/0/0-Prologue"
     Mode: 0
@@ -150,33 +182,4 @@ Rulesets:
     Mode: 0
   - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0
-- Name: "DF"
-  LongName: "Expert Endless 2-Dash [Monika's D-Sides] (F)"
-  Algorithm: "Endless"
-  Dashes: "Two"
-  Difficulty: "Expert"
-  Darkness: "Never"
-  Lights: "On"
-  EnabledMaps:
-  - SID: "nameguysdsidespack/0/0-Prologue"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/1-City"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/2-Oldsite"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/3-Resort"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/4-Ridge"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/5-Temple"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/6-ReflectionD"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/7-Summit"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/8-Core"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/9-Epilogue"
-    Mode: 0
-  - SID: "nameguysdsidespack/0/10-Farewell"
     Mode: 0

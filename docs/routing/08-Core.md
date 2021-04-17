@@ -18,10 +18,10 @@
 | c-03 | N/A | N/A | Normal | N/A | N/A | N/A |  |
 | c-04 | N/A | N/A | Normal | N/A | N/A | N/A |  |
 | c-05 | N/A | Perfect | Hard | N/A | N/A | N/A | 1DF possible, requires ice wall neutral at beginning and near-pixel perfect Kevin interaction at end |
-| d-01 | N/A | Expert | Hard | N/A | N/A | N/A |  |
+| d-01 | N/A | Hard | Hard | N/A | N/A | N/A |  |
 | d-02 | N/A | Perfect | Hard | N/A | N/A | Perfect | 1DF requires ice wall neutrals (2-5 depending on core launch), 2DR possible, requires a ton of waiting + very precise |
 | d-03 | N/A | Expert | Hard | N/A | N/A | Perfect | 2DR has tricky core jumps/lava cycles... consistent strat is to hit first switch w/o touching bottom core block, then launch up to the top core blocks, launch left, grab jump over the next two then dash over the last one and launch left to the second switch, then as the core block breaks jump and dash to the next block and grab jump over, neutral to the end |
 | d-04 | N/A | Expert | Hard | N/A | N/A | Perfect | Dash refill lets you skip second switch (makes second half easy), 2DR have to do really tight dash (near pixel perfect) through ice ball corridor... |
-| d-05 | N/A | N/A | Perfect | N/A | N/A | N/A | No special strats, room is just awful; reverse technically possible (thanks Etpio) |
+| d-05 | N/A | N/A | Master | N/A | N/A | N/A | Reverse technically possible but bad spawn (thanks Etpio) |
 | d-06 | N/A | Expert | Expert | N/A | N/A | N/A | Requires lava wallbounces/neutrals with setups  |
 | space | N/A | N/A | Master | N/A | N/A | N/A |  |
