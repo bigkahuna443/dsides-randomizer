@@ -8432,7 +8432,7 @@ ASide:
     - Name: "spawn"
       Update:
         Add: true
-        X: 1194
+        X: 1184
         Y: 136
     - Name: "noRefillTrigger"
       Update:
